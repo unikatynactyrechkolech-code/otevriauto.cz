@@ -1,0 +1,43 @@
+import Image from "next/image";
+import { siteConfig } from "@/lib/site-config";
+import { images } from "@/lib/images";
+import PhoneIcon from "./PhoneIcon";
+
+export default function CtaBanner() {
+  return (
+    <section className="relative overflow-hidden py-24 sm:py-32">
+      <Image
+        src={images.dashboard}
+        alt="Interiér vozidla za tmy"
+        fill
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-black/70" />
+
+      <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center sm:px-6 lg:px-8">
+        <span className="rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
+          Nonstop pohotovost
+        </span>
+
+        <h2 className="font-heading text-4xl font-extrabold text-white sm:text-5xl">
+          Jsme k dispozici 24/7 pro nouzové otevření vozidla
+        </h2>
+        <p className="max-w-xl text-white/70">
+          Zavolejte nám – otevřeme váš automobil šetrně, efektivně a za férovou
+          cenu. Otevírání aut v celé Praze i Středočeském kraji je naše každodenní
+          práce.
+        </p>
+
+        <a
+          href={siteConfig.phoneHref}
+          className="mt-2 flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-black shadow-[0_14px_30px_-10px_rgba(242,183,5,0.8)] transition hover:bg-brand-dark"
+        >
+          <PhoneIcon className="h-4 w-4" />
+          Volejte {siteConfig.phone}
+        </a>
+      </div>
+    </section>
+  );
+}
+
