@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative flex min-h-[88svh] w-full items-end overflow-hidden bg-ink sm:min-h-[92svh]">
       <Image
         src={images.hero}
-        alt="Detail zamčeného vozidla za soumraku"
+        alt="Otevírání zámku dveří auta"
         fill
         priority
         sizes="100vw"

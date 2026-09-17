@@ -1,7 +1,10 @@
+// Own photos live in the "otevri auto" folder of the zamecnik-husak R2 bucket.
+const r2 = "https://pub-1210b04a751146ca8c08bf867908398c.r2.dev/otevri%20auto";
+
 // Curated automotive photography used as backgrounds across the site.
 export const images = {
-  hero: "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-  keys: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7",
+  hero: `${r2}/otevreni-zamku-auta.webp`,
+  keys: `${r2}/autoklice-a-zamek-zapalovani.webp`,
   ignition: "https://images.unsplash.com/photo-1615906655593-ad0386982a0f",
   wheel: "https://images.unsplash.com/photo-1502877338535-766e1452684a",
   technician: "https://images.unsplash.com/photo-1580273916550-e323be2ae537",
