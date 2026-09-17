@@ -1,14 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/lib/site-config";
 import PhoneIcon from "./PhoneIcon";
 
 const links = [
-  { href: "#sluzby", label: "Služby" },
-  { href: "#znacky", label: "Značky vozidel" },
-  { href: "#postup", label: "Jak to funguje" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#sluzby", label: "Služby" },
+  { href: "/#znacky", label: "Značky vozidel" },
+  { href: "/#postup", label: "Jak to funguje" },
+  { href: "/#lokality", label: "Lokality" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export default function Header() {
@@ -17,10 +19,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-2 font-heading text-lg font-bold text-black">
+        <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold text-black">
           <span className="h-4 w-1.5 rounded-full bg-brand" />
           otevriauto.cz
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {links.map((link) => (

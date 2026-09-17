@@ -24,7 +24,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section id="kontakt" className="py-16 sm:py-24">
+    <section id="kontakt" className="scroll-mt-20 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid overflow-hidden rounded-3xl shadow-2xl shadow-black/10 lg:grid-cols-5">
           <div className="relative flex flex-col justify-between gap-8 overflow-hidden bg-ink p-8 text-white sm:p-10 lg:col-span-2">

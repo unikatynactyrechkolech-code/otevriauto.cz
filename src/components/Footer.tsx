@@ -1,14 +1,15 @@
+import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
 const quickLinks = [
-  { href: "#sluzby", label: "Služby" },
-  { href: "#znacky", label: "Značky vozidel" },
-  { href: "#postup", label: "Jak to funguje" },
-  { href: "#proc-my", label: "Proč my" },
+  { href: "/#sluzby", label: "Služby" },
+  { href: "/#znacky", label: "Značky vozidel" },
+  { href: "/#postup", label: "Jak to funguje" },
+  { href: "/#lokality", label: "Lokality" },
 ];
 
 const usefulLinks = [
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#kontakt", label: "Kontakt" },
   { href: "#", label: "Ceník služeb" },
   { href: "#", label: "Časté dotazy" },
   { href: "#", label: "Ochrana osobních údajů" },
@@ -20,10 +21,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <a href="#" className="flex items-center gap-2 font-heading text-lg font-bold text-white">
+            <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold text-white">
               <span className="h-4 w-1.5 rounded-full bg-brand" />
               otevriauto.cz
-            </a>
+            </Link>
             <p className="mt-4 max-w-xs text-sm text-white/50">
               Nouzové otevírání aut v Praze 1 – nonstop, šetrně a bez poškození
               vozidla. Spolehněte se na odborníky s praxí.

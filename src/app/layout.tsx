@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Mulish, Poppins } from "next/font/google";
+import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
 const mulish = Mulish({
@@ -14,6 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: "Otevírání aut Praha 1 | Nouzové otevření vozidla 24/7",
   description:
     "Nouzové otevírání aut v Praze 1 – Staré Město, Josefov, Malá Strana, Hradčany a Nové Město. Bez poškození, nonstop 24/7, dojezd do 30 minut. Volejte 775 180 299.",

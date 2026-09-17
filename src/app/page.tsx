@@ -9,6 +9,7 @@ import Tips from "@/components/Tips";
 import CoverageAreas from "@/components/CoverageAreas";
 import CtaBanner from "@/components/CtaBanner";
 import ContactForm from "@/components/ContactForm";
+import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
 
@@ -27,6 +28,7 @@ export default function Home() {
         <CoverageAreas />
         <CtaBanner />
         <ContactForm />
+        <LocationsDirectory />
       </main>
       <Footer />
       <MobileCallBar />

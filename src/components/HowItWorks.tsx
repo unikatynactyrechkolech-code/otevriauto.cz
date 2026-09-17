@@ -2,34 +2,46 @@ import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { images } from "@/lib/images";
 
-const steps = [
-  {
-    title: "Zavoláte nám",
-    text: "Telefonicky nás kontaktujete a uvedete typ vozidla.",
-  },
-  {
-    title: "Upřesníme detaily",
-    text: "Doplníme značku, model a rok výroby automobilu.",
-  },
-  {
-    title: "Sdělíme cenu",
-    text: "Před výjezdem sdělíme orientační cenu zásahu.",
-  },
-  {
-    title: "Technik dorazí",
-    text: "Zámečník dorazí zpravidla do 30–40 minut.",
-  },
-  {
-    title: "Otevření vozidla",
-    text: "Po odsouhlasení ceny provedeme šetrné otevření.",
-  },
-];
+function buildSteps(arrival: string) {
+  return [
+    {
+      title: "Zavoláte nám",
+      text: "Telefonicky nás kontaktujete a uvedete typ vozidla.",
+    },
+    {
+      title: "Upřesníme detaily",
+      text: "Doplníme značku, model a rok výroby automobilu.",
+    },
+    {
+      title: "Sdělíme cenu",
+      text: "Před výjezdem sdělíme orientační cenu zásahu.",
+    },
+    {
+      title: "Technik dorazí",
+      text: `Zámečník dorazí zpravidla do ${arrival}.`,
+    },
+    {
+      title: "Otevření vozidla",
+      text: "Po odsouhlasení ceny provedeme šetrné otevření.",
+    },
+  ];
+}
 
-export default function HowItWorks() {
+type HowItWorksProps = {
+  title?: string;
+  arrival?: string;
+};
+
+export default function HowItWorks({
+  title = "Jak probíhá otevírání aut krok za krokem",
+  arrival = "30–40 minut",
+}: HowItWorksProps) {
+  const steps = buildSteps(arrival);
+
   return (
-    <section id="postup" className="bg-gray-50/70 py-16 sm:py-24">
+    <section id="postup" className="scroll-mt-20 bg-gray-50/70 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading title="Jak probíhá otevírání aut krok za krokem" />
+        <SectionHeading title={title} />
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="lg:sticky lg:top-24">

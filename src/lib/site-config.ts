@@ -2,6 +2,7 @@
 export const siteConfig = {
   name: "otevriauto.cz",
   shortName: "otevriauto.cz",
+  url: "https://otevriauto.cz",
   tagline: "Nouzové otevírání aut Praha 1",
   phone: "775 180 299",
   phoneHref: "tel:+420775180299",

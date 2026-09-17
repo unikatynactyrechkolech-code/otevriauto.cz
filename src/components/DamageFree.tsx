@@ -11,7 +11,7 @@ const vehicleTypes = [
 
 export default function DamageFree() {
   return (
-    <section id="sluzby" className="py-16 sm:py-24">
+    <section id="sluzby" className="scroll-mt-20 py-16 sm:py-24">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8">
         <div>
           <SectionHeading
