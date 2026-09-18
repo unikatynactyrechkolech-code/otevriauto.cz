@@ -1,15 +1,41 @@
 import { pragueLocations } from "./praha";
 import { pragueWestLocations } from "./praha-zapad";
 import { pragueEastLocations } from "./praha-vychod";
+import { locationsA, okresInfosA } from "./stredocesky-a";
+import { locationsB, okresInfosB } from "./stredocesky-b";
+import { locationsC, okresInfosC } from "./stredocesky-c";
 import type { Location, RegionId } from "./types";
 
 export type { Location, RegionId } from "./types";
 
-export const regions: { id: RegionId; name: string; locations: Location[] }[] = [
-  { id: "praha", name: "Praha", locations: pragueLocations },
-  { id: "praha-zapad", name: "Praha-západ", locations: pragueWestLocations },
-  { id: "praha-vychod", name: "Praha-východ", locations: pragueEastLocations },
+export type Region = {
+  id: RegionId;
+  name: string;
+  /** Locations with their own page. */
+  locations: Location[];
+  /** Towns listed by name only. */
+  otherTowns: string[];
+};
+
+const districtLocations = [
+  ...pragueWestLocations,
+  ...pragueEastLocations,
+  ...locationsA,
+  ...locationsB,
+  ...locationsC,
 ];
+
+export const prague: Region = { id: "praha", name: "Praha", locations: pragueLocations, otherTowns: [] };
+
+// Districts (okresy) of Středočeský kraj in alphabetical order.
+export const districts: Region[] = [...okresInfosA, ...okresInfosB, ...okresInfosC]
+  .sort((a, b) => a.name.localeCompare(b.name, "cs"))
+  .map((okres) => ({
+    ...okres,
+    locations: districtLocations.filter((location) => location.region === okres.id),
+  }));
+
+export const regions: Region[] = [prague, ...districts];
 
 export const allLocations: Location[] = regions.flatMap((region) => region.locations);
 
@@ -46,11 +72,13 @@ function distanceKm([lat1, lng1]: [number, number], [lat2, lng2]: [number, numbe
   return 6371 * 2 * Math.asin(Math.sqrt(a));
 }
 
-// Rough dispatch estimate from central Prague: 15 min base + 1.2 min per km as the crow
-// flies, shown as a 15-minute window rounded to 5 minutes (e.g. "40–55 minut").
+// Rough dispatch estimate from central Prague as the crow flies: 15 min base, 1.2 min per km
+// for the first 20 km of city traffic, 0.9 min per km beyond that on motorways. Shown as
+// a 15-minute window rounded to 5 minutes (e.g. "40–55 minut").
 export function arrivalWindow(location: Location): string {
   const km = distanceKm(PRAGUE_CENTRE, location.geo);
-  const from = Math.max(15, Math.round((15 + 1.2 * km) / 5) * 5);
+  const minutes = 15 + 1.2 * Math.min(km, 20) + 0.9 * Math.max(km - 20, 0);
+  const from = Math.max(15, Math.round(minutes / 5) * 5);
   return `${from}–${from + 15} minut`;
 }
 

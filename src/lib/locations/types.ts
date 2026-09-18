@@ -1,4 +1,26 @@
-export type RegionId = "praha" | "praha-zapad" | "praha-vychod";
+export type RegionId =
+  | "praha"
+  | "benesov"
+  | "beroun"
+  | "kladno"
+  | "kolin"
+  | "kutna-hora"
+  | "melnik"
+  | "mlada-boleslav"
+  | "nymburk"
+  | "praha-vychod"
+  | "praha-zapad"
+  | "pribram"
+  | "rakovnik";
+
+/** A district (okres) shown in the locations directory. */
+export type OkresInfo = {
+  id: RegionId;
+  /** Display name, e.g. "okres Kladno". */
+  name: string;
+  /** Towns of the district that don't have their own page; listed as plain text. */
+  otherTowns: string[];
+};
 
 export type Location = {
   /** URL slug without the "autozamecnik-" prefix, e.g. "praha-1" or "brandys-nad-labem". */
