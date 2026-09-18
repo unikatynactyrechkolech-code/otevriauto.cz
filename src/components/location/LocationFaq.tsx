@@ -2,15 +2,15 @@ import type { FaqItem } from "@/lib/locations/faq";
 import SectionHeading from "../SectionHeading";
 
 type LocationFaqProps = {
-  name: string;
+  title: string;
   items: FaqItem[];
 };
 
-export default function LocationFaq({ name, items }: LocationFaqProps) {
+export default function LocationFaq({ title, items }: LocationFaqProps) {
   return (
     <section className="py-16 sm:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading align="center" title={`Časté dotazy – autozámečník ${name}`} />
+        <SectionHeading align="center" title={title} />
 
         <div className="mt-10 space-y-3">
           {items.map((item, index) => (

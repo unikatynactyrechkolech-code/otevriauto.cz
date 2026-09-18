@@ -1,14 +1,19 @@
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
-import PhoneIcon from "../PhoneIcon";
+import PhoneIcon from "./PhoneIcon";
 
-type LocationHeroProps = {
-  name: string;
-  regionName: string;
-  regionHref: string;
+type PageHeroProps = {
+  title: string;
+  subtitle: string;
+  /** Links leading to this page; the page itself is appended as the last crumb. */
+  breadcrumbs: { label: string; href: string }[];
   arrival: string;
+  /** Fourth item of the stats bar, e.g. { label: "Značky", value: "Všechny značky aut" }. */
+  extraStat: { label: string; value: string };
   image: string;
+  imageAlt: string;
 };
 
 function ClockIcon({ className }: { className: string }) {
@@ -35,12 +40,20 @@ function CarIcon({ className }: { className: string }) {
   );
 }
 
-export default function LocationHero({ name, regionName, regionHref, arrival, image }: LocationHeroProps) {
+export default function PageHero({
+  title,
+  subtitle,
+  breadcrumbs,
+  arrival,
+  extraStat,
+  image,
+  imageAlt,
+}: PageHeroProps) {
   const stats = [
     { icon: ClockIcon, label: "Příjezd", value: arrival },
     { icon: PhoneIcon, label: "Nonstop linka", value: siteConfig.phone },
     { icon: ShieldIcon, label: "Garance", value: "Cena předem" },
-    { icon: CarIcon, label: "Značky", value: "Všechny značky aut" },
+    { icon: CarIcon, ...extraStat },
   ];
 
   return (
@@ -48,7 +61,7 @@ export default function LocationHero({ name, regionName, regionHref, arrival, im
       <section className="relative overflow-hidden bg-ink">
         <Image
           src={image}
-          alt={`Autozámečník ${name} – nouzové otevření auta`}
+          alt={imageAlt}
           fill
           preload
           sizes="100vw"
@@ -59,30 +72,26 @@ export default function LocationHero({ name, regionName, regionHref, arrival, im
         <div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 pb-16 pt-14 text-center sm:px-6 sm:pb-20 sm:pt-20 lg:px-8">
           <nav aria-label="Drobečková navigace">
             <ol className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-white/60">
-              <li>
-                <Link href="/" className="transition hover:text-white">
-                  Domů
-                </Link>
-              </li>
-              <li aria-hidden="true">›</li>
-              <li>
-                <Link href={regionHref} className="transition hover:text-white">
-                  {regionName}
-                </Link>
-              </li>
-              <li aria-hidden="true">›</li>
+              {breadcrumbs.map((crumb) => (
+                <Fragment key={crumb.href}>
+                  <li>
+                    <Link href={crumb.href} className="transition hover:text-white">
+                      {crumb.label}
+                    </Link>
+                  </li>
+                  <li aria-hidden="true">›</li>
+                </Fragment>
+              ))}
               <li aria-current="page" className="font-semibold text-brand">
-                Autozámečník {name}
+                {title}
               </li>
             </ol>
           </nav>
 
           <h1 className="mt-6 font-heading text-4xl font-extrabold uppercase leading-tight text-white sm:text-5xl lg:text-6xl">
-            Autozámečník {name}
+            {title}
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-white/75 sm:text-lg">
-            Nonstop otevírání aut bez poškození – příjezd do {arrival}
-          </p>
+          <p className="mt-4 max-w-2xl text-base text-white/75 sm:text-lg">{subtitle}</p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             <a

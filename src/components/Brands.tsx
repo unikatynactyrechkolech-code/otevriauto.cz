@@ -1,5 +1,7 @@
+import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { brandGroups } from "@/lib/brands";
+import { brandPath, getBrandPageForLabel } from "@/lib/brand-pages";
 
 type BrandsProps = {
   title?: string;
@@ -25,14 +27,24 @@ export default function Brands({
                 {group.label}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {group.brands.map((brand) => (
-                  <span
-                    key={brand}
-                    className="rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink shadow-sm"
-                  >
-                    {brand}
-                  </span>
-                ))}
+                {group.brands.map((brand) => {
+                  const page = getBrandPageForLabel(brand);
+                  const chipClass =
+                    "rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink shadow-sm";
+                  return page ? (
+                    <Link
+                      key={brand}
+                      href={brandPath(page)}
+                      className={`${chipClass} transition hover:border-brand hover:bg-brand/10`}
+                    >
+                      {brand}
+                    </Link>
+                  ) : (
+                    <span key={brand} className={chipClass}>
+                      {brand}
+                    </span>
+                  );
+                })}
               </div>
             </div>
           ))}
