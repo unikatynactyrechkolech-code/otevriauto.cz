@@ -34,14 +34,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-black/5 bg-white">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 font-heading text-lg font-bold text-black"
           >
-            <Image src="/logo.svg" alt="" width={32} height={32} unoptimized />
+            <Image src="/logo.png" alt="" width={36} height={36} />
             otevriauto.cz
           </Link>
 
@@ -65,13 +65,13 @@ export default function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
           >
-            <span className={`h-[3px] w-7 rounded-full bg-brand transition ${open ? "translate-y-[4.5px] rotate-45" : ""}`} />
-            <span className={`h-[3px] w-7 rounded-full bg-brand transition ${open ? "-translate-y-[4.5px] -rotate-45" : ""}`} />
+            <span className={`h-1 w-7 rounded-full bg-brand transition ${open ? "translate-y-[5px] rotate-45" : ""}`} />
+            <span className={`h-1 w-7 rounded-full bg-brand transition ${open ? "-translate-y-[5px] -rotate-45" : ""}`} />
           </button>
         </div>
       </header>
 
-      {/* Rendered outside the header: its backdrop blur would otherwise trap this fixed overlay. */}
+      {/* Full-screen overlay sits under the sticky header (z-50) and above the call button (z-40). */}
       {open ? (
         <div
           id="mobile-menu"

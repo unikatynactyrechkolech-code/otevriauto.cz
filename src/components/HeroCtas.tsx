@@ -11,16 +11,16 @@ export default function HeroCtas({
   secondary = { label: "Ceník", href: "/cenik" },
 }: HeroCtasProps) {
   return (
-    <div className={`flex flex-wrap items-center gap-3 ${align === "center" ? "justify-center" : ""}`}>
+    <div className={`flex flex-wrap items-center gap-2 sm:gap-3 ${align === "center" ? "justify-center" : ""}`}>
       <a
         href={siteConfig.phoneHref}
-        className="rounded-full bg-brand px-7 py-3.5 font-heading text-base font-bold text-black transition hover:bg-brand-dark sm:px-9 sm:py-4 sm:text-lg"
+        className="rounded-full bg-brand px-5 py-2.5 font-heading text-sm font-bold text-black transition hover:bg-brand-dark sm:px-6 sm:text-base"
       >
         Zavolat teď
       </a>
       <Link
         href={secondary.href}
-        className="rounded-full border-2 border-white px-7 py-3 font-heading text-base font-bold text-white transition hover:bg-white hover:text-black sm:px-9 sm:py-3.5 sm:text-lg"
+        className="rounded-full border-2 border-white px-5 py-2 font-heading text-sm font-bold text-white transition hover:bg-white hover:text-black sm:px-6 sm:text-base"
       >
         {secondary.label}
       </Link>

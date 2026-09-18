@@ -11,7 +11,7 @@ export function buildBrandFaq(brand: BrandPage, arrival: string): FaqItem[] {
     },
     {
       question: "Jak rychle přijedete?",
-      answer: `V Praze bývá technik na místě zpravidla do ${arrival}, do okolních obcí podle vzdálenosti. Jezdíme nonstop – v noci, o víkendech i o svátcích.`,
+      answer: `V Praze bývá technik na místě zpravidla za ${arrival}, do okolních obcí podle vzdálenosti. Jezdíme nonstop – v noci, o víkendech i o svátcích.`,
     },
     {
       question: "Kolik otevření auta stojí?",

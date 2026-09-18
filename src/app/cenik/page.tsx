@@ -11,6 +11,7 @@ import CallButton from "@/components/CallButton";
 import JsonLd from "@/components/JsonLd";
 import LocationFaq from "@/components/location/LocationFaq";
 import { travelAndPayment } from "@/lib/pricing";
+import { PRAGUE_ARRIVAL } from "@/lib/locations";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
 
@@ -77,7 +78,7 @@ export default function PricingPage() {
           title="Ceník"
           subtitle="Otevření auta bez poškození od 900 Kč – cenu znáte vždy předem"
           breadcrumbs={[{ label: "Domů", href: "/" }]}
-          arrival="30–40 minut"
+          arrival={PRAGUE_ARRIVAL}
           extraStat={{ label: "Výjezd Praha", value: "700 Kč" }}
           image={images.dashboard}
           imageAlt="Ceník otevírání aut"

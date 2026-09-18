@@ -14,12 +14,11 @@ import LocationFaq from "@/components/location/LocationFaq";
 import BrandIntro from "@/components/brand/BrandIntro";
 import BrandLockTech from "@/components/brand/BrandLockTech";
 import { allBrandPages, brandPath, type BrandPage } from "@/lib/brand-pages";
+import { PRAGUE_ARRIVAL } from "@/lib/locations";
 import { buildBrandFaq } from "@/lib/brand-pages/faq";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
 
-// Typical arrival within Prague, matching the homepage promise.
-const PRAGUE_ARRIVAL = "30–40 minut";
 
 const heroImages = [images.keys, images.hero, images.dashboard, images.nightRoad, images.wheel];
 

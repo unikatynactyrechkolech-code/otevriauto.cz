@@ -11,7 +11,7 @@ export function buildLocationFaq(location: Location, arrival: string): FaqItem[]
   return [
     {
       question: `Jak rychle dorazíte ${location.locative}?`,
-      answer: `Autozámečník vyráží hned po vašem zavolání a ${location.locative} bývá zpravidla do ${arrival}. Jezdíme nonstop – v noci, o víkendech i o svátcích.${partsSentence}`,
+      answer: `Autozámečník vyráží hned po vašem zavolání a ${location.locative} bývá zpravidla za ${arrival}. Jezdíme nonstop – v noci, o víkendech i o svátcích.${partsSentence}`,
     },
     location.faq,
     {

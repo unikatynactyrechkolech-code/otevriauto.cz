@@ -4,7 +4,7 @@ import sharp from "sharp";
 
 const svg = readFileSync("public/logo.svg");
 
-const png = (source, size) => sharp(source, { density: 600 }).resize(size, size).png().toBuffer();
+const png = (source, size) => sharp(source, { density: 1200 }).resize(size, size).png().toBuffer();
 
 // ICO container with PNG-encoded images (supported by every current browser and search engine).
 function toIco(images) {
@@ -33,8 +33,15 @@ writeFileSync("src/app/favicon.ico", toIco(icoImages));
 
 writeFileSync("src/app/icon.svg", svg);
 
-// iOS rounds the corners itself, so the touch icon is a full square.
-const squareSvg = Buffer.from(svg.toString().replace('rx="14"', 'rx="0"'));
-writeFileSync("src/app/apple-icon.png", await png(squareSvg, 180));
+// Transparent PNG logo used in the header and footer.
+writeFileSync("public/logo.png", await png(svg, 512));
 
-console.log("Wrote src/app/favicon.ico, src/app/icon.svg, src/app/apple-icon.png");
+// iOS fills transparent icons with black anyway, so the touch icon gets an explicit black square.
+const glyph = await png(svg, 150);
+const appleIcon = await sharp({ create: { width: 180, height: 180, channels: 4, background: "#0a0a0a" } })
+  .composite([{ input: glyph, left: 15, top: 15 }])
+  .png()
+  .toBuffer();
+writeFileSync("src/app/apple-icon.png", appleIcon);
+
+console.log("Wrote src/app/favicon.ico, src/app/icon.svg, src/app/apple-icon.png, public/logo.png");

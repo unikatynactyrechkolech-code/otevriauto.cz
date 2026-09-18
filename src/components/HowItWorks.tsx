@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
 import { images } from "@/lib/images";
+import { PRAGUE_ARRIVAL } from "@/lib/locations";
 
 function buildSteps(arrival: string) {
   return [
@@ -18,7 +19,7 @@ function buildSteps(arrival: string) {
     },
     {
       title: "Technik dorazí",
-      text: `Zámečník dorazí zpravidla do ${arrival}.`,
+      text: `Zámečník dorazí zpravidla za ${arrival}.`,
     },
     {
       title: "Otevření vozidla",
@@ -34,7 +35,7 @@ type HowItWorksProps = {
 
 export default function HowItWorks({
   title = "Jak probíhá otevírání aut krok za krokem",
-  arrival = "30–40 minut",
+  arrival = PRAGUE_ARRIVAL,
 }: HowItWorksProps) {
   const steps = buildSteps(arrival);
 

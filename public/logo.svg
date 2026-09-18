@@ -1,13 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#F2B705"/>
-  <path d="M4 47V40.5Q4 36.6 8 36L17 34.6 23.4 27Q24.9 25.5 27 25.5H36Q38.1 25.5 39.5 27L46.4 34.6 54.6 35.8Q60 36.6 60 41V47Z" fill="#0A0A0A"/>
-  <path d="M20.6 34.2 25.4 28.6H30.6V34.2ZM33 28.6H37.6L42.5 34.2H33Z" fill="#F2B705"/>
-  <circle cx="16" cy="47" r="7" fill="#0A0A0A" stroke="#F2B705" stroke-width="2.5"/>
-  <circle cx="48" cy="47" r="7" fill="#0A0A0A" stroke="#F2B705" stroke-width="2.5"/>
-  <circle cx="16" cy="47" r="2.2" fill="#F2B705"/>
-  <circle cx="48" cy="47" r="2.2" fill="#F2B705"/>
-  <path d="M44.5 17V12.5A5.5 5.5 0 0 1 55.5 12.5V17" fill="none" stroke="#0A0A0A" stroke-width="3.4" stroke-linecap="round"/>
-  <rect x="40.5" y="16" width="19" height="14" rx="3" fill="#0A0A0A" stroke="#F2B705" stroke-width="2.5" paint-order="stroke"/>
-  <circle cx="50" cy="21.6" r="2.3" fill="#F2B705"/>
-  <rect x="49.05" y="22.4" width="1.9" height="4.2" rx="0.9" fill="#F2B705"/>
+  <g transform="translate(0 -5.5)" fill="#F2B705">
+    <!-- Car seen from the front, with windscreen, headlights, grille and bumper cut out. -->
+    <path transform="translate(-2.44 7.7) scale(0.86)" fill-rule="evenodd" d="M4 34Q4 30 8 30H11L14.5 20.5Q15.3 18 18 18H34Q36.7 18 37.5 20.5L41 30H44Q48 30 48 34V45Q48 47 46 47H6Q4 47 4 45ZM17.5 21.5H34.5L37.6 29H14.4ZM7.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM37.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM19 35H33Q34 35 34 36V39Q34 40 33 40H19Q18 40 18 39V36Q18 35 19 35ZM9 42.5H43V44H9ZM7 47H15V53Q15 55 13 55H9Q7 55 7 53ZM37 47H45V53Q45 55 43 55H39Q37 55 37 53Z"/>
+    <!-- Open padlock: the right leg of the shackle is lifted out of the body. -->
+    <path d="M45.5 35V26.5a6.5 6.5 0 0 1 13 0v3" fill="none" stroke="#F2B705" stroke-width="4" stroke-linecap="round"/>
+    <path fill-rule="evenodd" d="M44.5 35H58.5Q62 35 62 38.5V51.5Q62 55 58.5 55H44.5Q41 55 41 51.5V38.5Q41 35 44.5 35ZM51.5 40.2a2.8 2.8 0 1 0 0 5.6a2.8 2.8 0 1 0 0-5.6ZM50.5 44.5H52.5V50Q52.5 51 51.5 51Q50.5 51 50.5 50Z"/>
+  </g>
 </svg>
