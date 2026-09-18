@@ -21,16 +21,16 @@ export default function Brands({
           {brandGroups.map((group) => (
             <div
               key={group.label}
-              className="rounded-none border-2 border-black bg-gray-50/70 p-6"
+              className="rounded-2xl border border-black/5 bg-gray-50/70 p-6"
             >
-              <p className="text-xs font-bold uppercase tracking-wider text-black">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
                 {group.label}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {group.brands.map((brand) => {
                   const page = getBrandPageForLabel(brand);
                   const chipClass =
-                    "rounded-none border-2 border-black bg-white px-3 py-1.5 text-sm font-semibold text-ink";
+                    "rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink";
                   return page ? (
                     <Link
                       key={brand}

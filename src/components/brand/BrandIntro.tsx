@@ -23,7 +23,7 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
         </div>
 
         <aside className="space-y-4">
-          <div className="rounded-none border-2 border-black bg-gray-50/70 p-6">
+          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6">
             <h3 className="font-heading text-lg font-bold text-ink">
               Modely značky {brand.name}, které otevíráme nejčastěji
             </h3>
@@ -31,7 +31,7 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
               {brand.models.map((model) => (
                 <li
                   key={model}
-                  className="rounded-none border-2 border-black bg-white px-3 py-1.5 text-sm font-semibold text-ink"
+                  className="rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink"
                 >
                   {model.startsWith(brand.name) ? model : `${brand.name} ${model}`}
                 </li>
@@ -39,8 +39,8 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
             </ul>
           </div>
 
-          <div className="rounded-none border border-brand bg-brand/10 p-6">
-            <p className="text-xs font-bold uppercase tracking-wider text-black">
+          <div className="rounded-2xl border border-brand/30 bg-brand/10 p-6">
+            <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
               Než zavoláte – tip pro majitele vozů {brand.name}
             </p>
             <p className="mt-2 text-sm font-semibold text-ink">{brand.emergencyTip}</p>

@@ -26,7 +26,7 @@ export default function NearbyLocations({ title, description, locations }: Nearb
             <li key={location.slug}>
               <Link
                 href={locationPath(location)}
-                className="flex h-full flex-col rounded-none border-2 border-black bg-white p-2.5 transition hover:border-brand sm:rounded-none sm:p-4"
+                className="flex h-full flex-col rounded-xl border border-black/5 bg-white p-2.5 transition hover:border-brand sm:rounded-2xl sm:p-4"
               >
                 <span className="font-heading text-sm font-bold leading-tight text-ink sm:text-base">
                   {location.name}

@@ -17,11 +17,11 @@ export default function LocationFaq({ title, items }: LocationFaqProps) {
             <details
               key={item.question}
               open={index === 0}
-              className="group rounded-none border-2 border-black bg-gray-50/70 px-6 py-5"
+              className="group rounded-2xl border border-black/5 bg-gray-50/70 px-6 py-5"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-heading text-base font-bold text-ink [&::-webkit-details-marker]:hidden">
                 {item.question}
-                <span className="text-xl text-black transition group-open:rotate-45" aria-hidden="true">
+                <span className="text-xl text-brand-dark transition group-open:rotate-45" aria-hidden="true">
                   +
                 </span>
               </summary>

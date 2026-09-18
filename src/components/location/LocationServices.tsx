@@ -30,9 +30,9 @@ export default function LocationServices({ locative }: LocationServicesProps) {
           {services.map((service) => (
             <li
               key={service}
-              className="flex items-center gap-4 rounded-none border-2 border-black bg-white px-6 py-5 text-sm font-semibold text-ink sm:text-base"
+              className="flex items-center gap-4 rounded-2xl border border-black/5 bg-white px-6 py-5 text-sm font-semibold text-ink sm:text-base"
             >
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-none bg-brand text-black">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-black">
                 <CheckIcon className="h-3.5 w-3.5" />
               </span>
               {service}

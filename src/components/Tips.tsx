@@ -15,7 +15,7 @@ export default function Tips() {
         <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {tips.map((tip, index) => (
             <div key={tip} className="border-t-2 border-ink pt-4">
-              <span className="font-heading text-sm font-bold text-black">
+              <span className="font-heading text-sm font-bold text-brand-dark">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <p className="mt-2 text-sm font-semibold text-ink">{tip}</p>

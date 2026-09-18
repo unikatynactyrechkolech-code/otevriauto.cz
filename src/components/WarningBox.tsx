@@ -7,7 +7,7 @@ export default function WarningBox() {
   return (
     <section className="py-4 sm:py-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-none">
+        <div className="relative overflow-hidden rounded-3xl">
           <Image
             src={images.nightRoad}
             alt="Cesta za soumraku"
@@ -32,7 +32,7 @@ export default function WarningBox() {
 
             <a
               href={siteConfig.phoneHref}
-              className="flex shrink-0 items-center justify-center gap-2 rounded-none border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition hover:bg-white/20"
+              className="flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition hover:bg-white/20"
             >
               <PhoneIcon className="h-4 w-4" />
               Zavolejte nám radši

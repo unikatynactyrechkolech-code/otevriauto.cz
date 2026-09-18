@@ -57,7 +57,7 @@ export default function Situations() {
           {tiles.map((tile) => (
             <div
               key={tile.title}
-              className="group relative aspect-[4/5] overflow-hidden rounded-none"
+              className="group relative aspect-[4/5] overflow-hidden"
             >
               <Image
                 src={tile.image}
@@ -75,7 +75,7 @@ export default function Situations() {
           ))}
         </div>
 
-        <div className="mt-10 border-t border-black pt-8">
+        <div className="mt-10 border-t border-black/5 pt-8">
           <h3 className="font-heading text-xl font-bold text-black">Další důvody</h3>
           <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
             {extra.map((item) => (

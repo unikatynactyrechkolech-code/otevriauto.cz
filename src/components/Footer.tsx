@@ -19,7 +19,6 @@ const usefulLinks = [
 export default function Footer() {
   return (
     <footer className="bg-ink text-white">
-      <div aria-hidden="true" className="hazard h-3" />
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -86,11 +85,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/40 pt-6 text-xs text-white sm:flex-row sm:justify-between">
+        <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-xs text-white sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. Všechna práva vyhrazena.</p>
           <p>
             Stránky vytvořil{" "}
-            <a href="https://webpojede.cz" className="font-bold text-brand transition hover:text-white">
+            <a href="https://webpojede.cz" className="font-bold text-brand transition hover:text-brand-dark">
               webpojede.cz
             </a>
           </p>

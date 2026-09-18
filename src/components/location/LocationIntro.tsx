@@ -20,22 +20,22 @@ export default function LocationIntro({ location }: LocationIntroProps) {
         </div>
 
         <aside className="space-y-4">
-          <div className="rounded-none border-2 border-black bg-gray-50/70 p-6">
+          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6">
             <h3 className="font-heading text-lg font-bold text-ink">
               Kde nejčastěji otevíráme auta {location.locative}
             </h3>
             <ul className="mt-4 space-y-3">
               {location.hotspots.map((hotspot) => (
                 <li key={hotspot} className="flex items-start gap-3 text-sm font-semibold text-ink">
-                  <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-black" />
+                  <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-brand-dark" />
                   {hotspot}
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="rounded-none border border-brand bg-brand/10 p-6">
-            <p className="text-xs font-bold uppercase tracking-wider text-black">
+          <div className="rounded-2xl border border-brand/30 bg-brand/10 p-6">
+            <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
               Tip pro řidiče {location.locative}
             </p>
             <p className="mt-2 text-sm font-semibold text-ink">{location.tip}</p>

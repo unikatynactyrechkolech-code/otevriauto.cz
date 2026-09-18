@@ -29,8 +29,8 @@ export default function LiveStatus({ tone = "light", className = "" }: LiveStatu
       } ${className}`}
     >
       <span className="relative flex h-2.5 w-2.5" aria-hidden="true">
-        <span className="absolute inline-flex h-full w-full bg-brand motion-safe:animate-ping" />
-        <span className="relative inline-flex h-2.5 w-2.5 bg-brand" />
+        <span className="absolute inline-flex h-full w-full rounded-full bg-brand motion-safe:animate-ping" />
+        <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-brand" />
       </span>
       <span>Na příjmu</span>
       <span className={tone === "light" ? "text-black/60" : "text-white/70"} suppressHydrationWarning>
