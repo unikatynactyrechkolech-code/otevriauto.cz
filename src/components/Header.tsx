@@ -84,28 +84,31 @@ export default function Header() {
       {open ? (
         <div
           id="mobile-menu"
-          className="fixed inset-0 z-[45] flex flex-col items-center justify-center gap-10 bg-white px-6 pt-16 lg:hidden"
+          className="fixed inset-0 z-[45] flex items-center justify-center bg-white px-6 pt-16 lg:hidden"
         >
-          <nav className="flex flex-col items-center gap-6">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="font-heading text-3xl font-bold text-black transition hover:text-brand-dark"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          {/* Left-aligned column, centred on the screen as a block. */}
+          <div className="flex flex-col items-start gap-10">
+            <nav className="flex flex-col items-start gap-6">
+              {links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="font-heading text-3xl font-bold text-black transition hover:text-brand-dark"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
 
-          <a
-            href={siteConfig.phoneHref}
-            className="flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-lg font-bold text-black transition hover:bg-brand-dark"
-          >
-            <PhoneIcon className="h-5 w-5" />
-            Volejte {siteConfig.phone}
-          </a>
+            <a
+              href={siteConfig.phoneHref}
+              className="flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-lg font-bold text-black transition hover:bg-brand-dark"
+            >
+              <PhoneIcon className="h-5 w-5" />
+              Volejte {siteConfig.phone}
+            </a>
+          </div>
         </div>
       ) : null}
     </>

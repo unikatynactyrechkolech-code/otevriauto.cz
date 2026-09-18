@@ -7,8 +7,8 @@ export default function CtaBanner() {
   return (
     <section className="relative overflow-hidden py-24 sm:py-32">
       <Image
-        src={images.dashboard}
-        alt="Interiér vozidla za tmy"
+        src={images.callNonstop}
+        alt="Řidič volá nonstop autozámečníka u zaparkovaného auta"
         fill
         sizes="100vw"
         className="object-cover"
@@ -16,18 +16,9 @@ export default function CtaBanner() {
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 text-center sm:px-6 lg:px-8">
-        <span className="rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm">
-          Nonstop pohotovost
-        </span>
-
         <h2 className="font-heading text-4xl font-extrabold text-white sm:text-5xl">
           Jsme k dispozici 24/7 pro nouzové otevření vozidla
         </h2>
-        <p className="max-w-xl text-white">
-          Zavolejte nám – otevřeme váš automobil šetrně, efektivně a za férovou
-          cenu. Otevírání aut v celé Praze i Středočeském kraji je naše každodenní
-          práce.
-        </p>
 
         <a
           href={siteConfig.phoneHref}
