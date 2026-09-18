@@ -122,6 +122,7 @@ export default function LocationPage({ location }: { location: Location }) {
           title={`Kam všude ${location.locative} jezdíme`}
           description="Vyjíždíme nonstop ve dne, v noci i o svátcích – k autu na ulici, na parkovišti i v podzemní garáži."
           areas={location.parts}
+          currentSlug={location.slug}
         />
         {location.region === "praha" ? <PragueDistrictsMap currentSlug={location.slug} /> : null}
         <LocationFaq title={`Časté dotazy k otevírání aut ${location.locative}`} items={faq} />

@@ -19,30 +19,22 @@ export default function Brands({
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {brandGroups.map((group) => (
-            <div
-              key={group.label}
-              className="rounded-2xl border border-black/5 bg-gray-50/70 p-6"
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
-                {group.label}
-              </p>
+            <div key={group.label} className="rounded-[1.75rem] bg-neutral-100 p-6">
+              <p className="font-heading text-xs font-bold uppercase tracking-wider text-ink">{group.label}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {group.brands.map((brand) => {
                   const page = getBrandPageForLabel(brand);
                   const chipClass =
-                    "rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink";
+                    "rounded-full bg-white px-3 py-1.5 text-sm font-bold text-ink transition hover:bg-brand";
+                  // Brands with their own page link there; the rest lead to the contact section.
                   return page ? (
-                    <Link
-                      key={brand}
-                      href={brandPath(page)}
-                      className={`${chipClass} transition hover:border-brand hover:bg-brand/10`}
-                    >
+                    <Link key={brand} href={brandPath(page)} className={chipClass}>
                       {brand}
                     </Link>
                   ) : (
-                    <span key={brand} className={chipClass}>
+                    <a key={brand} href="#kontakt" className={chipClass}>
                       {brand}
-                    </span>
+                    </a>
                   );
                 })}
               </div>

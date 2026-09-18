@@ -27,7 +27,7 @@ export default function PragueMap({ currentSlug }: PragueMapProps) {
     : null;
 
   return (
-    <div className="overflow-hidden rounded-[2rem] bg-ink">
+    <div className="overflow-hidden bg-ink">
       <svg
         viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`}
         className="h-auto w-full"

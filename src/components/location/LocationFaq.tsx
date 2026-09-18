@@ -17,7 +17,7 @@ export default function LocationFaq({ title, items }: LocationFaqProps) {
             <details
               key={item.question}
               open={index === 0}
-              className="group rounded-2xl border border-black/5 bg-gray-50/70 px-6 py-5"
+              className="group border border-black/5 bg-gray-50/70 px-6 py-5"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-heading text-base font-bold text-ink [&::-webkit-details-marker]:hidden">
                 {item.question}

@@ -2,7 +2,7 @@ import { priceList } from "@/lib/pricing";
 
 export default function PriceTable() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-black/10 bg-white">
+    <div className="overflow-hidden border border-black/10 bg-white">
       <h3 className="bg-ink px-4 py-4 font-heading text-lg font-bold text-white sm:px-6">
         Otevírání aut / automobilů
       </h3>

@@ -11,12 +11,12 @@ type LocationsDirectoryProps = {
 
 export default function LocationsDirectory({ currentSlug }: LocationsDirectoryProps) {
   const chipClass = (active: boolean) =>
-    `rounded-md px-1.5 py-0.5 text-[11px] font-semibold transition sm:px-2.5 sm:py-1 sm:text-sm ${
+    `rounded-full px-2 py-0.5 text-[11px] font-semibold transition sm:px-3 sm:py-1 sm:text-sm ${
       active
         ? "bg-brand text-black"
         : "bg-white/10 text-white hover:bg-brand/25 hover:text-white"
     }`;
-  const regionClass = "scroll-mt-20 rounded-2xl bg-white/[0.04] p-2 sm:p-6";
+  const regionClass = "scroll-mt-20 bg-white/[0.04] p-2 sm:p-6";
   const regionHeadingClass =
     "flex items-center gap-2 border-b-2 border-brand px-1 pb-2 font-heading text-base font-bold text-white sm:gap-3 sm:pb-3 sm:text-2xl";
 
@@ -39,10 +39,10 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
           </h3>
           <div className="mt-2 grid grid-cols-2 gap-1.5 sm:mt-4 sm:gap-3 lg:grid-cols-4">
             {prague.locations.map((location) => (
-              <div key={location.slug} className="rounded-xl bg-white/[0.05] p-1.5 sm:p-3">
+              <div key={location.slug} className="bg-white/[0.05] p-1.5 sm:p-3">
                 <Link
                   href={locationPath(location)}
-                  className={`block rounded-lg py-1.5 text-center font-heading text-sm font-bold transition sm:py-2.5 sm:text-base ${
+                  className={`block py-1.5 text-center font-heading text-sm font-bold transition sm:py-2.5 sm:text-base ${
                     location.slug === currentSlug
                       ? "bg-white text-black"
                       : "bg-brand text-black hover:bg-brand-dark"
@@ -72,7 +72,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
               <div
                 key={district.id}
                 id={`lokality-${district.id}`}
-                className="scroll-mt-20 rounded-xl bg-white/[0.05] p-1.5 sm:p-3"
+                className="scroll-mt-20 bg-white/[0.05] p-1.5 sm:p-3"
               >
                 <h4 className="px-0.5 font-heading text-xs font-bold text-brand sm:text-base">
                   {district.name}
@@ -90,7 +90,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
                   {district.otherTowns.map((town) => (
                     <span
                       key={town}
-                      className="rounded-md border border-white/10 px-1.5 py-0.5 text-[11px] text-white sm:px-2.5 sm:py-1 sm:text-sm"
+                      className="rounded-full border border-white/20 px-2 py-0.5 text-[11px] text-white sm:px-3 sm:py-1 sm:text-sm"
                     >
                       {town}
                     </span>

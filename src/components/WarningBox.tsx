@@ -7,7 +7,7 @@ export default function WarningBox() {
   return (
     <section className="py-4 sm:py-6">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl">
+        <div className="relative overflow-hidden ">
           <Image
             src={images.nightRoad}
             alt="Cesta za soumraku"

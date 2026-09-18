@@ -105,7 +105,7 @@ export default function PricingPage() {
               {travelAndPayment.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-black/5 bg-white p-4 text-center sm:p-6"
+                  className="border border-black/5 bg-white p-4 text-center sm:p-6"
                 >
                   <h3 className="font-heading text-base font-bold text-black sm:text-lg">{item.title}</h3>
                   <p className="mt-2 text-sm text-black">{item.text}</p>

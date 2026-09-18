@@ -20,7 +20,7 @@ export default function HeroCtas({
       </a>
       <Link
         href={secondary.href}
-        className="rounded-full border-2 border-white px-5 py-2 font-heading text-sm font-bold text-white transition hover:bg-white hover:text-black sm:px-6 sm:text-base"
+        className="rounded-full border-2 border-brand px-5 py-2 font-heading text-sm font-bold text-brand transition hover:bg-brand hover:text-black sm:px-6 sm:text-base"
       >
         {secondary.label}
       </Link>

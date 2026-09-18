@@ -73,7 +73,7 @@ export default function HowItWorks({
               </div>
             ))}
 
-            <p className="mt-8 rounded-2xl border border-brand/30 bg-brand/10 px-6 py-4 text-sm font-semibold text-ink-soft">
+            <p className="mt-8 border border-brand/30 bg-brand/10 px-6 py-4 text-sm font-semibold text-ink-soft">
               Cena je vždy dohodnuta před zahájením práce a během zásahu se nemění.
             </p>
           </div>
