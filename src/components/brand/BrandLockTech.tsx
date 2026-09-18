@@ -13,7 +13,7 @@ export default function BrandLockTech({ brand }: BrandLockTechProps) {
         <SectionHeading
           align="center"
           title={`Klíče a zámky u vozů ${brand.name}`}
-          description={`Každá značka zamyká jinak. Tohle je dobré vědět, když se vám auto ${brand.name} nechce odemknout.`}
+          description={`Každá značka zamyká trochu jinak. Když vám vůz ${brand.name} nechce odemknout, hodí se vědět tohle.`}
         />
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">

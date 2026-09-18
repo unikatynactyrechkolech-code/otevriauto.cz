@@ -5,6 +5,7 @@ import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
 import WarningBox from "@/components/WarningBox";
 import CoverageAreas from "@/components/CoverageAreas";
+import PragueDistrictsMap from "@/components/PragueDistrictsMap";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
@@ -20,11 +21,12 @@ import {
   arrivalWindow,
   getRegion,
   locationPath,
-  nearbyLocations,
+  relatedLocations,
   type Location,
 } from "@/lib/locations";
 import { buildLocationFaq } from "@/lib/locations/faq";
 import { siteConfig } from "@/lib/site-config";
+import { capitalize } from "@/lib/text";
 import { images } from "@/lib/images";
 
 const heroImages = [images.hero, images.nightRoad, images.dashboard, images.wheel, images.keys];
@@ -97,7 +99,6 @@ export default function LocationPage({ location }: { location: Location }) {
       <main className="flex-1">
         <PageHero
           title={`Autozámečník ${location.name}`}
-          subtitle={`Nonstop otevírání aut bez poškození – příjezd do ${arrival}`}
           breadcrumbs={[
             { label: "Domů", href: "/" },
             { label: region.name, href: regionHref },
@@ -108,20 +109,25 @@ export default function LocationPage({ location }: { location: Location }) {
           imageAlt={`Autozámečník ${location.name} – nouzové otevření auta`}
         />
         <LocationIntro location={location} />
-        <LocationServices name={location.name} locative={location.locative} />
+        <LocationServices locative={location.locative} />
         <Brands
-          title={`Otevíráme všechny značky aut – ${location.name}`}
-          description={`Od Škody a Volkswagenu přes BMW a Mercedes-Benz až po Teslu nebo Porsche – ${location.locative} otevřeme osobní auta, SUV i dodávky všech značek, včetně vozů s bezklíčovým vstupem.`}
+          title={`${capitalize(location.locative)} otevřeme auto jakékoli značky`}
+          description="Od Škody a Volkswagenu přes BMW a Mercedes-Benz až po Teslu nebo Porsche – otevíráme osobní auta, SUV i dodávky, včetně vozů s bezklíčovým přístupem."
         />
-        <HowItWorks title={`Příjezd autozámečníka do ${arrival} – ${location.name}`} arrival={arrival} />
+        <HowItWorks title={`U auta ${location.locative} jsme za ${arrival}`} arrival={arrival} />
         <WarningBox />
         <CoverageAreas
-          title={`Oblasti, které pokrýváme – ${location.name}`}
-          description={`Autozámečník ${location.locative} vyjíždí nonstop ve dne, v noci i o svátcích – na ulici, na parkoviště i do podzemních garáží.`}
+          title={`Kam všude ${location.locative} jezdíme`}
+          description="Vyjíždíme nonstop ve dne, v noci i o svátcích – k autu na ulici, na parkovišti i v podzemní garáži."
           areas={location.parts}
         />
-        <LocationFaq title={`Časté dotazy – autozámečník ${location.name}`} items={faq} />
-        <NearbyLocations name={location.name} locations={nearbyLocations(location)} />
+        {location.region === "praha" ? <PragueDistrictsMap currentSlug={location.slug} /> : null}
+        <LocationFaq title={`Časté dotazy k otevírání aut ${location.locative}`} items={faq} />
+        <NearbyLocations
+          title="Další lokality, kam jezdíme"
+          description="Nejbližší okolí a výběr dalších míst v Praze a Středočeském kraji"
+          locations={relatedLocations(location.slug, location)}
+        />
         <CtaBanner />
         <Contact />
         <LocationsDirectory currentSlug={location.slug} />

@@ -13,8 +13,9 @@ import JsonLd from "@/components/JsonLd";
 import LocationFaq from "@/components/location/LocationFaq";
 import BrandIntro from "@/components/brand/BrandIntro";
 import BrandLockTech from "@/components/brand/BrandLockTech";
+import NearbyLocations from "@/components/location/NearbyLocations";
 import { allBrandPages, brandPath, type BrandPage } from "@/lib/brand-pages";
-import { PRAGUE_ARRIVAL } from "@/lib/locations";
+import { PRAGUE_ARRIVAL, relatedLocations } from "@/lib/locations";
 import { buildBrandFaq } from "@/lib/brand-pages/faq";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
@@ -90,7 +91,6 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
       <main className="flex-1">
         <PageHero
           title={`Otevření auta ${brand.name}`}
-          subtitle={`${brand.models.slice(0, 3).join(", ")} i další modely – nonstop a bez poškození`}
           breadcrumbs={[
             { label: "Domů", href: "/" },
             { label: "Značky vozidel", href: "/#znacky" },
@@ -108,6 +108,11 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
         <Brands
           title="Otevíráme i další značky aut"
           description="Vyberte značku svého vozu – u nejrozšířenějších značek najdete podrobnosti o klíčích, zámcích a nejčastějších modelech."
+        />
+        <NearbyLocations
+          title={`Kde vozy ${brand.name} otevíráme`}
+          description="Výběr lokalit v Praze a Středočeském kraji – jezdíme ale všude v okolí"
+          locations={relatedLocations(brand.slug)}
         />
         <CtaBanner />
         <Contact />

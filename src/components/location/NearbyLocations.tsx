@@ -1,42 +1,38 @@
 import Link from "next/link";
-import { arrivalWindow, locationPath, type Location } from "@/lib/locations";
+import { arrivalWindow, getRegion, locationPath, type Location } from "@/lib/locations";
 import SectionHeading from "../SectionHeading";
-import MapPinIcon from "../MapPinIcon";
 
 type NearbyLocationsProps = {
-  name: string;
+  title: string;
+  description: string;
   locations: Location[];
 };
 
-export default function NearbyLocations({ name, locations }: NearbyLocationsProps) {
+// What a location covers: its parts, or its district when it has no named parts.
+function coverage(location: Location): string {
+  const parts = location.parts.filter((part) => part !== location.name);
+  if (parts.length === 0) return getRegion(location.region).name;
+  return parts.slice(0, 3).join(", ") + (parts.length > 3 ? "…" : "");
+}
+
+export default function NearbyLocations({ title, description, locations }: NearbyLocationsProps) {
   return (
     <section className="bg-gray-50/70 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          align="center"
-          title={`Otevírání aut v okolí – ${name}`}
-          description="Autozámečník vyjíždí nonstop i do sousedních částí Prahy a okolních obcí"
-        />
+        <SectionHeading align="center" title={title} description={description} />
 
         <ul className="-mx-2 mt-8 grid grid-cols-2 gap-1.5 sm:mx-0 sm:mt-10 sm:gap-3 lg:grid-cols-4">
           {locations.map((location) => (
             <li key={location.slug}>
               <Link
                 href={locationPath(location)}
-                className="group flex h-full items-center gap-2 rounded-xl border border-black/5 bg-white p-2 transition hover:-translate-y-0.5 sm:gap-3 sm:rounded-2xl sm:p-4"
+                className="flex h-full flex-col rounded-xl border border-black/5 bg-white p-2.5 transition hover:border-brand sm:rounded-2xl sm:p-4"
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand-dark sm:h-10 sm:w-10">
-                  <MapPinIcon className="h-3.5 w-3.5 sm:h-5 sm:w-5" />
+                <span className="font-heading text-sm font-bold leading-tight text-ink sm:text-base">
+                  {location.name}
                 </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block font-heading text-xs font-bold leading-tight text-ink sm:text-base">
-                    {location.name}
-                  </span>
-                  <span className="block text-[11px] text-ink sm:text-sm">{arrivalWindow(location)}</span>
-                </span>
-                <span className="hidden text-xl text-ink transition group-hover:text-brand-dark sm:inline" aria-hidden="true">
-                  ›
-                </span>
+                <span className="mt-0.5 text-[11px] font-semibold text-ink sm:text-sm">{arrivalWindow(location)}</span>
+                <span className="mt-1 truncate text-[11px] text-ink sm:text-xs">{coverage(location)}</span>
               </Link>
             </li>
           ))}

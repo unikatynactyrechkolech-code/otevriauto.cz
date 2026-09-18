@@ -11,7 +11,7 @@ export const pragueEastLocations: Location[] = [
     headline: "zámek nad Labem, Stará Boleslav a dálnice D10",
     intro: [
       "Brandýs nad Labem a Stará Boleslav tvoří jedno město rozdělené řekou, a tak mají i zabouchnuté klíče dvě podoby. Na brandýské straně jde často o auto zaparkované pod zámkem nebo u Masarykova náměstí v úzkých ulicích památkové zóny. Ve Staré Boleslavi se zase parkuje kolem baziliky svatého Václava a Mariánského náměstí, nejvíc během Národní svatováclavské pouti, kdy je ve městě plno.",
-      "Druhou skupinou jsou řidiči, kteří najíždějí na dálnici D10 u Staré Boleslavi nebo nechávají vůz na parkovišti P+R u brandýského nádraží. Ranní spěch, vybitá baterie v ovladači nebo porucha centrálního zamykání umí celý den rozházet. Otevíráme osobní auta, dodávky z průmyslové zóny i vozy s bezklíčovým přístupem – nonstop, bez poškození a v Brandýse nad Labem, ve Staré Boleslavi i v Popovicích."
+      "Druhou skupinou jsou řidiči, kteří najíždějí na dálnici D10 u Staré Boleslavi nebo nechávají vůz na parkovišti P+R u brandýského nádraží. Ranní spěch, vybitá baterie v ovladači nebo porucha centrálního zamykání dokážou rozhodit celý den. Osobní auta, dodávky z průmyslové zóny i vozy s bezklíčovým přístupem otevíráme ve dne i v noci a bez poškození, ať stojí v Brandýse, ve Staré Boleslavi, nebo v Popovicích."
     ],
     hotspots: [
       "Zámek Brandýs nad Labem",
@@ -36,8 +36,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Říčany", "Jažlovice", "Kuří", "Pacov", "Radošovice", "Strašín", "Voděrádky"],
     headline: "nádraží, placené stání a Černokostelecká ulice",
     intro: [
-      "Pro mnoho lidí jsou Říčany místem, kde ráno přesedají z auta na vlak linky S9 do Prahy. Právě ve spěchu u nádraží zůstane klíč nejsnáz ležet na sedadle, případně v mrazu vypoví baterie ovladače. Otevíráme auta u říčanského nádraží, na Masarykově náměstí i na parkovištích pod zříceninou hradu, a to šetrně – bez poškození zámků, těsnění a elektroniky.",
-      "Mimo centrum Říčan vyjíždíme k obchodům v Černokostelecké ulici, k Nemocnici Říčany nebo v létě k plovárně Jureček, kde se klíč snadno zaklapne v kufru spolu s taškou na koupání. Pomůžeme i v Radošovicích, Strašíně, Kuří, Pacově, Jažlovicích a Voděrádkách, ať máte osobní vůz, dodávku, nebo auto s bezklíčovým startováním. Jezdíme nonstop a cenu vždy řekneme předem."
+      "Pro mnoho lidí jsou Říčany místem, kde ráno přesedají z auta na vlak linky S9 do Prahy. Právě ve spěchu u nádraží nejsnáz zůstane klíč ležet na sedadle, nebo v mrazu vypoví službu baterie ovladače. Auta otevíráme u říčanského nádraží, na Masarykově náměstí i na parkovištích pod zříceninou hradu – šetrně a bez poškození zámků, těsnění či elektroniky.",
+      "Mimo centrum vyjíždíme k obchodům v Černokostelecké ulici, k Nemocnici Říčany a v létě i k plovárně Jureček, kde se klíč snadno zaklapne v kufru spolu s taškou na koupání. Stejně tak přijedeme do Radošovic, Strašína, Kuří, Pacova, Jažlovic nebo Voděrádek, ať řídíte osobní vůz, dodávku, nebo auto s bezklíčovým startováním. Cenu vám řekneme dopředu."
     ],
     hotspots: [
       "Nádraží Říčany",
@@ -47,7 +47,7 @@ export const pragueEastLocations: Location[] = [
       "Nemocnice Říčany",
       "Plovárna Jureček"
     ],
-    tip: "Centrum Říčan včetně okolí nádraží je zónou placeného stání. Pokud máte zamčený v autě telefon s aplikací nebo parkovací lístek, hlídejte si dobu stání – na Masarykově náměstí se smí parkovat nejvýše tři hodiny.",
+    tip: "Centrum Říčan včetně okolí nádraží je zónou placeného stání. Pokud máte v autě zamčený telefon s aplikací nebo parkovací lístek, hlídejte si dobu stání – na Masarykově náměstí se smí parkovat nejvýše tři hodiny.",
     faq: {
       question: "Parkovné na říčanském náměstí mi brzy vyprší a klíč je zamčený v autě. Co mám dělat?",
       answer: "Zavolejte nám, a pokud máte telefon u sebe, zaplaťte si další stání přes SMS nebo u parkovacího automatu. Vůz otevřeme bez poškození, takže s ním pak můžete přeparkovat dřív, než vyprší nejdelší povolená doba stání na náměstí."
@@ -62,8 +62,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Úvaly", "Hodov", "Hostín"],
     headline: "P+R u nádraží a procházky ve Škvorecké oboře",
     intro: [
-      "V Úvalech začíná den mnoha lidí na parkovišti P+R u nádraží, odkud jezdí vlaky linky S1 do Prahy. Stačí zabouchnout dveře s klíčem v zapalování nebo zjistit, že mráz zablokoval zámek, a vlak odjíždí bez vás. Na parkoviště P+R i do ulic kolem úvalského nádraží přijedeme kdykoli ve dne i v noci a auto otevřeme bez poškození dveří a elektroniky.",
-      "Neřešíme jen dojíždějící. V Úvalech otevíráme vozy také u Obchodního centra Pražská, na náměstí Arnošta z Pardubic i na parkovišti u koupaliště. Oblíbené jsou i procházky do Škvorecké obory – Králičiny, při kterých se klíč od auta občas ztratí. Nezáleží na tom, jestli jde o starší auto s klasickým klíčem, rodinnou dodávku, nebo vůz s bezklíčovým přístupem – cenu znáte předem."
+      "V Úvalech začíná den mnoha lidí na parkovišti P+R u nádraží, odkud jezdí vlaky linky S1 do Prahy. Stačí zabouchnout dveře s klíčem v zapalování nebo zjistit, že zámek zamrzl, a vlak vám ujede. Na P+R i do ulic kolem úvalského nádraží přijedeme kdykoli ve dne i v noci a auto otevřeme, aniž bychom poškodili dveře nebo elektroniku.",
+      "Nepomáháme ale jen těm, kdo dojíždějí. Auta otevíráme i u Obchodního centra Pražská, na náměstí Arnošta z Pardubic nebo na parkovišti u koupaliště. Mnoho lidí odtud vyráží na procházku do Škvorecké obory – Králičiny a klíč od auta se při ní občas ztratí. Ať máte starší auto s klasickým klíčem, rodinnou dodávku, nebo vůz s bezklíčovým přístupem, cenu se dozvíte předem."
     ],
     hotspots: [
       "P+R u nádraží Úvaly",
@@ -75,7 +75,7 @@ export const pragueEastLocations: Location[] = [
     tip: "Míříte z Úval do Škvorecké obory nebo na rozhlednu Vinice? Klíč od auta noste v kapse na zip. Ztracený klíč se v hustém porostu obory hledá těžko a bez něj auto neodemknete ani nenastartujete.",
     faq: {
       question: "Nechal jsem auto přes noc na P+R u nádraží v Úvalech. Otevřete ho i brzy ráno?",
-      answer: "Ano, jezdíme nonstop, takže přijedeme i za tmy před ranní špičkou. Řekněte nám, ve které části parkoviště vůz stojí, jeho barvu a značku, ať ho technik mezi ostatními auty najde hned."
+      answer: "Ano, jezdíme nonstop, takže přijedeme i za tmy před ranní špičkou. Řekněte nám, ve které části parkoviště vůz stojí, a přidejte jeho barvu a značku, ať ho technik mezi ostatními auty hned najde."
     }
   },
   {
@@ -87,8 +87,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Klecany", "Klecánky", "Drasty", "Zdibsko"],
     headline: "město nad Vltavou s přívozem do Roztok",
     intro: [
-      "Klecany stojí na skalním ostrohu nad Vltavou, ale řada aut míří dolů do Klecánek. Odtud jezdí přívoz do Roztok, a tak tu lidé vykládají kola z nosiče, zabouchnou kufr i s klíčem a zjistí to až na druhém břehu. Pro nás to znamená vyjet k řece a otevřít vůz šetrně, bez páčení dveří a bez poškození laku či těsnění.",
-      "V horní části Klecan otevíráme auta u zámku a kostela Nanebevzetí Panny Marie, v areálu Národního ústavu duševního zdraví i v ulicích Drast a Zdibska. Pomůžeme s vybitou baterií ovladače, se zaseknutým centrálním zamykáním i s klíči zamčenými v kufru. Otevíráme osobní auta, dodávky a vozy s bezklíčovým přístupem všech značek, nonstop a s cenou sdělenou předem."
+      "Klecany stojí na skalním ostrohu nad Vltavou, ale řada aut míří dolů do Klecánek. Odtud jezdí přívoz do Roztok, a tak tu lidé vykládají kola z nosiče, zabouchnou kufr i s klíčem a zjistí to až na druhém břehu. V takové chvíli sjedeme za vámi k řece a vůz otevřeme šetrně, bez páčení dveří a bez poškození laku či těsnění.",
+      "V horní části Klecan otevíráme auta u zámku a kostela Nanebevzetí Panny Marie, v areálu Národního ústavu duševního zdraví i v ulicích Drast a Zdibska. Pomůžeme s vybitou baterií ovladače, se zaseknutým centrálním zamykáním i s klíči zamčenými v kufru. Na značce nezáleží a přijedeme kdykoli – ať jde o osobní auto, dodávku, nebo vůz s bezklíčovým přístupem."
     ],
     hotspots: [
       "Přívoz Klecánky – Roztoky",
@@ -111,8 +111,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Líbeznice"],
     headline: "spádové centrum na silnici I/9 k Mělníku",
     intro: [
-      "Líbeznice jsou přirozeným centrem pro celé okolí – jezdí se sem k lékaři do zdravotního střediska, do školy, na poštu i za sportem a kulturou do Chrupavky. Při krátkých zastávkách se klíče zabouchnou nejsnáz: motor běží, dítě se odvádí do třídy a auto se nečekaně zamkne. V Líbeznicích otevíráme vozy nonstop a bez poškození, ať stojí u Mírového náměstí, nebo u školy.",
-      "Řada řidičů Líbeznicemi jen projíždí po obchvatu na silnici I/9 mezi Prahou a Mělníkem. Když se na čerpací stanici nebo u krajnice ukáže, že ovladač nereaguje nebo klíč zůstal v zamčeném kufru, přijedeme za vámi. Otevíráme osobní auta i dodávky všech značek, vozy s klasickým klíčem i s bezklíčovým přístupem, a cenu sdělíme hned do telefonu."
+      "Líbeznice jsou přirozeným centrem pro celé okolí – jezdí se sem k lékaři do zdravotního střediska, do školy, na poštu i za sportem a kulturou do Chrupavky. Při krátkých zastávkách se klíče zabouchnou nejsnáz: motor běží, vy odvádíte dítě do třídy a auto se mezitím samo zamkne. Ať stojí u Mírového náměstí, nebo u školy, přijedeme kdykoli a otevřeme ho bez poškození.",
+      "Řada řidičů Líbeznicemi jen projíždí po obchvatu na silnici I/9 mezi Prahou a Mělníkem. Pokud na čerpací stanici nebo u krajnice zjistíte, že ovladač nereaguje nebo klíč zůstal v zamčeném kufru, přijedeme za vámi. Poradíme si s osobními auty i dodávkami všech značek, s klasickým klíčem i s bezklíčovým přístupem, a cenu vám řekneme hned do telefonu."
     ],
     hotspots: [
       "Mírové náměstí",
@@ -124,7 +124,7 @@ export const pragueEastLocations: Location[] = [
     tip: "Při ranním zastavení u líbeznické školy nenechávejte klíč v autě s běžícím motorem. Některé vozy se po zabouchnutí dveří samy zamknou a uvnitř pak zůstane klíč i telefon.",
     faq: {
       question: "Auto se mi zamklo u krajnice obchvatu Líbeznic a vesta s trojúhelníkem jsou uvnitř. Co teď?",
-      answer: "Nestůjte na vozovce – přejděte za svodidla, nebo aspoň co nejdál od projíždějících aut, a zavolejte nám. Pokud vůz překáží v jízdním pruhu, informujte také policii na lince 158. Auto otevřeme bez poškození a výbavu pak hned použijete."
+      answer: "Nestůjte na vozovce – přejděte za svodidla, nebo aspoň co nejdál od projíždějících aut, a zavolejte nám. Pokud vůz překáží v jízdním pruhu, informujte také policii na lince 158. Jakmile auto otevřeme, výbavu můžete hned použít."
     }
   },
   {
@@ -136,8 +136,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Mnichovice", "Božkov", "Myšlín"],
     headline: "vlak S9, Koupadlo a výlety Ladovým krajem",
     intro: [
-      "Mnichovice leží na trati z Prahy do Benešova a u železniční zastávky je parkoviště P+R pro ty, kdo pokračují vlakem. Když vám ráno zůstane klíč zamčený v autě nebo v zimě nepovolí zamrzlý zámek, vlak linky S9 nepočká. Přijedeme k zastávce i do ulic kolem ní a vůz otevřeme bez poškození, aby vás nepříjemnost zdržela co nejméně.",
-      "V létě se přidává přírodní koupaliště Koupadlo, letní kino a výlety na Cestu Kocoura Mikeše v Ladově kraji. Klíč schovaný v tašce s plavkami snadno skončí v zamčeném kufru. V Mnichovicích otevíráme auta na náměstí u kostela Narození Panny Marie, u Hubačovského rybníka i v Božkově a Myšlíně – osobní vozy, dodávky i auta s bezklíčovým přístupem, vždy s cenou sdělenou předem."
+      "Mnichovice leží na trati z Prahy do Benešova a u železniční zastávky je parkoviště P+R pro ty, kdo pokračují vlakem. Zůstane-li vám ráno klíč zamčený v autě nebo v zimě nepovolí zamrzlý zámek, vlak linky S9 nepočká. Přijedeme k zastávce i do ulic kolem ní a vůz otevřeme bez poškození, aby vás celá nepříjemnost zdržela co nejméně.",
+      "V létě k tomu přibude přírodní koupaliště Koupadlo, letní kino a výlety po Cestě Kocoura Mikeše v Ladově kraji. Klíč schovaný v tašce s plavkami pak snadno skončí v zamčeném kufru. Auta otevíráme na náměstí u kostela Narození Panny Marie, u Hubačovského rybníka i v Božkově a Myšlíně, ať jde o osobní vůz, dodávku, nebo auto s bezklíčovým přístupem. Cenu znáte předem."
     ],
     hotspots: [
       "P+R Mnichovice",
@@ -162,8 +162,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Mukařov", "Srbín", "Žernovka"],
     headline: "křižovatka silnic I/2 a II/113 za Říčany",
     intro: [
-      "Mukařovem prochází silnice I/2 z Prahy na Kutnou Horu a v obci se kříží se silnicí II/113, která vede přes Žernovku a Srbín. Řidiči tu zastavují na nákup nebo u autobusové zastávky, odkud jezdí spoje na pražské Háje, a při krátké zastávce se klíč zabouchne nejsnáz. V Mukařově otevíráme auta nonstop, šetrně a bez poškození dveří či zámků.",
-      "Mimo hlavní silnice najdete v Mukařově, Srbíně i Žernovce rodinné domy a chaty, u kterých auto někdy stojí celé týdny. Po takové pauze se často ozve vybitá baterie ovladače nebo autobaterie, zamrzlý zámek či zaseknuté centrální zamykání. Přijedeme k domu, k chatě i ke kostelu Nanebevzetí Panny Marie a otevřeme osobní auto i dodávku jakékoli značky."
+      "Mukařovem prochází silnice I/2 z Prahy na Kutnou Horu a v obci se kříží se silnicí II/113, která vede přes Žernovku a Srbín. Řidiči tu stavějí na nákup nebo u autobusové zastávky, odkud jezdí spoje na pražské Háje – a právě při krátkém zastavení se klíč zabouchne nejsnáz. Přijedeme klidně i v noci a auto otevřeme šetrně, bez poškození dveří či zámků.",
+      "Mimo hlavní silnice najdete v Mukařově, Srbíně i Žernovce rodinné domy a chaty, u kterých auto někdy stojí celé týdny. Po delším stání se pak často ozve vybitá baterie ovladače nebo autobaterie, zamrzlý zámek či zaseknuté centrální zamykání. Přijedeme k domu, na chatu i ke kostelu Nanebevzetí Panny Marie a otevřeme osobní auto či dodávku jakékoli značky."
     ],
     hotspots: [
       "Křižovatka silnic I/2 a II/113",
@@ -175,7 +175,7 @@ export const pragueEastLocations: Location[] = [
     tip: "Necháváte-li auto u chaty v Mukařově nebo Žernovce stát několik týdnů, vyměňte před odjezdem baterii v ovladači a náhradní klíč si odvezte domů. Po delším stání v mrazu ovladač i zámky často vypovídají službu.",
     faq: {
       question: "Jel jsem z Mukařova autobusem na Háje a klíč zůstal v autě u zastávky. Co teď?",
-      answer: "Pokud je auto zamčené, klíč uvnitř je v bezpečí a nemusíte se hned vracet. Zavolejte nám a domluvte se, kdy budete zpátky u vozu – přijedeme k zastávce a auto otevřeme bez poškození, i večer nebo v noci."
+      answer: "Pokud je auto zamčené, klíč uvnitř je v bezpečí a nemusíte se hned vracet. Zavolejte nám a domluvte se, kdy budete zpátky u vozu – přijedeme k zastávce a auto otevřeme, klidně i večer nebo v noci."
     }
   },
   {
@@ -187,8 +187,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Jirny", "Nové Jirny"],
     headline: "logistický park u exitu 8 dálnice D11",
     intro: [
-      "U exitu 8 dálnice D11 leží za Jirnami rozsáhlý logistický areál se sklady a překladišti. Točí se tu dodávky a rozvozová auta, jejichž řidiči při nakládce vystupují a nastupují mnohokrát za den. Stačí jednou nechat klíč na sedadle a zabouchnout dveře – a vůz je zamčený. Otevíráme dodávky i osobní auta přímo u rampy nebo na parkovišti, vždy bez poškození.",
-      "V Jirnech a Nových Jirnech řešíme spíš běžné domácí starosti: klíče zamčené v kufru u nákupního střediska, vybitý ovladač po mrazivé noci nebo zamrzlé dveře auta parkujícího na ulici. V zimě se na Návesním rybníku bruslí, a tak auta stojí i kolem návsi a kostela svatého Petra a Pavla. Ke všemu přijedeme nonstop a cenu zásahu řekneme předem."
+      "U exitu 8 dálnice D11 se na okraji obce rozkládá rozsáhlý logistický areál se sklady a překladišti. Točí se tu dodávky a rozvozová auta, jejichž řidiči při nakládce mnohokrát za den vystupují a zase nastupují. Stačí jednou nechat klíč na sedadle a zabouchnout dveře – a vůz je zamčený. Dodávky i osobní auta otevíráme přímo u rampy nebo na parkovišti, a to bez poškození.",
+      "V Jirnech a Nových Jirnech řešíme spíš běžné domácí starosti: klíče zamčené v kufru u nákupního střediska, vybitý ovladač po mrazivé noci nebo zamrzlé dveře auta, které stálo na ulici. V zimě se na Návesním rybníku bruslí, a tak auta parkují i kolem návsi a kostela svatého Petra a Pavla. Přijedeme kdykoli a cenu vám řekneme ještě do telefonu."
     ],
     hotspots: [
       "Exit 8 Jirny na D11",
@@ -213,8 +213,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Sibřina", "Stupice"],
     headline: "nové ulice, škola a autobusy na Černý Most",
     intro: [
-      "Sibřina se v posledních letech výrazně rozrostla o nové ulice s rodinnými domy. Ráno se tu spěchá do školy, do práce nebo na autobus směr Černý Most a klíč, který zůstal zamčený v autě před domem, dokáže celý den rozhodit. V Sibřině i ve Stupicích otevíráme auta nonstop a bez poškození, přímo na příjezdové cestě, na ulici nebo u školy.",
-      "Kdo jezdí do Prahy autobusem, nechává auto doma stát a po několika mrazivých nocích se může ozvat vybitá autobaterie, zamrzlý zámek nebo ovladač, který přestane reagovat. O víkendu zase pomáháme u hřiště SK Viktoria Sibřina, když klíče zůstanou v kufru se sportovní taškou. Otevíráme osobní vozy, dodávky i auta s bezklíčovým přístupem a cenu vždy řekneme předem."
+      "Sibřina se v posledních letech výrazně rozrostla o nové ulice s rodinnými domy. Ráno se tu spěchá do školy, do práce nebo na autobus směr Černý Most a klíč zamčený v autě před domem umí celé ráno pořádně zkomplikovat. V Sibřině i ve Stupicích přijedeme přímo na příjezdovou cestu, na ulici nebo ke škole a auto otevřeme bez poškození.",
+      "Kdo jezdí do Prahy autobusem, nechává auto stát doma – a po několika mrazivých nocích se pak může ozvat vybitá autobaterie, zamrzlý zámek nebo ovladač, který přestane reagovat. O víkendu zase pomáháme u hřiště SK Viktoria Sibřina, když klíče zůstanou v kufru u sportovní tašky. Otevíráme osobní vozy, dodávky i auta s bezklíčovým přístupem a cenu se dozvíte předem."
     ],
     hotspots: [
       "Zastávka Sibřina",
@@ -226,7 +226,7 @@ export const pragueEastLocations: Location[] = [
     tip: "Pokud auto v Sibřině necháváte několik dní stát, protože jezdíte autobusem, nastartujte ho aspoň občas a nechte chvíli běžet. Slabá autobaterie v mrazu vyřadí i centrální zamykání a auto pak ovladačem neodemknete.",
     faq: {
       question: "Klíče od domu jsou zamčené v autě před domem v Sibřině. Pomůžete?",
-      answer: "Ano. Otevřeme auto bez poškození a vy se dostanete ke všem věcem uvnitř, včetně klíčů od domu. Při volání řekněte, zda vůz stojí na ulici, nebo za bránou na pozemku, a jestli k němu technik bude mít přístup."
+      answer: "Ano. Jakmile auto otevřeme, dostanete se ke všem věcem uvnitř, včetně klíčů od domu. Při volání řekněte, zda vůz stojí na ulici, nebo za bránou na pozemku, a jestli k němu technik bude mít přístup."
     }
   },
   {
@@ -238,8 +238,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Hovorčovice"],
     headline: "vlak S3, autobus do Letňan a gymnastická hala",
     intro: [
-      "Hovorčovice mají železniční zastávku na trati z Prahy směrem na Neratovice a přímý autobus do Letňan, a tak tu řada lidí přesedá z auta na veřejnou dopravu. V ranním spěchu k vlaku linky S3 se klíč snadno zabouchne v autě, a když k tomu vypoví baterie v ovladači, je potíž na světě. U zastávky, na Staré návsi i v dalších ulicích Hovorčovic otevíráme vozy bez poškození.",
-      "Odpoledne se provoz v Hovorčovicích přesouvá k základní škole a k hale Centra gymnastických sportů, kde rodiče čekají na děti z tréninku. Pokud se klíč zamkne v autě spolu s taškou nebo telefonem, přijedeme a vůz otevřeme šetrně – osobní auto, dodávku i vůz s bezklíčovým přístupem jakékoli značky. Pomáháme nonstop a cenu zásahu vždy sdělíme předem."
+      "Hovorčovice mají železniční zastávku na trati z Prahy směrem na Neratovice a přímý autobus do Letňan, a tak tu řada lidí přesedá z auta na veřejnou dopravu. V ranním spěchu k vlaku linky S3 se klíč snadno zabouchne v autě, a když k tomu vypoví službu baterie v ovladači, je potíž na světě. U zastávky, na Staré návsi i v dalších ulicích Hovorčovic otevíráme vozy bez poškození.",
+      "Odpoledne se provoz v Hovorčovicích přesouvá k základní škole a k hale Centra gymnastických sportů, kde rodiče čekají na děti z tréninku. Zůstane-li klíč zamčený v autě spolu s taškou nebo telefonem, přijedeme a vůz otevřeme, ať jde o osobní auto, dodávku, nebo vůz s bezklíčovým přístupem jakékoli značky. Jezdíme nonstop a o ceně víte dopředu."
     ],
     hotspots: [
       "Železniční zastávka Hovorčovice",
@@ -263,8 +263,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Měšice"],
     headline: "stanice Měšice u Prahy a rokokový zámek",
     intro: [
-      "Stanice Měšice u Prahy je nejbližší železnicí nejen pro místní, ale i pro Líbeznice a další okolní obce bez vlastní trati, a tak k ní lidé dojíždějí i autem. Kdo spěchá na vlak linky S3, snadno nechá klíč v autě nebo zjistí, že vybitý ovladač nereaguje. V Měšicích otevíráme auta nonstop, u stanice i v ulicích obce, a vždy bez poškození dveří, zámku a elektroniky.",
-      "Druhým místem, kam se v Měšicích často zajíždí, je zámecký areál s anglickým parkem, ve kterém dnes sídlí zdravotnické zařízení. Při návštěvě blízkých se na klíče myslí nejméně, a tak snadno zůstanou zamčené v autě spolu s taškou. Přijedeme k zámku i na silnici II/244 směrem na Kostelec nad Labem a otevřeme osobní auto, dodávku i vůz s bezklíčovým přístupem."
+      "Stanice Měšice u Prahy je nejbližší zastávkou vlaku nejen pro místní, ale i pro Líbeznice a další okolní obce bez vlastní trati, a proto k ní lidé často dojíždějí autem. Kdo spěchá na vlak linky S3, snadno nechá klíč v autě nebo zjistí, že vybitý ovladač nereaguje. Přijedeme ke stanici i do ulic obce, třeba i v noci, a auto otevřeme bez poškození dveří, zámku a elektroniky.",
+      "Druhým místem, kam se v Měšicích často zajíždí, je zámek s anglickým parkem, v jehož areálu dnes sídlí zdravotnické zařízení. Kdo jede navštívit blízké, myslí na klíče až v poslední řadě, a ty pak snadno zůstanou zamčené v autě spolu s taškou. Přijedeme k zámku i na silnici II/244 směrem na Kostelec nad Labem a otevřeme osobní auto, dodávku i vůz s bezklíčovým přístupem."
     ],
     hotspots: [
       "Stanice Měšice u Prahy",
@@ -287,8 +287,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Zdiby", "Brnky", "Přemyšlení", "Veltěž"],
     headline: "začátek dálnice D8 a silnice I/9",
     intro: [
-      "Ve Zdibech oficiálně začíná dálnice D8 a odbočuje silnice I/9 na Mělník, takže tudy projíždí spousta řidičů mezi Prahou a severem Čech. Stačí krátká zastávka na čerpací stanici u D8 a klíč zůstane zamčený v autě i s telefonem. Přijedeme k dálničnímu exitu i do centra Zdib a vůz otevřeme bez poškození, abyste mohli co nejdřív pokračovat v cestě.",
-      "Zdiby ale nejsou jen dopravní uzel. Z Brnek se chodí ke skále Špička v Kaňonu Vltavy u Sedlce a okolí obce patří do přírodního parku Dolní Povltaví. Auto zaparkované na okraji lesa pak v zimě potrápí zamrzlé zámky a vybité ovladače. Otevíráme osobní vozy, dodávky i auta s bezklíčovým přístupem ve Zdibech, Brnkách, Přemyšlení i Veltěži a cenu víte vždy předem."
+      "Ve Zdibech oficiálně začíná dálnice D8 a odbočuje silnice I/9 na Mělník, takže tudy projíždí spousta řidičů mezi Prahou a severem Čech. Stačí krátce zastavit na čerpací stanici u D8 a klíč i s telefonem zůstane zamčený v autě. Přijedeme k dálničnímu exitu i do centra Zdib a vůz otevřeme bez poškození, abyste mohli co nejdřív pokračovat v cestě.",
+      "Zdiby ale nejsou jen dopravní uzel. Z Brnek se chodí ke skále Špička v Kaňonu Vltavy u Sedlce a okolí obce patří do přírodního parku Dolní Povltaví. Kdo nechá auto na okraji lesa, toho v zimě snadno potrápí zamrzlý zámek nebo vybitý ovladač. Osobní vozy, dodávky i auta s bezklíčovým přístupem otevíráme ve Zdibech, Brnkách, Přemyšlení i ve Veltěži a cenu vám řekneme předem."
     ],
     hotspots: [
       "Exit 1 Zdiby na D8",
@@ -324,8 +324,8 @@ export const pragueEastLocations: Location[] = [
     ],
     headline: "silnice na Benešov, Štiřín a deset místních částí",
     intro: [
-      "Kamenicí prochází silnice II/603 z Prahy na Benešov a v centru se kříží se silnicí II/107 mezi Velkými Popovicemi a Týncem nad Sázavou. Zastávka Kamenice, Kulturní dům je přestupním bodem autobusů od metra Budějovická, takže tu občas někdo nechá auto a pokračuje dál. Když pak klíč zůstane uvnitř nebo ovladač přestane reagovat, přijedeme a vůz otevřeme bez poškození.",
-      "Kamenice má deset místních částí – od Těptína a Ládví přes Olešovice až po Štiřín se zámkem a Štiřínským rybníkem, kde přibývají nové domy. Auta tu parkují u rodinných domů, u rybníků i na okraji lesů, a v zimě je proto trápí zamrzlé zámky dveří. Otevíráme osobní vozy, dodávky i auta s bezklíčovým přístupem ve všech částech obce, nonstop a s cenou sdělenou předem."
+      "Přes Kamenici vede silnice II/603 z Prahy na Benešov, kterou v centru kříží silnice II/107 mezi Velkými Popovicemi a Týncem nad Sázavou. Zastávka Kamenice, Kulturní dům je přestupním bodem autobusů od metra Budějovická, takže tu lidé občas nechají auto a pokračují dál. Zůstane-li pak klíč uvnitř nebo přestane-li reagovat ovladač, přijedeme a vůz otevřeme bez poškození.",
+      "Kamenice má deset místních částí – od Těptína a Ládví přes Olešovice až po Štiřín se zámkem a Štiřínským rybníkem, kde přibývají nové domy. Auta tu stojí u rodinných domů, u rybníků i na okraji lesů a v zimě je často potrápí zamrzlé zámky dveří. Přijedeme do všech částí obce a poradíme si s osobním vozem, dodávkou i autem s bezklíčovým přístupem."
     ],
     hotspots: [
       "Křižovatka silnic II/603 a II/107",
@@ -360,8 +360,8 @@ export const pragueEastLocations: Location[] = [
     ],
     headline: "pivovarská obec kousek od dálnice D1",
     intro: [
-      "Velké Popovice jsou známé především díky pivovaru, jehož novodobá historie začala za Františka Ringhoffera. Kolem pivovaru vede Ringhofferova ulice se silnicí II/107 a projíždějí tu i řidiči mířící na sjezd Všechromy na D1. Kdo se k autu vrátí a zjistí, že klíč zůstal v zamčeném voze, nemusí rozbíjet okno – auto ve Velkých Popovicích otevřeme nonstop a bez poškození.",
-      "K Velkým Popovicím patří také Brtnice, Lojovice, Křivá Ves, Mokřany, Řepčice a další vesnice, mezi kterými se většinou přejíždí autem. Řešíme tu vybité ovladače po mrazivé noci, klíče zamčené v kufru u obchodů v Masarykově ulici i zaseknuté centrální zamykání u dodávek řemeslníků. Otevíráme vozy všech značek včetně aut s bezklíčovým přístupem a cenu zásahu vždy sdělíme předem."
+      "Velké Popovice jsou známé především díky pivovaru, jehož novodobá historie začala za Františka Ringhoffera. Kolem pivovaru vede Ringhofferova ulice, kudy prochází silnice II/107, a jezdí tudy i řidiči mířící na sjezd Všechromy na D1. Kdo se k autu vrátí a zjistí, že klíč zůstal uvnitř, nemusí rozbíjet okno – přijedeme kdykoli a vůz otevřeme bez poškození.",
+      "K Velkým Popovicím patří také Brtnice, Lojovice, Křivá Ves, Mokřany, Řepčice a další vesnice, mezi kterými se většinou jezdí autem. Řešíme tu vybité ovladače po mrazivé noci, klíče zamčené v kufru u obchodů v Masarykově ulici i zaseknuté centrální zamykání u dodávek řemeslníků. Otevíráme vozy všech značek, samozřejmě i auta s bezklíčovým přístupem."
     ],
     hotspots: [
       "Pivovar Velké Popovice",
@@ -385,8 +385,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Čestlice"],
     headline: "obchodní zóna u D1 a Aquapalace Praha",
     intro: [
-      "Obchodní a zábavní zóna v Čestlicích zabírá větší plochu než samotná obec. Na rozlehlých parkovištích u dálnice D1 se nakládají nákupy do kufru, přendávají tašky a vracejí vozíky – a klíč snadno zůstane v kufru, který se zaklapne. Otevíráme auta u nákupního centra Spektrum, u velkoobchodu Makro, u hobbymarketu Bauhaus i u autosalonů, vždy bez poškození.",
-      "Druhým magnetem Čestlic je Aquapalace Praha s hotelem, kam se jezdí na celý den. Klíč ponechaný v autě při převlékání nebo zabalený do tašky s ručníky pak skončí za zamčenými dveřmi. Pomůžeme i s vybitým ovladačem, s keyless vozy nebo dodávkami a přijedeme také do staré části obce ke kostelu svatého Prokopa. Pomáháme nonstop a cenu řekneme předem."
+      "Obchodní a zábavní zóna v Čestlicích zabírá větší plochu než samotná obec. Na rozlehlých parkovištích u dálnice D1 se nakládají nákupy do kufru, přendávají tašky a vracejí vozíky – a stačí chvilka, aby klíč zůstal v zaklapnutém kufru. Auta otevíráme u nákupního centra Spektrum, u velkoobchodu Makro, u hobbymarketu Bauhaus i u autosalonů, a to přímo na místě a bez poškození.",
+      "Druhým magnetem Čestlic je Aquapalace Praha s hotelem, kam se jezdí na celý den. Klíč, který zůstal v autě při převlékání nebo se zamotal do tašky s ručníky, pak skončí za zamčenými dveřmi. Poradíme si i s vybitým ovladačem, s bezklíčovými vozy nebo s dodávkami a přijedeme také do staré části obce ke kostelu svatého Prokopa. Jezdíme nonstop a cenu znáte předem."
     ],
     hotspots: [
       "Aquapalace Praha",
@@ -411,8 +411,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Nehvizdy", "Nehvízdky"],
     headline: "rostoucí městys mezi silnicí II/611 a D11",
     intro: [
-      "Nehvizdy se během posledních dvaceti let proměnily z malé obce v rychle rostoucí městys s novými ulicemi rodinných domů. Za prací se odtud jezdí po dálnici D11 nebo autobusy na Černý Most, a tak zabouchnuté klíče na příjezdové cestě či vybitý ovladač v ranním mrazu dokážou pořádně zdržet. V Nehvizdech i Nehvízdkách otevíráme auta nonstop a bez poškození.",
-      "Středem městyse prochází silnice II/611 souběžná s dálnicí a v centru stojí kostel svatého Václava. Na východním okraji Nehvizd u téže silnice připomíná pomník místo seskoku parašutistů výsadku Anthropoid. Pokud vám tu klíč zůstane v zamčeném autě, přijedeme – ať jde o osobní vůz, dodávku, nebo auto s bezklíčovým přístupem. Cenu řekneme předem."
+      "Nehvizdy se během posledních dvaceti let proměnily z malé obce v rychle rostoucí městys s novými ulicemi rodinných domů. Za prací se odtud jezdí po dálnici D11 nebo autobusem na Černý Most, takže zabouchnuté klíče na příjezdové cestě či vybitý ovladač v ranním mrazu umějí pořádně zdržet. V Nehvizdech i v Nehvízdkách přijedeme ve dne i v noci a auto otevřeme bez poškození.",
+      "Středem městyse vede silnice II/611, souběžná s dálnicí, a v centru stojí kostel svatého Václava. Na východním okraji Nehvizd u téže silnice připomíná pomník místo, kde seskočili parašutisté výsadku Anthropoid. Pokud vám tu klíč zůstane v zamčeném autě, přijedeme, ať jde o osobní vůz, dodávku, nebo auto s bezklíčovým přístupem, a cenu řekneme předem."
     ],
     hotspots: [
       "Silnice II/611",
@@ -436,13 +436,13 @@ export const pragueEastLocations: Location[] = [
     parts: ["Zeleneč", "Mstětice"],
     headline: "vlaky na Lysou, Mstětice a nové ulice",
     intro: [
-      "Zeleneč má železniční zastávku na trati z Prahy do Lysé nad Labem a další stanici v Mstěticích, takže se tu auto a vlak přirozeně doplňují. Kdo ráno zaparkuje u nástupiště a nechá klíč v zapalování nebo v zamčeném kufru, má pak komplikovaný odjezd i návrat domů. U zastávky Zeleneč i u stanice Mstětice otevíráme auta nonstop a bez poškození.",
-      "V posledních letech v Zelenči přibyly celé kolonie rodinných domů a s nimi i auta parkující na ulicích a příjezdových cestách. Po mrazivé noci tu řešíme zamrzlé zámky, vybité ovladače i nefunkční centrální zamykání. Přijedeme také k tenisové hale, na fotbalové hřiště SK Zeleneč nebo na silnici II/101 v Mstěticích a otevřeme osobní vůz, dodávku i keyless auto."
+      "Zeleneč má železniční zastávku na trati z Prahy do Lysé nad Labem a další stanici ve Mstěticích, takže se tu auto a vlak přirozeně doplňují. Kdo ráno zaparkuje u nástupiště a nechá klíč v zapalování nebo v zamčeném kufru, zkomplikuje si odjezd i cestu domů. U zastávky Zeleneč i u stanice Mstětice přijedeme kdykoli ve dne i v noci a auto otevřeme bez poškození.",
+      "V posledních letech v Zelenči přibyly celé kolonie rodinných domů a s nimi i auta parkující na ulicích a příjezdových cestách. Po mrazivé noci tu řešíme zamrzlé zámky, vybité ovladače i nefunkční centrální zamykání. Přijedeme také k tenisové hale, na fotbalové hřiště SK Zeleneč nebo na silnici II/101 ve Mstěticích a otevřeme osobní vůz, dodávku i auto s bezklíčovým přístupem."
     ],
     hotspots: [
       "Železniční zastávka Zeleneč",
       "Stanice Mstětice",
-      "Silnice II/101 v Mstěticích",
+      "Silnice II/101 ve Mstěticích",
       "Tenisová hala Zeleneč",
       "Hřiště SK Zeleneč"
     ],
@@ -461,8 +461,8 @@ export const pragueEastLocations: Location[] = [
     parts: ["Škvorec", "Třebohostice"],
     headline: "městys se dvěma zámky na silnici II/101",
     intro: [
-      "Škvorcem prochází silnice II/101 z Říčan do Úval a na náměstí končí autobusová linka 329 od metra Skalka. Kdo nejede autobusem, může jet autem na vlak do Úval, a v obou případech rozhoduje každá minuta. Když zůstane klíč zamčený v autě na náměstí, u domu nebo v Třebohosticích, přijedeme a vůz otevřeme bez poškození dveří, zámku i elektroniky.",
-      "Nad Škvorcem stojí torzo Starého zámku s kamenným mostem a nedaleko Nový zámek, oba veřejnosti nepřístupné. Kdo se vydá na procházku ke kostelu svaté Anny nebo do polí k soše svatého Donáta, může nechat auto u cesty na kraji obce. V zimě ho pak potrápí zamrzlý zámek nebo vybitá baterie ovladače. Pomůžeme nonstop, u všech značek a s cenou sdělenou předem."
+      "Škvorcem vede silnice II/101 z Říčan do Úval a na náměstí končí autobusová linka 329 od metra Skalka. Kdo nejede autobusem, může vyrazit autem na vlak do Úval – a v obou případech rozhoduje každá minuta. Zůstal-li vám klíč zamčený v autě na náměstí, u domu nebo v Třebohosticích, přijedeme a vůz otevřeme bez poškození dveří, zámku i elektroniky.",
+      "Nad Škvorcem stojí torzo Starého zámku s kamenným mostem a nedaleko i Nový zámek, oba jsou veřejnosti nepřístupné. Kdo se vydá na procházku ke kostelu svaté Anny nebo do polí k soše svatého Donáta, často nechá auto u cesty na kraji obce. V zimě ho pak potrápí zamrzlý zámek nebo vybitá baterie ovladače. Přijedeme i tam, poradíme si s vozem jakékoli značky a cenu řekneme předem."
     ],
     hotspots: [
       "Náměstí ve Škvorci",

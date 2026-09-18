@@ -94,3 +94,34 @@ export function nearbyLocations(location: Location, count = 8): Location[] {
     .slice(0, count)
     .map(({ other }) => other);
 }
+
+// Deterministic "random" order (FNV-1a hash seeding mulberry32) so static builds stay stable.
+function seededShuffle<T>(items: T[], seed: string): T[] {
+  let state = 2166136261;
+  for (const char of seed) state = Math.imul(state ^ char.charCodeAt(0), 16777619);
+  const random = () => {
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const shuffled = [...items];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+/**
+ * Links for the "more locations" section: the nearest locations first, topped up with a
+ * page-specific random pick from everywhere else so visitors can keep clicking around.
+ */
+export function relatedLocations(seed: string, near?: Location, count = 12): Location[] {
+  const nearest = near ? nearbyLocations(near, count / 2) : [];
+  const rest = allLocations.filter(
+    (location) => location.slug !== near?.slug && !nearest.includes(location),
+  );
+  return [...nearest, ...seededShuffle(rest, seed).slice(0, count - nearest.length)];
+}
+

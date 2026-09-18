@@ -33,8 +33,12 @@ writeFileSync("src/app/favicon.ico", toIco(icoImages));
 
 writeFileSync("src/app/icon.svg", svg);
 
-// Transparent PNG logo used in the header and footer.
-writeFileSync("public/logo.png", await png(svg, 512));
+// Transparent PNG logo for the header and footer, trimmed to the artwork so it lines up with text.
+// The file name changes with the artwork so no browser or image cache serves an old version.
+const trimmed = await sharp(await png(svg, 1024)).trim().png().toBuffer();
+const logo = await sharp(trimmed).resize({ height: 96 }).png().toBuffer({ resolveWithObject: true });
+writeFileSync("public/logo-auto-zamek.png", logo.data);
+console.log(`public/logo-auto-zamek.png is ${logo.info.width}x${logo.info.height}`);
 
 // iOS fills transparent icons with black anyway, so the touch icon gets an explicit black square.
 const glyph = await png(svg, 150);
@@ -44,4 +48,4 @@ const appleIcon = await sharp({ create: { width: 180, height: 180, channels: 4, 
   .toBuffer();
 writeFileSync("src/app/apple-icon.png", appleIcon);
 
-console.log("Wrote src/app/favicon.ico, src/app/icon.svg, src/app/apple-icon.png, public/logo.png");
+console.log("Wrote src/app/favicon.ico, src/app/icon.svg, src/app/apple-icon.png");

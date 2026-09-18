@@ -9,6 +9,7 @@ export const images = {
   frozenLock: `${r2}/zamrzly-zamek-auta.webp`,
   centralLocking: `${r2}/porucha-centralniho-zamykani.webp`,
   callNonstop: `${r2}/ridic-vola-nonstop-autozamecnika.webp`,
+  process: `${r2}/autozamecnik-otevira-dvere-auta.webp`,
   ignition: "https://images.unsplash.com/photo-1615906655593-ad0386982a0f",
   wheel: "https://images.unsplash.com/photo-1502877338535-766e1452684a",
   technician: "https://images.unsplash.com/photo-1580273916550-e323be2ae537",

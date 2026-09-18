@@ -13,18 +13,17 @@ const services = [
 ];
 
 type LocationServicesProps = {
-  name: string;
   locative: string;
 };
 
-export default function LocationServices({ name, locative }: LocationServicesProps) {
+export default function LocationServices({ locative }: LocationServicesProps) {
   return (
     <section id="sluzby" className="scroll-mt-20 bg-gray-50/70 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           align="center"
-          title={`Nouzové otevírání aut – ${name}`}
-          description={`Speciální nářadí určené pro automobilové zámky nám umožňuje otevřít vůz ${locative} bez poškození dveří, těsnění, skel i elektroniky.`}
+          title={`Nouzové otevírání aut ${locative}`}
+          description="Díky nářadí určenému přímo pro automobilové zámky otevřeme vaše auto bez poškození dveří, těsnění, skel i elektroniky."
         />
 
         <ul className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2">

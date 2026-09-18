@@ -36,7 +36,7 @@ export default function LocationIntro({ location }: LocationIntroProps) {
 
           <div className="rounded-2xl border border-brand/30 bg-brand/10 p-6">
             <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
-              Tip pro řidiče – {location.name}
+              Tip pro řidiče {location.locative}
             </p>
             <p className="mt-2 text-sm font-semibold text-ink">{location.tip}</p>
           </div>

@@ -48,8 +48,8 @@ export default function HowItWorks({
           <div className="lg:sticky lg:top-24">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
               <Image
-                src={images.ignition}
-                alt="Klíč v zapalování vozidla"
+                src={images.process}
+                alt="Autozámečník šetrně otevírá zámek dveří auta"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
                 className="object-cover"

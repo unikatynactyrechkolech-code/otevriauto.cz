@@ -8,8 +8,8 @@ export const brandPagesB: BrandPage[] = [
     models: ["Mégane", "Clio", "Captur", "Scénic", "Kangoo", "Laguna", "Thalia", "Kadjar", "Austral", "Arkana", "Trafic", "Master"],
     headline: "Mégane, Clio, Captur i hands-free karta",
     intro: [
-      "Renault jako jedna z prvních automobilek nahradil klasický klíč kartou – poprvé ji v roce 2001 dostala Laguna II a postupně se rozšířila na Mégane, Scénic i Clio. Karta patří k výbavě i dnešních Capturů, Kadjarů nebo Australů. Je plochá a lehká, takže snadno zůstane v kapse bundy odložené na zadním sedadle, zapadne do kufru mezi nákup nebo se v peněžence nenápadně zlomí.",
-      "U starších Renaultů, například Mégane II a III, Laguny nebo Scénicu, se karta zasouvá do štěrbiny v palubní desce, novější Clio, Captur či Arkana se s kartou handsfree odemknou už při přiblížení. Ať jde o osobní vůz, nebo o dodávku Trafic či Master, auto otevřeme nonstop v Praze a okolí bez poškození zámků, těsnění i laku. Cenu vám řekneme předem, ještě než vyrazíme."
+      "Renault jako jedna z prvních automobilek nahradil klasický klíč kartou – poprvé ji v roce 2001 dostala Laguna II a postupně se rozšířila na Mégane, Scénic i Clio. Kartu mají i dnešní Captury, Kadjary nebo Australy. Je plochá a lehká, takže snadno zůstane v kapse bundy odložené na zadním sedadle, zapadne do kufru mezi nákup nebo se v peněžence nenápadně zlomí.",
+      "U starších Renaultů, například Mégane II a III, Laguny nebo Scénicu, se karta zasouvá do štěrbiny v palubní desce. Novější Clio, Captur či Arkana se s kartou handsfree odemknou už při přiblížení. Osobní auto otevřeme stejně jako dodávku Trafic nebo Master – nonstop v Praze a okolí, bez poškození zámků, těsnění i laku a za cenu, kterou vám řekneme ještě před výjezdem."
     ],
     lockTech: [
       {
@@ -35,11 +35,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Otevřete Renault, když karta handsfree zůstala zamčená uvnitř?",
-        answer: "Ano, karta zamčená v kabině patří u Renaultu k typickým situacím. Vůz otevřeme bez poškození zámku, těsnění i laku a kartu si pak jednoduše vezmete zevnitř – funguje dál stejně jako předtím. Jezdíme nonstop po Praze a okolí a cenu sdělíme předem."
+        answer: "Ano, karta zamčená v kabině patří u Renaultu k typickým případům. Vůz otevřeme, kartu si pak jednoduše vezmete zevnitř a funguje dál stejně jako předtím."
       },
       {
         question: "Co dělat, když se karta Renault zlomí nebo ztratí?",
-        answer: "Novou kartu musí vyrobit a spárovat s vozem autorizovaný servis nebo specializovaná firma – výrobu ani programování karet neděláme. Pokud ale potřebujete do zamčeného auta kvůli dokladům, druhé kartě nebo věcem uvnitř, otevřeme ho bez poškození a s cenou řečenou předem."
+        answer: "Novou kartu musí vyrobit a spárovat s vozem autorizovaný servis nebo specializovaná firma – výrobu ani programování karet neděláme. Pokud se ale potřebujete dostat do zamčeného auta kvůli dokladům, druhé kartě nebo věcem uvnitř, otevřeme ho a vše potřebné si vyzvednete."
       }
     ]
   },
@@ -50,7 +50,7 @@ export const brandPagesB: BrandPage[] = [
     headline: "Duster, Sandero i Logan s klíčem nebo kartou",
     intro: [
       "Dacia se díky Dusteru a Sanderu stala v Česku velmi oblíbenou značkou – jezdí s ní rodiny, řemeslníci i firmy. Většina vozů Dacia, od Loganu přes Sandero a Dokker až po starší Duster, má klíč s dálkovým ovladačem, často vyklápěcí. Lépe vybavené verze novějšího Dusteru nebo Sandera Stepway dostávají kartu handsfree, kterou značka sdílí s Renaultem.",
-      "Klasický klíč i karta mají jedno společné: když zůstanou v zamčeném autě a druhý klíč je doma, dovnitř se sami nedostanete. Stává se to při nakládání kufru, na čerpací stanici nebo když děti v kabině omylem stisknou tlačítko zamčení. Dacii otevřeme nonstop v Praze a okolí, bez poškození a s cenou sdělenou předem – ať jde o Jogger, elektrický Spring, nebo nový Bigster."
+      "Klasický klíč i karta mají jedno společné: když zůstanou v zamčeném autě a druhý klíč je doma, dovnitř se sami nedostanete. Stává se to při nakládání kufru, na čerpací stanici nebo když děti v kabině omylem stisknou tlačítko zamčení. Poradíme si s Joggerem, elektrickým Springem i novým Bigsterem – v Praze a okolí ve dne i v noci, beze stop na voze a za cenu, kterou znáte předem."
     ],
     lockTech: [
       {
@@ -63,7 +63,7 @@ export const brandPagesB: BrandPage[] = [
       },
       {
         title: "Automatické opětovné zamčení",
-        text: "Když vůz odemknete dálkovým ovladačem a do zhruba jedné až dvou minut – podle modelu – neotevřete žádné dveře, centrální zamykání ho samo znovu zamkne. Chrání to před nechtěně odemčeným autem, ale majitele to občas zaskočí."
+        text: "Když vůz odemknete dálkovým ovladačem a zhruba do jedné až dvou minut – podle modelu – neotevřete žádné dveře, centrální zamykání ho samo znovu zamkne. Chrání to před nechtěně odemčeným autem, ale majitele to občas zaskočí."
       }
     ],
     emergencyTip: "U klasického ovladače vyklopte klíč a zkuste odemknout dveře řidiče přímo v zámku. Když ovladač ani karta nereagují, bývá na vině vybitá baterie – její výměna nebo druhý klíč z domova problém často vyřeší.",
@@ -76,11 +76,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Proč se můj Duster po odemčení sám zase zamkl?",
-        answer: "Jde o automatické opětovné zamčení: když po odemčení dálkovým ovladačem neotevřete žádné dveře, Dacia se podle modelu zhruba po jedné až dvou minutách znovu zamkne. Pokud máte klíč u sebe, stačí odemknout znovu. Když ale zůstal uvnitř, přijedeme nonstop a vůz otevřeme bez poškození."
+        answer: "Jde o automatické opětovné zamčení: když po odemčení dálkovým ovladačem neotevřete žádné dveře, Dacia se podle modelu zhruba po jedné až dvou minutách znovu zamkne. Pokud máte klíč u sebe, stačí odemknout znovu. Když ale zůstal uvnitř, přijedeme a vůz otevřeme."
       },
       {
         question: "Otevřete i Dacii Logan nebo Sandero první generace?",
-        answer: "Ano, otevíráme Dacie všech generací – od první generace Loganu a Sandera až po nový Duster a Bigster. Starší vozy mají klasický klíč, novější často kartu handsfree, na otevření bez poškození to ale nic nemění. Přijedeme nonstop v Praze a okolí a cenu sdělíme předem."
+        answer: "Ano, otevíráme Dacie všech generací – od prvních Loganů a Sanderů až po nový Duster a Bigster. Starší vozy mají klasický klíč, novější často kartu handsfree, na otevření to ale nic nemění."
       }
     ]
   },
@@ -91,13 +91,13 @@ export const brandPagesB: BrandPage[] = [
     models: ["Focus", "Mondeo", "Fiesta", "Kuga", "C-Max", "S-Max", "Galaxy", "Fusion", "Puma", "Transit", "Transit Custom", "Ranger"],
     headline: "Focus, Mondeo, Kuga i systém KeyFree",
     intro: [
-      "Ford Focus a Mondeo patří v Česku k nejrozšířenějším ojetinám a starší Focusy druhé a třetí generace s vyklápěcím klíčem potkáte téměř v každé ulici, stejně jako Mondea kombi nebo rodinné C-Max a Galaxy. U těchto Fordů jde typicky o klíč zapomenutý v kufru, vybitý ovladač nebo zámek dveří řidiče, který po letech přestal spolehlivě fungovat.",
-      "Novější Focus, Kuga, Mondeo, S-Max nebo Puma mohou mít bezklíčový systém Ford KeyFree s tlačítkem startování a nouzovým klíčem ukrytým v ovladači. U dodávek Transit a Transit Custom zase stačí chvilka nepozornosti při nakládání. Ať řídíte osobní auto, nebo užitkový vůz, přijedeme nonstop v Praze a okolí, otevřeme bez poškození a cenu sdělíme předem."
+      "Ford Focus a Mondeo patří v Česku k nejrozšířenějším ojetinám. Starší Focusy druhé a třetí generace s vyklápěcím klíčem potkáte téměř v každé ulici, stejně jako Mondea kombi nebo rodinné C-Max a Galaxy. Potíže u nich obvykle začínají klíčem zapomenutým v kufru, vybitým ovladačem nebo zámkem dveří řidiče, který po letech přestal spolehlivě fungovat.",
+      "Novější Focus, Kuga, Mondeo, S-Max nebo Puma mohou mít bezklíčový systém Ford KeyFree s tlačítkem startování a nouzovým klíčem ukrytým v ovladači. U dodávek Transit a Transit Custom zase stačí chvilka nepozornosti při nakládání. K osobnímu i užitkovému vozu přijedeme po Praze a okolí nonstop, vůz otevřeme bez poškození a cenu vám řekneme předem."
     ],
     lockTech: [
       {
         title: "Ford KeyFree a tlačítko startu",
-        text: "Bezklíčový systém KeyFree pozná ovladač v kapse, dveře odemkne po uchopení kliky a motor se startuje tlačítkem. Z ovladače lze po posunutí pojistky na zadní straně vytáhnout nouzový klíč pro dveře řidiče, když systém nebo baterie selže."
+        text: "Bezklíčový systém KeyFree pozná ovladač v kapse, dveře odemkne po uchopení kliky a motor nastartujete tlačítkem. Z ovladače lze po posunutí pojistky na zadní straně vytáhnout nouzový klíč pro dveře řidiče, když systém nebo baterie selže."
       },
       {
         title: "Dvojité zamčení",
@@ -105,10 +105,10 @@ export const brandPagesB: BrandPage[] = [
       },
       {
         title: "Opětovné zamčení po 45 sekundách",
-        text: "Například u Focusu třetí generace se vůz sám znovu zamkne, pokud do 45 sekund po odemčení ovladačem neotevřete dveře, víko kufru ani nezapnete zapalování. Funkce chrání před nechtěně odemčeným autem na parkovišti."
+        text: "Například u Focusu třetí generace se vůz sám znovu zamkne, pokud do 45 sekund po odemčení ovladačem neotevřete dveře ani víko kufru a nezapnete zapalování. Funkce chrání před nechtěně odemčeným autem na parkovišti."
       }
     ],
-    emergencyTip: "U klíče KeyFree posuňte pojistku na zadní straně ovladače, vytáhněte nouzový klíč a odemkněte jím dveře řidiče – u novějších modelů bývá zámek nenápadně ukrytý v klice, přesné místo najdete v příručce. Pokud ovladač nereaguje, zkuste s ním pohnout, vyměnit baterii nebo přinést druhý klíč z domova.",
+    emergencyTip: "U klíče KeyFree posuňte pojistku na zadní straně ovladače, vytáhněte nouzový klíč a odemkněte jím dveře řidiče – u novějších modelů bývá zámek nenápadně ukrytý v klice, přesné místo najdete v příručce. Pokud ovladač nereaguje, zkuste s ním pohnout, vyměnit baterii nebo sehnat druhý klíč z domova.",
     situations: [
       "Klíč zamčený v kufru staršího Focusu kombi",
       "Klíč KeyFree zapomenutý v kabině Kugy nebo Mondea",
@@ -118,11 +118,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Proč u Fordu nejdou dveře otevřít ani zevnitř?",
-        answer: "Nejspíš je aktivní dvojité zamčení, které se zapne dvojím stiskem tlačítka zamčení do tří sekund a vyřadí vnitřní kliky. Zrušíte ho odemčením ovladačem. Proto ho nikdy nepoužívejte, když je ve voze dítě nebo zvíře. Pokud ovladač nefunguje a klíč je uvnitř, zavolejte nám."
+        answer: "Nejspíš je aktivní dvojité zamčení, které se zapne dvojím stiskem tlačítka zamčení do tří sekund a vyřadí vnitřní kliky. Zrušíte ho odemčením ovladačem. Když je ve voze dítě nebo zvíře, nikdy ho nepoužívejte. Pokud ovladač nefunguje a klíč je uvnitř, zavolejte nám."
       },
       {
         question: "Proč bezklíčový ovladač Fordu nereaguje, když delší dobu ležel?",
-        answer: "Novější bezklíčové ovladače Fordu mají pohybové čidlo a po zhruba 40 sekundách bez pohybu přejdou do úsporného režimu, který chrání před zneužitím signálu. Stačí s klíčem pohnout a znovu funguje. Pokud nereaguje ani potom a do vozu se nedostanete, přijedeme nonstop a otevřeme bez poškození."
+        answer: "Novější bezklíčové ovladače Fordu mají pohybové čidlo a zhruba po 40 sekundách bez pohybu přejdou do úsporného režimu, který chrání před zneužitím signálu. Stačí s klíčem pohnout a znovu funguje. Pokud ani potom nereaguje a do vozu se nedostanete, přijedeme a otevřeme ho."
       }
     ]
   },
@@ -132,8 +132,8 @@ export const brandPagesB: BrandPage[] = [
     models: ["Model Y", "Model 3", "Model S", "Model X", "Model 3 Highland", "Model Y Juniper"],
     headline: "když nereaguje karta ani telefon",
     intro: [
-      "Tesla nemá klasický klíč ani zámkovou vložku ve dveřích. Model 3 a Model Y se odemykají telefonem, klíčovou kartou nebo volitelným ovladačem, starší Model S a Model X hlavně ovladačem ve tvaru autíčka. Dokud všechno funguje, je to pohodlné. Jakmile se ale vybije telefon, karta zůstane doma a ovladač chybí, stojí majitel před vozem, do kterého se nemá jak dostat.",
-      "Druhým typickým případem je vybitá nebo dosluhující nízkonapěťová baterie ve voze. Tesla pak nereaguje na kartu ani aplikaci, elektronické kliky nefungují a displej zůstane tmavý, přestože hlavní trakční baterie může být nabitá. Přijedeme nonstop v Praze a okolí, situaci posoudíme a pomůžeme vám dostat se do Tesly bez poškození – cenu vždy řekneme předem."
+      "Tesla nemá klasický klíč ani zámkovou vložku ve dveřích. Model 3 a Model Y se odemykají telefonem, klíčovou kartou nebo volitelným ovladačem, starší Model S a Model X hlavně ovladačem ve tvaru autíčka. Dokud všechno funguje, je to pohodlné. Jakmile se ale vybije telefon, karta zůstane doma a ovladač chybí, stojíte před vozem, do kterého se nemáte jak dostat.",
+      "Druhým typickým případem je vybitá nebo dosluhující nízkonapěťová baterie ve voze. Tesla pak nereaguje na kartu ani aplikaci, elektronické kliky nefungují a displej zůstane tmavý, i když hlavní trakční baterie může být klidně nabitá. Přijedeme nonstop v Praze a okolí, situaci posoudíme a pomůžeme vám dostat se do Tesly bez poškození – cenu vám vždy řekneme předem."
     ],
     lockTech: [
       {
@@ -149,7 +149,7 @@ export const brandPagesB: BrandPage[] = [
         text: "Zámky, kliky i čtečky napájí nízkonapěťová baterie – starší vozy mají olověnou 12V, novější lithiovou. Když se vybije, vůz nereaguje na kartu ani telefon. Přední kapotu s přístupem k baterii lze bez napájení uvolnit jen externím zdrojem podle postupu v příručce."
       }
     ],
-    emergencyTip: "Zapněte v telefonu Bluetooth, restartujte aplikaci Tesla a zkuste vůz odemknout na dálku z aplikace, případně přiložte klíčovou kartu ke čtečce na sloupku mezi dveřmi řidiče. Pokud vůz nereaguje ani na kartu, bývá vybitá nízkonapěťová baterie – postup pro tuto situaci popisuje uživatelská příručka vašeho modelu.",
+    emergencyTip: "Zapněte v telefonu Bluetooth, restartujte aplikaci Tesla a zkuste vůz odemknout na dálku z aplikace, případně přiložte klíčovou kartu ke čtečce na sloupku mezi předními a zadními dveřmi na straně řidiče. Pokud vůz nereaguje ani na kartu, příčinou bývá vybitá nízkonapěťová baterie – postup pro tuto situaci popisuje uživatelská příručka vašeho modelu.",
     situations: [
       "Vybitý telefon a klíčová karta zůstala doma",
       "Vybitá 12V baterie – Tesla nereaguje na kartu ani aplikaci",
@@ -159,7 +159,7 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Co dělat, když Tesla s vybitou 12V baterií nejde otevřít?",
-        answer: "Bez napájení nefungují kliky ani čtečka karty a Tesla nemá mechanickou vložku. Příručka popisuje uvolnění přední kapoty externím zdrojem a připojení pomocného zdroje k nízkonapěťové baterii, teprve pak vůz znovu reaguje. Pokud si postupem nejste jistí nebo zdroj nemáte, zavolejte nám – přijedeme nonstop a cenu řekneme předem."
+        answer: "Bez napájení nefungují kliky ani čtečka karty a Tesla nemá mechanickou vložku. Příručka popisuje uvolnění přední kapoty externím zdrojem a připojení pomocného zdroje k nízkonapěťové baterii, teprve potom vůz znovu reaguje. Pokud si postupem nejste jistí nebo zdroj nemáte, zavolejte nám a přijedeme."
       },
       {
         question: "Funguje telefonní klíč Tesly bez internetu?",
@@ -173,13 +173,13 @@ export const brandPagesB: BrandPage[] = [
     models: ["Yaris", "Corolla", "Auris", "RAV4", "C-HR", "Aygo", "Yaris Cross", "Avensis", "Aygo X", "Corolla Verso", "Proace", "Hilux"],
     headline: "Yaris, Corolla a systém Smart Entry & Start",
     intro: [
-      "V kolínské továrně se od roku 2005 vyrábělo malé Aygo, od listopadu 2021 tam vzniká i Toyota Yaris a v roce 2022 přibylo Aygo X. Yaris je proto v Česku velmi běžným městským autem. Vedle něj jezdí hlavně Corolly, starší Aurisy a Avensisy nebo SUV RAV4, C-HR a Yaris Cross – spolehlivé vozy, u kterých se klíč zabouchne stejně snadno jako jinde.",
-      "Novější Toyoty ve vyšší výbavě mají systém Smart Entry & Start: dveře odemknete dotykem kliky a motor nastartujete tlačítkem, klíč přitom zůstává v kapse. Když ho ale necháte v zavazadlovém prostoru, pojistka proti zamčení klíče uvnitř nemusí zafungovat a vůz se zamkne i s ním. Toyotu otevřeme nonstop v Praze a okolí bez poškození, cenu sdělíme předem."
+      "V kolínské továrně se od roku 2005 vyrábělo malé Aygo, od listopadu 2021 tam vzniká i Toyota Yaris a v roce 2022 přibylo Aygo X. Yaris je proto v Česku velmi běžným městským autem. Vedle něj jezdí hlavně Corolly, starší Aurisy a Avensisy nebo SUV RAV4, C-HR a Yaris Cross – spolehlivé vozy, ve kterých se ale klíč zabouchne stejně snadno jako v kterémkoli jiném autě.",
+      "Novější Toyoty ve vyšší výbavě mají systém Smart Entry & Start: dveře odemknete dotykem kliky a motor nastartujete tlačítkem, klíč přitom zůstává v kapse. Když ho ale necháte v zavazadlovém prostoru, pojistka proti zamčení klíče uvnitř nemusí zafungovat a vůz se zamkne i s ním. Pak za vámi po Praze a okolí přijedeme kdykoli, Toyotu otevřeme bez poškození a cenu vám řekneme předem."
     ],
     lockTech: [
       {
         title: "Smart Entry & Start",
-        text: "Elektronický klíč komunikuje s anténami v kabině, kufru i dveřích. Dotykem senzoru v klice se dveře odemknou nebo zamknou, a pokud je po odemčení do zhruba 60 sekund nikdo neotevře, vůz se sám znovu zamkne."
+        text: "Elektronický klíč komunikuje s anténami v kabině, kufru i dveřích. Dotykem senzoru v klice se dveře odemknou nebo zamknou, a pokud je po odemčení zhruba do 60 sekund nikdo neotevře, vůz se sám znovu zamkne."
       },
       {
         title: "Mechanický klíč v ovladači",
@@ -200,11 +200,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Může se Toyota zamknout, když je klíč Smart Entry v kufru?",
-        answer: "Ano, může. Toyota má funkci, která brání zamčení klíče uvnitř, ale podle příručky nemusí zafungovat vždy – záleží na tom, kde klíč leží, například v zavazadlovém prostoru. Pokud se to stane, přijedeme nonstop a vůz otevřeme bez poškození, cenu řekneme předem."
+        answer: "Ano, může. Toyota má funkci, která brání zamčení klíče uvnitř, ale podle příručky nemusí zafungovat vždy – záleží na tom, kde klíč leží, například v zavazadlovém prostoru. Pokud se vám to stane, zavolejte nám a vůz otevřeme."
       },
       {
         question: "Otevřete Toyotu s digitálním klíčem v aplikaci MyToyota?",
-        answer: "Ano. Vybrané nejnovější modely, například C-HR nové generace nebo bZ4X, mohou mít digitální klíč v telefonu. Když se telefon vybije nebo aplikace selže a fyzický klíč nemáte u sebe, vůz otevřeme bez poškození. Náhradní klíč vám ale musí zajistit autorizovaný servis."
+        answer: "Ano. Vybrané nejnovější modely, například C-HR nové generace nebo bZ4X, mohou mít digitální klíč v telefonu. Když se telefon vybije nebo aplikace selže a fyzický klíč nemáte u sebe, vůz otevřeme. Náhradní klíč vám ale musí zajistit autorizovaný servis."
       }
     ]
   },
@@ -214,8 +214,8 @@ export const brandPagesB: BrandPage[] = [
     models: ["i30", "Tucson", "ix35", "i20", "i10", "Kona", "ix20", "Santa Fe", "Bayon", "i40", "Getz", "Ioniq 5"],
     headline: "i30 a Tucson z Nošovic i Smart Key",
     intro: [
-      "Hyundai má v Nošovicích svou jedinou továrnu v Evropské unii – od roku 2008 odtud vyjíždí i30, dnes hlavně Tucson a dříve také ix35 a ix20. Vozy Hyundai z Nošovic jsou proto na našich silnicích mimořádně běžné, doplněné o malé i10 a i20, SUV Kona nebo větší Santa Fe. Mezi nimi najdete starší kusy s obyčejným klíčem i nejnovější modely s digitálním klíčem v telefonu.",
-      "Starší vozy mají často vyklápěcí klíč s ovladačem, novější chytrý klíč Smart Key, se kterým se dveře odemykají tlačítkem na klice a motor startuje tlačítkem Start/Stop. Když ale ovladači dojde baterie nebo zůstane v kufru, dveře se neotevřou. Zamčený Hyundai otevřeme nonstop v Praze a okolí, bez poškození zámků i laku a s cenou řečenou předem."
+      "Hyundai má v Nošovicích svou jedinou továrnu v Evropské unii – od roku 2008 odtud vyjíždí i30, dříve také ix35 a ix20 a dnes hlavně Tucson. Vozy Hyundai z Nošovic jsou proto na našich silnicích mimořádně běžné a doplňují je malé i10 a i20, SUV Kona nebo větší Santa Fe. Mezi nimi najdete starší kusy s obyčejným klíčem i nejnovější modely s digitálním klíčem v telefonu.",
+      "Starší vozy mají často vyklápěcí klíč s ovladačem, novější chytrý klíč Smart Key, se kterým se dveře odemykají tlačítkem na klice a motor startuje tlačítkem Start/Stop. Když ale ovladači dojde baterie nebo zůstane v kufru, dveře se neotevřou. V Praze a okolí pak přijedeme ve dne i v noci, Hyundai otevřeme bez poškození zámků i laku a cenu znáte předem."
     ],
     lockTech: [
       {
@@ -241,11 +241,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Kde je zámek pro nouzový klíč u Hyundaie Tucson?",
-        answer: "U současného Tucsonu a dalších novějších modelů je vložka ukrytá pod krytkou na klice dveří řidiče. Krytku podle příručky uvolníte mechanickým klíčem, který vytáhnete z ovladače, a pak odemknete dveře řidiče. Pokud to nepůjde, přijedeme nonstop a vůz otevřeme bez poškození."
+        answer: "U současného Tucsonu a dalších novějších modelů je vložka ukrytá pod krytkou na klice dveří řidiče. Krytku podle příručky uvolníte mechanickým klíčem, který vytáhnete z ovladače, a pak odemknete dveře řidiče. Pokud to nepůjde, zavolejte nám."
       },
       {
         question: "Co dělat, když se ztratí Smart Key od Hyundaie?",
-        answer: "Ztracený chytrý klíč musí nahradit a naučit na vůz servis nebo specializovaná firma – výrobu ani programování klíčů neděláme. Pokud ale máte zamčené auto a uvnitř zůstal druhý klíč nebo doklady, otevřeme ho nonstop a bez poškození, cenu řekneme předem."
+        answer: "Ztracený chytrý klíč musí nahradit a naučit na vůz servis nebo specializovaná firma – výrobu ani programování klíčů neděláme. Pokud ale máte zamčené auto a uvnitř zůstal druhý klíč nebo doklady, otevřeme vám ho."
       }
     ]
   },
@@ -255,8 +255,8 @@ export const brandPagesB: BrandPage[] = [
     models: ["Ceed", "Sportage", "Picanto", "Rio", "XCeed", "Stonic", "Niro", "Sorento", "Venga", "ProCeed", "EV6"],
     headline: "Ceed a Sportage ze Žiliny i digitální klíč",
     intro: [
-      "Kia vyrábí Ceed, XCeed i Sportage kousek za hranicemi, ve slovenské Žilině, a tyto modely proto patří u nás k velmi rozšířeným. Menší Kia Venga dokonce sjížděla z linky v nošovickém závodě Hyundai. Vedle nich jezdí po Praze a okolí malé Picanto a Rio, kompaktní Stonic a stále častěji i elektrické Niro nebo EV6.",
-      "Ať máte starší Ceed s vyklápěcím klíčem, Sportage s chytrým klíčem Smart Key, nebo nejnovější model s digitálním klíčem v telefonu, princip je stejný: jakmile klíč zůstane v zamčeném voze a druhý je daleko, dovnitř se sami nedostanete. Vozy Kia otevíráme nonstop v Praze a okolí, bez poškození a s cenou sdělenou předem."
+      "Kia vyrábí Ceed, XCeed i Sportage kousek za hranicemi, ve slovenské Žilině, a proto jsou tyto modely u nás velmi rozšířené. Menší Kia Venga dokonce sjížděla z linky v nošovickém závodě Hyundai. Vedle nich jezdí po Praze a okolí malé Picanto a Rio, kompaktní Stonic a stále častěji i elektrické Niro nebo EV6.",
+      "U staršího Ceedu s vyklápěcím klíčem, Sportage s chytrým klíčem Smart Key i nejnovějšího modelu s digitálním klíčem v telefonu platí totéž: jakmile klíč zůstane v zamčeném voze a druhý je daleko, dovnitř se sami nedostanete. Pak vám rádi pomůžeme – v Praze a okolí nonstop, beze škod na voze a za cenu, kterou vám řekneme předem."
     ],
     lockTech: [
       {
@@ -265,7 +265,7 @@ export const brandPagesB: BrandPage[] = [
       },
       {
         title: "Krytka zámku u Sportage",
-        text: "U Sportage páté generace je vložka v klice řidiče schovaná pod krytkou. Uvolní se páčkou zespodu krytky pomocí klíče a krytka se pak vysune. Pokud v mrazu zamrzne, stačí ji lehce poklepat nebo zahřát dlaní."
+        text: "U Sportage páté generace je vložka v klice řidiče schovaná pod krytkou. Uvolní se páčkou zespodu krytky pomocí klíče a krytka se pak vysune. Pokud v mrazu zamrzne, stačí na ni lehce poklepat nebo ji zahřát dlaní."
       },
       {
         title: "Kia Digital Key",
@@ -282,11 +282,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Které vozy Kia umějí digitální klíč v telefonu?",
-        answer: "V Evropě ho Kia nabízí například u EV3, EV9, modernizovaného EV6 a Sportage od modelového roku 2025 nebo modernizovaného Sorenta od modelového roku 2024. Když telefon selže, použijte fyzický klíč. Pokud ho nemáte u sebe, přijedeme nonstop a vůz otevřeme bez poškození."
+        answer: "V Evropě ho Kia nabízí například u EV3, EV9, modernizovaného EV6 a Sportage od modelového roku 2025 nebo modernizovaného Sorenta od modelového roku 2024. Když telefon selže, použijte fyzický klíč. Pokud ho nemáte u sebe, přijedeme a vůz otevřeme."
       },
       {
         question: "Co dělat, když na Sportage zamrzne krytka zámku?",
-        answer: "Podle příručky na krytku lehce poklepejte nebo ji zahřejte dlaní, nikdy ne horkou vodou, která by v mrazu znovu zmrzla. Pak krytku uvolněte páčkou zespodu a dveře řidiče odemkněte mechanickým klíčem. Pokud se to nepovede, zavolejte nám – cenu řekneme předem."
+        answer: "Podle příručky na krytku lehce poklepejte nebo ji zahřejte dlaní, nikdy ne horkou vodou, která by v mrazu znovu zmrzla. Pak krytku uvolněte páčkou zespodu a dveře řidiče odemkněte mechanickým klíčem. Pokud se to nepovede, zavolejte nám."
       }
     ]
   },
@@ -297,12 +297,12 @@ export const brandPagesB: BrandPage[] = [
     headline: "Mazda 3, CX-5 i Advanced Keyless Entry",
     intro: [
       "Mazda si v Česku získala věrné majitele hlavně modely Mazda 6, Mazda 3 a CX-5, k nimž v posledních letech přibyly CX-30 a velké CX-60. Na silnicích jsou ale pořád běžné i starší Mazdy 2 a 5 nebo roadstery MX-5. Většina z nich má klíč s dálkovým ovladačem, lépe vybavené verze bezklíčový systém Advanced Keyless Entry, u kterého stačí mít ovladač v kapse.",
-      "Když bezklíčovou Mazdu zamknete druhým klíčem a první zůstane v kabině, vůz vás na to zhruba deset sekund upozorňuje pípáním zvenku. V ruchu parkoviště nebo s dětmi se ale varování snadno přeslechne. Vůz pak otevřeme nonstop v Praze a okolí, bez poškození zámků i laku, a cenu vám sdělíme ještě před výjezdem."
+      "Když bezklíčovou Mazdu zamknete druhým klíčem a první zůstane v kabině, vůz vás na to zhruba deset sekund upozorňuje pípáním zvenku. V ruchu parkoviště nebo s dětmi se ale varování snadno přeslechne. Pak je řada na nás: přijedeme nonstop po Praze a okolí, Mazdu otevřeme bez poškození zámků i laku a cenu vám řekneme ještě před výjezdem."
     ],
     lockTech: [
       {
         title: "Advanced Keyless Entry",
-        text: "S ovladačem v kapse se dveře odemknou tlačítkem na klice, u novějších modelů dotykem senzoru. Když po odemčení do zhruba 60 sekund neotevřete dveře ani kufr, Mazda se automaticky znovu zamkne; tuto dobu lze v nastavení změnit."
+        text: "S ovladačem v kapse se dveře odemknou tlačítkem na klice, u novějších modelů dotykem senzoru. Když po odemčení zhruba do 60 sekund neotevřete dveře ani kufr, Mazda se automaticky znovu zamkne; tuto dobu lze v nastavení změnit."
       },
       {
         title: "Pomocný klíč v ovladači",
@@ -327,7 +327,7 @@ export const brandPagesB: BrandPage[] = [
       },
       {
         question: "Proč Mazda nereaguje na dotyk kliky, i když tlačítka ovladače fungují?",
-        answer: "Ovladač může být v úsporném režimu, který vypíná bezklíčové odemykání i startování. Zruší se stejnou sérií stisků tlačítka zamčení, jakou se zapíná – přesný postup je v příručce. Příčinou bývá i slabá baterie ovladače. Pokud se do vozu nedostanete vůbec, přijedeme nonstop."
+        answer: "Ovladač může být v úsporném režimu, který vypíná bezklíčové odemykání i startování. Zruší se stejnou sérií stisků tlačítka zamčení, jakou se zapíná – přesný postup je v příručce. Příčinou bývá i slabá baterie ovladače. Pokud se do vozu nedostanete vůbec, zavolejte nám."
       }
     ]
   },
@@ -338,7 +338,7 @@ export const brandPagesB: BrandPage[] = [
     headline: "Qashqai, Juke a klíč Intelligent Key",
     intro: [
       "Nissan Qashqai bývá považován za auto, které odstartovalo módu kompaktních SUV, a v Česku ho potkáte ve všech třech generacích. Vedle něj jezdí Juke, X-Trail, malá Micra a Note nebo elektrický Leaf. Bezklíčový systém se u Nissanu jmenuje Intelligent Key – ovladač stačí mít v kapse, dveře se odemknou tlačítkem na klice a motor se startuje tlačítkem.",
-      "Qashqai současné generace navíc umí vůz odemknout při přiblížení a po odchodu ho sám zamknout. Pozor ale na situaci se dvěma klíči: když jeden zůstane v kabině a druhý je venku, vůz se podle příručky zamknout dá. Zamčený Nissan otevřeme nonstop v Praze a okolí, bez poškození a s cenou sdělenou předem."
+      "Qashqai současné generace se navíc umí odemknout při vašem přiblížení a po odchodu se sám zamkne. Pozor ale na situaci se dvěma klíči: když jeden zůstane v kabině a druhý je venku, vůz se podle příručky zamknout dá. Zamčený Nissan pak otevřeme bez poškození – v Praze a okolí nonstop a za cenu, kterou vám řekneme předem."
     ],
     lockTech: [
       {
@@ -364,11 +364,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Jak se může Qashqai zamknout, když je klíč uvnitř?",
-        answer: "Tlačítko na klice vůz s klíčem uvnitř běžně nezamkne. Podle příručky to ale jde, pokud je venku druhý Intelligent Key – třeba v kapse spolujezdce, který odešel napřed. Když se to stane, přijedeme nonstop v Praze a okolí a vůz otevřeme bez poškození."
+        answer: "Tlačítko na klice vůz s klíčem uvnitř běžně nezamkne. Podle příručky to ale jde, pokud je venku druhý Intelligent Key – třeba v kapse spolujezdce, který odešel napřed. Když se to stane, zavolejte nám a vůz otevřeme."
       },
       {
         question: "Co dělat, když Nissan nereaguje na Intelligent Key?",
-        answer: "Nejprve vysuňte z ovladače nouzový klíč a odemkněte dveře řidiče. Uvnitř pak ovladačem dotkněte tlačítka zapalování – vůz ho rozpozná i se slabou baterií. Ovladač může zlobit i kvůli silnému rušení. Pokud dveře neodemknete, přijedeme nonstop a otevřeme bez poškození."
+        answer: "Nejprve vysuňte z ovladače nouzový klíč a odemkněte dveře řidiče. Uvnitř se pak ovladačem dotkněte tlačítka zapalování – vůz ho rozpozná i se slabou baterií. Ovladač může zlobit i kvůli silnému rušení. Pokud dveře neodemknete, přijedeme a otevřeme je my."
       }
     ]
   },
@@ -379,7 +379,7 @@ export const brandPagesB: BrandPage[] = [
     headline: "Vitara, SX4 i bezklíčové startování",
     intro: [
       "Suzuki je v Česku oblíbené hlavně díky kompaktním SUV s pohonem všech kol – Vitara, SX4 i S-Cross pocházejí z maďarské Ostřihomi a jezdí po celé zemi, stejně jako praktický Swift, malý Ignis nebo terénní Jimny. Protože jde o vozy, které vydrží dlouho, potkáte na silnicích Suzuki s úplně obyčejným klíčem i s moderním bezklíčovým systémem.",
-      "Novější Vitara nebo S-Cross mají bezklíčové startování s tlačítky na klikách dveří, starší SX4 a Grand Vitara s ním používaly místo tlačítka otočný knoflík zapalování. Nabídku doplňují Swace a Across, sesterské modely Toyoty Corolla a RAV4. Vozy Suzuki otevíráme nonstop v Praze a okolí, bez poškození a s cenou řečenou předem."
+      "Novější Vitara nebo S-Cross mají bezklíčové startování s tlačítky na klikách dveří, starší SX4 a Grand Vitara s ním používaly místo tlačítka otočný knoflík zapalování. Nabídku doplňují Swace a Across, sesterské modely Toyoty Corolla a RAV4. Otevřeme kterékoli Suzuki – v Praze a okolí 24 hodin denně, beze škod a za cenu, kterou znáte předem."
     ],
     lockTech: [
       {
@@ -392,10 +392,10 @@ export const brandPagesB: BrandPage[] = [
       },
       {
         title: "Zamčení po 30 sekundách",
-        text: "Pokud po odemčení dálkovým ovladačem do zhruba 30 sekund neotevřete žádné dveře, Vitara se automaticky znovu zamkne. Dvojím stiskem zamykacího tlačítka do tří sekund se navíc zapíná dead lock, při kterém nejdou dveře otevřít ani zevnitř."
+        text: "Pokud po odemčení dálkovým ovladačem zhruba do 30 sekund neotevřete žádné dveře, Vitara se automaticky znovu zamkne. Dvojím stiskem zamykacího tlačítka do tří sekund se navíc zapíná dead lock, při kterém nejdou dveře otevřít ani zevnitř."
       }
     ],
-    emergencyTip: "Vysuňte z ovladače nouzový klíč a odemkněte jím dveře řidiče přímo v zámku. Když ovladač nereaguje, vyměňte baterii, která vydrží zhruba dva roky, a nikdy nezamykejte vůz režimem dead lock, pokud je někdo uvnitř.",
+    emergencyTip: "Vysuňte z ovladače nouzový klíč a odemkněte jím dveře řidiče přímo v zámku. Když ovladač nereaguje, vyměňte baterii, která vydrží zhruba dva roky. A pamatujte: režimem dead lock nikdy nezamykejte vůz, ve kterém někdo zůstal.",
     situations: [
       "Ovladač zůstal v kufru Vitary a vůz zamkl druhý klíč",
       "Klíče zabouchnuté ve starší SX4 nebo Swiftu",
@@ -405,11 +405,11 @@ export const brandPagesB: BrandPage[] = [
     faq: [
       {
         question: "Proč Vitara pípá a nejde zamknout tlačítkem na klice?",
-        answer: "Bzučák a nezamčení znamenají, že systém našel ovladač uvnitř vozu – Suzuki vás tak chrání před zabouchnutím klíče. Ovladač si vezměte a zamkněte znovu. Pokud se auto přesto zamklo a klíč zůstal uvnitř, například druhým ovladačem, přijedeme nonstop a otevřeme bez poškození."
+        answer: "Bzučák a nezamčené dveře znamenají, že systém našel ovladač uvnitř vozu – Suzuki vás tak chrání před zabouchnutím klíče. Ovladač si vezměte a zamkněte znovu. Pokud se auto přesto zamklo – třeba druhým ovladačem – a klíč zůstal uvnitř, zavolejte nám."
       },
       {
         question: "Otevřete i Suzuki Swace nebo Across?",
-        answer: "Ano. Swace a Across jsou sesterské modely Toyoty Corolla Touring Sports a RAV4 plug-in hybrid, takže technicky vycházejí z Toyoty. Na otevření bez poškození to nic nemění – přijedeme nonstop v Praze a okolí a cenu sdělíme předem."
+        answer: "Ano. Swace a Across jsou sesterské modely Toyoty Corolla Touring Sports a RAV4 plug-in hybrid, takže technicky vycházejí z Toyoty. Na otevření to nic nemění – poradíme si s nimi stejně jako s ostatními vozy Suzuki."
       }
     ]
   }

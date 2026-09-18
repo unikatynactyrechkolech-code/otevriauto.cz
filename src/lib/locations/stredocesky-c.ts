@@ -50,8 +50,8 @@ export const locationsC: Location[] = [
     parts: ["Příbram", "Březové Hory", "Zdaboř", "Brod", "Bytíz", "Jesenice", "Kozičín", "Lazec", "Orlov", "Zavržice", "Žežice"],
     headline: "Svatá Hora, Březové Hory a brána do Brd",
     intro: [
-      "Poutníci, výletníci mířící do Brd i místní na nákupech – v Příbrami se parkuje prakticky pořád. Na placeném parkovišti pod Svatou Horou se klíč snadno zaklapne v kufru ve chvíli, kdy se chystáte vystoupat po krytém schodišti k bazilice. Na náměstí T. G. Masaryka nebo na náměstí 17. listopadu zase stačí chvilka nepozornosti a ovladač zůstane ležet na sedadle zamčeného auta.",
-      "Otevíráme vozy také u Oblastní nemocnice v ulici Gen. Tesaříka, na Březových Horách u Hornického muzea nebo v obchodní zóně na Zdaboři v Brodské ulici. Poradíme si s vybitou baterií klíče, zamrzlým zámkem po mrazivé noci na sídlišti i s poruchou centrálního zamykání u aut s bezklíčovým přístupem. Jezdíme nonstop po celé Příbrami včetně místních částí Brod, Bytíz a Orlov, auto otevřeme bez poškození a cenu řekneme předem."
+      "Poutníci, výletníci mířící do Brd i místní, kteří si jedou nakoupit – v Příbrami se parkuje prakticky pořád. Na placeném parkovišti pod Svatou Horou se klíč snadno zaklapne v kufru ve chvíli, kdy se chystáte vystoupat po krytém schodišti k bazilice. Na náměstí T. G. Masaryka nebo na náměstí 17. listopadu zase stačí chvilka nepozornosti a ovladač zůstane ležet na sedadle zamčeného auta.",
+      "Otevíráme vozy také u Oblastní nemocnice v ulici Gen. Tesaříka, na Březových Horách u Hornického muzea nebo v obchodní zóně na Zdaboři v Brodské ulici. Poradíme si s vybitou baterií klíče, zamrzlým zámkem po mrazivé noci na sídlišti i s poruchou centrálního zamykání u aut s bezklíčovým přístupem. Přijedeme kamkoli po Příbrami včetně Brodu, Bytíze a Orlova, ve dne i v noci, a auto otevřeme bez poškození."
     ],
     hotspots: [
       "Parkoviště pod Svatou Horou",
@@ -76,8 +76,8 @@ export const locationsC: Location[] = [
     parts: ["Benešov", "Konopiště", "Úročnice", "Mariánovice", "Okrouhlice", "Chvojen", "Bedrč", "Boušice", "Buková Lhota", "Radíkovice", "Pomněnice", "Vidlákova Lhota"],
     headline: "zámek Konopiště, nádraží a Masarykovo náměstí",
     intro: [
-      "Kdo dojíždí z Benešova vlakem do Prahy, nechává auto často v parkovacím domě u nádraží Benešov u Prahy, hned vedle autobusového terminálu. Ranní spěch, telefon v jedné ruce, taška v druhé – a klíč zůstane za zabouchnutými dveřmi. Stejně rychle se to stane na Masarykově náměstí při krátkém zastavení u polikliniky. Auto otevřeme nonstop a bez poškození zámku, těsnění i elektroniky, ať jde o starší vůz, nebo model s bezklíčovým přístupem.",
-      "Druhou tváří Benešova jsou výletníci. Rodiny nechávají auta na placených parkovištích pod zámkem Konopiště a vyrážejí do parku nebo do Růžové zahrady – klíč se přitom snadno zaklapne v kufru spolu s kočárkem. Vyjíždíme také k Nemocnici Rudolfa a Stefanie a do místních částí Úročnice, Mariánovice nebo Okrouhlice. Poradíme si s vybitou baterií ovladače, zamrzlým zámkem, poruchou centrálního zamykání i s dodávkou, cenu znáte předem."
+      "Kdo dojíždí z Benešova vlakem do Prahy, často nechává auto v parkovacím domě u nádraží Benešov u Prahy, hned vedle autobusového terminálu. Ranní spěch, telefon v jedné ruce, taška v druhé – a klíč zůstane za zabouchnutými dveřmi. Stejně rychle se to stane na Masarykově náměstí při krátkém zastavení u polikliniky. Přijedeme ve dne i v noci a auto otevřeme bez poškození zámku, těsnění i elektroniky, ať jde o starší vůz, nebo model s bezklíčovým přístupem.",
+      "Druhou tváří Benešova jsou výletníci. Rodiny nechávají auta na placených parkovištích pod zámkem Konopiště a vyrážejí do parku nebo do Růžové zahrady – klíč se přitom snadno zaklapne v kufru spolu s kočárkem. Vyjíždíme také k Nemocnici Rudolfa a Stefanie a do Úročnice, Mariánovic nebo Okrouhlice. Poradíme si s vybitou baterií ovladače, zamrzlým zámkem i poruchou centrálního zamykání, u osobních aut stejně jako u dodávek, a cenu znáte předem."
     ],
     hotspots: [
       "Parkovací dům u nádraží",
@@ -102,7 +102,7 @@ export const locationsC: Location[] = [
     headline: "zámecký park, Žižkovo náměstí a údolí Blanice",
     intro: [
       "Do Vlašimi se jezdí hlavně kvůli zámeckému parku podél Blanice a Muzeu Podblanicka. Auto zůstane na malém parkovišti před branou parku, bunda s klíči poputuje na poslední chvíli do kufru a dveře se zamknou. Takový výlet nemusí skončit čekáním na náhradní klíč z domova – stačí zavolat. Vůz otevřeme bez poškození a vy se můžete vrátit na procházku k čínskému pavilonu nebo pokračovat v cestě.",
-      "Ve všední dny ve Vlašimi řešíme spíš dojíždění za prací a běžné pochůzky. Auta stojí na Žižkově a Husově náměstí, u polikliniky nebo u areálu Sellier & Bellot a v zimě umí potrápit zamrzlý zámek či vybitá baterie klíče. Pomůžeme i v místních částech Domašín, Znosim, Bolina nebo Polánka, ať jde o osobní auto, dodávku, nebo vůz s bezklíčovým přístupem. Jezdíme nonstop a cenu sdělíme předem."
+      "Ve všední dny se ve Vlašimi jezdí spíš do práce a po běžných pochůzkách. Auta stojí na Žižkově a Husově náměstí, u polikliniky nebo u areálu Sellier & Bellot a v zimě je umí potrápit zamrzlý zámek či vybitá baterie klíče. Pomůžeme i v místních částech, jako jsou Domašín, Znosim, Bolina nebo Polánka, ať jde o osobní auto, dodávku, nebo vůz s bezklíčovým přístupem. Přijedeme kdykoli a o ceně víte předem."
     ],
     hotspots: [
       "Žižkovo náměstí",
@@ -115,7 +115,7 @@ export const locationsC: Location[] = [
     tip: "Placené stání na Žižkově a Husově náměstí a v Komenského ulici tvoří jeden celek, zaplacený čas tedy platí i po přeparkování. Máte-li telefon u sebe, prodlužte si stání přes aplikaci ClickPark nebo DoKapsy, než auto otevřeme.",
     faq: {
       question: "Zamkl jsem klíče v autě během procházky zámeckým parkem ve Vlašimi. Kam vás mám navést?",
-      answer: "Z vnější strany parku je před branou malé parkoviště. Řekněte nám, jestli stojíte tam, nebo u jiného vstupu do parku, a přidejte barvu a značku vozu. Technik auto otevře bez poškození a vy se můžete vrátit do parku."
+      answer: "Z vnější strany parku je před branou malé parkoviště. Řekněte nám, jestli stojíte tam, nebo u jiného vstupu do parku, a přidejte barvu a značku vozu. Technik auto otevře bez poškození a procházku pak můžete v klidu dokončit."
     }
   },
   {
@@ -127,8 +127,8 @@ export const locationsC: Location[] = [
     parts: ["Čelákovice", "Císařská Kuchyně", "Sedlčánky", "Záluží"],
     headline: "dojíždění vlakem, Labská stezka a tvrz",
     intro: [
-      "Čelákovice jsou městem dojíždějících – ráno se parkuje v parkovacím domě u nádraží nebo v ulicích pod ním a dál se pokračuje vlakem do Prahy. Když klíč zůstane v zapalování a souprava už přijíždí k nástupišti, zavolejte nám. Auto otevřeme v parkovacím domě i v zóně placeného stání pod nádražím, a to bez poškození dveří, těsnění a elektroniky, u osobních vozů i dodávek.",
-      "Mimo nádraží vyjíždíme k obchodům v Toušeňské ulici, na náměstí 5. května, k Městskému stadionu nebo k tvrzi s Městským muzeem. Oblíbená je i Labská stezka kolem zdymadla, kam se vyráží na kole – klíč od auta přitom snadno zůstane v kufru vedle pumpičky. Pomůžeme také v Záluží, Sedlčánkách a Císařské Kuchyni, s vybitou baterií klíče, zamrzlým zámkem i s vozy s bezklíčovým startováním. Nonstop a s cenou předem."
+      "Čelákovice jsou městem dojíždějících – ráno se parkuje v parkovacím domě u nádraží nebo v ulicích pod ním a dál se pokračuje vlakem do Prahy. Zůstal vám klíč v zapalování a souprava už přijíždí k nástupišti? Zavolejte nám. Auto otevřeme v parkovacím domě i v zóně placeného stání pod nádražím, bez poškození dveří, těsnění či elektroniky – osobní vůz stejně jako dodávku.",
+      "Mimo nádraží vyjíždíme k obchodům v Toušeňské ulici, na náměstí 5. května, k Městskému stadionu nebo k tvrzi s Městským muzeem. Oblíbená je i Labská stezka kolem zdymadla, po které se jezdí na kole – klíč od auta přitom snadno zůstane v kufru vedle pumpičky. Pomůžeme také v Záluží, Sedlčánkách a Císařské Kuchyni, ať jde o vybitou baterii klíče, zamrzlý zámek, nebo vůz s bezklíčovým startováním. Cenu se dozvíte předem."
     ],
     hotspots: [
       "Parkovací dům u nádraží",

@@ -10,8 +10,9 @@ import Footer from "@/components/Footer";
 import CallButton from "@/components/CallButton";
 import JsonLd from "@/components/JsonLd";
 import LocationFaq from "@/components/location/LocationFaq";
+import NearbyLocations from "@/components/location/NearbyLocations";
 import { travelAndPayment } from "@/lib/pricing";
-import { PRAGUE_ARRIVAL } from "@/lib/locations";
+import { PRAGUE_ARRIVAL, relatedLocations } from "@/lib/locations";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
 
@@ -76,13 +77,11 @@ export default function PricingPage() {
       <main className="flex-1">
         <PageHero
           title="Ceník"
-          subtitle="Otevření auta bez poškození od 900 Kč – cenu znáte vždy předem"
           breadcrumbs={[{ label: "Domů", href: "/" }]}
           arrival={PRAGUE_ARRIVAL}
           extraStat={{ label: "Výjezd Praha", value: "700 Kč" }}
           image={images.dashboard}
           imageAlt="Ceník otevírání aut"
-          secondaryCta={{ label: "Jak to funguje?", href: "#postup" }}
         />
 
         <section className="py-16 sm:py-24">
@@ -117,6 +116,11 @@ export default function PricingPage() {
 
         <LocationFaq title="Časté dotazy k cenám" items={faq} />
         <HowItWorks />
+        <NearbyLocations
+          title="Kam jezdíme"
+          description="Výběr lokalit v Praze a Středočeském kraji, kde auta otevíráme za stejné ceny"
+          locations={relatedLocations("cenik")}
+        />
         <CtaBanner />
         <Contact />
       </main>

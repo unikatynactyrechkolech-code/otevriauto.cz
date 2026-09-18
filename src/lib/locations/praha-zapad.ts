@@ -10,8 +10,8 @@ export const pragueWestLocations: Location[] = [
     parts: ["Bojanovice", "Malá Lečice", "Senešnice"],
     headline: "chaty v údolí Kocáby a lesní cesty",
     intro: [
-      "Bojanovice leží na zalesněném pahorku nad levým břehem Vltavy a jejich území sahá až do údolí Kocáby, kde je oblíbená chatařská oblast. Právě tady se klíče nejsnáz zabouchnou – při vykládání nákupu, při nakládání kufru před nedělním odjezdem nebo ve chvíli, kdy auto zůstane stát na lesní cestě u chaty. Přijedeme za vámi a vůz otevřeme bez poškození zámku, těsnění i laku.",
-      "Kromě samotných Bojanovic jezdíme i do Malé Lečice a Senešnice, které k obci patří, přestože leží odděleně za Bratřínovem. Otevíráme osobní auta všech značek, rodinná SUV i dodávky, ve kterých se na chatu vozí dřevo nebo nářadí. Pomůžeme také ve chvíli, kdy vybitá baterie v ovladači nechce auto odemknout nebo když po chladné noci v údolí zatuhne zámek dveří."
+      "Bojanovice leží na zalesněném pahorku nad levým břehem Vltavy a jejich území sahá až do údolí Kocáby, kde je oblíbená chatařská oblast. Právě tady se klíče nejsnáz zabouchnou – při vykládání nákupu, při nakládání kufru před nedělním odjezdem nebo ve chvíli, kdy auto zůstane stát na lesní cestě u chaty. Přijedeme za vámi a vůz otevřeme tak, aby zámek, těsnění ani lak neutrpěly.",
+      "Kromě samotných Bojanovic jezdíme i do Malé Lečice a Senešnice, které k obci patří, přestože leží odděleně za Bratřínovem. Otevíráme osobní auta všech značek, rodinná SUV i dodávky, ve kterých se na chatu vozí dřevo nebo nářadí. Pomůžeme i tehdy, když auto kvůli vybité baterii v ovladači nejde odemknout nebo když po chladné noci v údolí zatuhne zámek dveří."
     ],
     hotspots: ["Údolí Kocáby", "Lokalita V Kocábech", "Zastávka Bojanovice, Chaty", "Kaple sv. Františka z Assisi", "Malá Lečice"],
     tip: "Malá Lečice a Senešnice patří k Bojanovicím, ale od hlavní části obce je odděluje území Bratřínova. Při volání proto řekněte přesně, ve které části auto stojí, ať technik nemíří na opačnou stranu.",
@@ -36,7 +36,7 @@ export const pragueWestLocations: Location[] = [
     tip: "Černošice mají dvě železniční zastávky – Černošice a Černošice-Mokropsy. Pokud necháváte auto u vlaku, řekněte při volání, u které z nich stojí, ať technik nezamíří na opačný konec města.",
     faq: {
       question: "Otevřete auto, když klíče zůstaly v tašce v kufru u haly Věry Čáslavské?",
-      answer: "Určitě. Otevřeme dveře řidiče nebo rovnou zavazadlový prostor, abyste se ke klíči dostali. Postupujeme šetrně, bez poškození zámků, těsnění i elektroniky, takže po zásahu můžete z Černošic hned odjet."
+      answer: "Určitě. Otevřeme dveře řidiče nebo rovnou zavazadlový prostor, abyste se ke klíči dostali. Postupujeme tak šetrně, že zámky ani elektronika neutrpí a po zásahu můžete z Černošic hned odjet."
     }
   },
   {
@@ -93,7 +93,7 @@ export const pragueWestLocations: Location[] = [
     tip: "Souběžně s dálnicí D6 vede Hostivicí i ulice Československé armády, původní silnice na Karlovy Vary. Při volání upřesněte, zda stojíte ve městě, nebo u dálnice, protože příjezd k oběma místům je úplně jiný.",
     faq: {
       question: "Otevřete auto zaparkované u Hostivických rybníků?",
-      answer: "Ano. U rybníků se chodí na procházky se psy i s dětmi a klíč se snadno zabouchne při vykládání věcí z kufru. Řekněte nám, zda auto stojí u Litovického, Břevského rybníka, nebo u Kaly, a technik dojede co nejblíž."
+      answer: "Ano. U rybníků se chodí na procházky se psy i s dětmi a klíč se snadno zabouchne při vykládání věcí z kufru. Řekněte nám, zda auto stojí u Litovického rybníka, u Břevského, nebo u Kaly, a technik dojede co nejblíž."
     }
   },
   {
@@ -105,7 +105,7 @@ export const pragueWestLocations: Location[] = [
     parts: ["Jesenice", "Horní Jirčany", "Osnice", "Zdiměřice"],
     headline: "největší město okresu u Pražského okruhu",
     intro: [
-      "Jesenice je největší město okresu Praha-západ a v Osnici, Zdiměřicích i Horních Jirčanech stále přibývají nové ulice rodinných domů. Ráno se odtud vyjíždí přes Vestec do Prahy nebo na Pražský okruh, odpoledne se zaplní parkoviště u supermarketů. V obou situacích se klíče snadno zabouchnou, a proto vyjíždíme nonstop – auto otevřeme přímo na místě a bez poškození.",
+      "Jesenice je největší město okresu Praha-západ a v Osnici, Zdiměřicích i Horních Jirčanech stále přibývají nové ulice rodinných domů. Ráno se odtud vyjíždí přes Vestec do Prahy nebo na Pražský okruh, odpoledne se zaplní parkoviště u supermarketů. V obou situacích se klíče snadno zabouchnou – vyjíždíme proto ve dne i v noci a auto otevřeme přímo na místě, bez poškození.",
       "Jezdíme do všech částí Jesenice včetně Kocandy a Mladíkova. Pomůžeme u sportovního areálu, u městského úřadu v Budějovické ulici i po procházce v průhonické oboře u Zdiměřic a Osnice. Otevíráme auta všech značek, rodinná SUV i dodávky řemeslníků, kteří pracují na stavbách v nových čtvrtích."
     ],
     hotspots: ["Exit 82 Jesenice na Pražském okruhu", "Budějovická ulice", "Sportovní areál Jesenice", "Městský úřad Jesenice", "Průhonická obora u Osnice"],
@@ -131,7 +131,7 @@ export const pragueWestLocations: Location[] = [
     tip: "Nádraží Jílové u Prahy neleží v centru, ale zhruba půldruhého kilometru jižně od náměstí v Kabátech. Pokud auto stojí u vlaku, řekněte to hned na začátku hovoru, ať technik nezamíří na Masarykovo náměstí.",
     faq: {
       question: "Dostanete se k autu u štol v údolí Kocour u Jílového?",
-      answer: "Ano, pokud k místu vede cesta, po které projede osobní auto. Když vůz stojí hlouběji v lese, domluvíme se na místě setkání u silnice a k autu dojdeme společně. Otevření je šetrné a bez poškození."
+      answer: "Ano, pokud k místu vede cesta, po které projede osobní auto. Když vůz stojí hlouběji v lese, domluvíme se na místě setkání u silnice a k autu dojdeme společně. Otevřeme ho pak šetrně."
     }
   },
   {
@@ -150,7 +150,7 @@ export const pragueWestLocations: Location[] = [
     tip: "Na lesních parkovištích pod Brdy v zimě snadno zamrzne zámek i těsnění dveří. Nelijte na ně horkou vodu a neotáčejte klíčem silou – zlomený klíč v zámku situaci jen zhorší.",
     faq: {
       question: "Otevřete auto i na odpočívce Mníšek na dálnici D4?",
-      answer: "Můžeme. Při volání uveďte směr jízdy, tedy zda jedete na Prahu, nebo na Příbram, ať technik najede na správnou stranu dálnice. Do příjezdu čekejte v bezpečí mimo jízdní pruhy a mimo prostor, kudy projíždějí kamiony."
+      answer: "Ano, přijedeme i tam. Při volání uveďte směr jízdy, tedy zda jedete na Prahu, nebo na Příbram, ať technik najede na správnou stranu dálnice. Do příjezdu čekejte v bezpečí mimo jízdní pruhy a mimo prostor, kudy projíždějí kamiony."
     }
   },
   {
@@ -188,7 +188,7 @@ export const pragueWestLocations: Location[] = [
     tip: "Když z Řevnic vyrážíte pěšky na Hřebeny, noste klíč od auta v zapínací kapse, ne volně v bundě, kterou si cestou svléknete. Ztracený klíč se v lese hledá špatně – auto vám ale otevřeme i bez něj.",
     faq: {
       question: "Otevřete auto po večerním představení v Lesním divadle v Řevnicích?",
-      answer: "Ano, jezdíme nonstop, tedy i pozdě večer. Řekněte nám, ve které ulici vůz stojí, a počkejte u něj. Auto otevřeme šetrně, bez poškození dveří i elektroniky, a můžete v klidu odjet domů."
+      answer: "Ano, jezdíme nonstop, tedy i pozdě večer. Řekněte nám, ve které ulici vůz stojí, a počkejte u něj. Auto otevřeme šetrně a vy pak můžete v klidu odjet domů."
     }
   },
   {
@@ -219,14 +219,14 @@ export const pragueWestLocations: Location[] = [
     parts: ["Rudná", "Dušníky", "Hořelice"],
     headline: "logistické areály u exitu 5 na D5",
     intro: [
-      "Rudná vznikla spojením Dušník a Hořelic a dnes je to město u dálnice D5, jehož jihozápadní část tvoří rozsáhlá komerční a skladová zóna. Za prací sem dojíždějí lidé z Prahy i širokého okolí a v ulicích areálů stojí firemní dodávky vedle osobních aut zaměstnanců. Zabouchnuté klíče v kabině i zamčený vůz na odstavném parkovišti otevřeme bez poškození.",
-      "Dušníky a Hořelice jsou díky blízkosti Prahy vyhledávané i k bydlení a mnoho místních dojíždí po D5 nebo vlakem z nádraží Rudná u Prahy či ze zastávky u středu Dušník. Otevíráme auta všech značek a pomůžeme i s vybitou baterií klíče nebo poruchou centrálního zamykání. Vyjíždíme nonstop a cenu řekneme předem."
+      "Rudná vznikla spojením Dušník a Hořelic a dnes je to město u dálnice D5, jehož jihozápadní část tvoří rozsáhlá komerční a skladová zóna. Za prací sem dojíždějí lidé z Prahy i širokého okolí a v ulicích areálů stojí firemní dodávky vedle osobních aut zaměstnanců. Dodávku se zabouchnutými klíči v kabině i zamčené auto na odstavném parkovišti otevřeme bez poškození.",
+      "Dušníky a Hořelice jsou díky blízkosti Prahy vyhledávané i k bydlení a mnoho místních dojíždí po D5 nebo vlakem z nádraží Rudná u Prahy či ze zastávky poblíž středu Dušník. Otevíráme auta všech značek a pomůžeme i s vybitou baterií v klíči nebo s poruchou centrálního zamykání. Vyjíždíme nonstop a cenu znáte předem."
     ],
     hotspots: ["Exit 5 Rudná na D5", "Komerční zóna Rudná", "Nádraží Rudná u Prahy", "Rudná zastávka", "Havlíčkovo náměstí", "Náměstí Svobody"],
     tip: "Pokud vaše auto stojí v uzavřeném areálu komerční zóny s vrátnicí nebo závorou, domluvte technikovi vjezd u ostrahy předem. Nebude pak čekat před branou a k vozu se dostane hned.",
     faq: {
       question: "Otevřete v Rudné i firemní dodávku s klíči zamčenými v kabině?",
-      answer: "Ano. Otevíráme dodávky a užitkové vozy všech značek. Zpřístupníme kabinu, odkud si klíč vezmete, takže nákladový prostor ani zboží uvnitř nijak nepoškodíme. Při volání uveďte název firmy nebo areálu v komerční zóně."
+      answer: "Ano. Otevíráme dodávky a užitkové vozy všech značek. Otevřeme jen kabinu, ze které si klíč vezmete, takže nákladový prostor i zboží zůstanou nedotčené. Při volání uveďte název firmy nebo areálu v komerční zóně."
     }
   },
   {
@@ -276,7 +276,7 @@ export const pragueWestLocations: Location[] = [
     parts: ["Davle", "Sázava", "Sloup"],
     headline: "soutok Vltavy a Sázavy a chatové osady",
     intro: [
-      "Davle leží přímo na soutoku Vltavy a Sázavy a v rekreační sezóně se počet lidí v obci několikanásobně zvýší díky chatařům a výletníkům. Auta pak parkují u náměstí, u nádraží mezi oběma mosty, v maríně i u chat na Sloupu, v Libřici nebo Račanech. Když se klíče zabouchnou nebo baterie v ovladači vypoví službu, nemusíte hledat servis v okolí – otevřeme vůz na místě, kde stojí.",
+      "Davle leží přímo na soutoku Vltavy a Sázavy a v rekreační sezoně se tu díky chatařům a výletníkům počet lidí několikanásobně zvýší. Auta pak stojí u náměstí, u nádraží mezi oběma mosty, v maríně i u chat na Sloupu, v Libřici nebo v Račanech. Když se klíče zabouchnou nebo baterie v ovladači vypoví službu, nemusíte hledat servis v okolí – otevřeme vůz na místě, kde stojí.",
       "Davlí prochází silnice z Prahy do Štěchovic a po mostu Vltavanů navazuje silnice do Jílového u Prahy, takže tudy jezdí i řidiči z Posázaví. Pomáháme u kostela sv. Kiliána na jihu obce, v části Sázava na pravém břehu i u cest k soutoku. Otevíráme osobní auta, dodávky i vozy s bezklíčovým přístupem, vždy s cenou domluvenou předem."
     ],
     hotspots: ["Nádraží Davle", "Most Vltavanů", "Náměstí v Davli", "Marina Davle", "Kostel sv. Kiliána"],
@@ -295,14 +295,14 @@ export const pragueWestLocations: Location[] = [
     parts: ["Horoměřice"],
     headline: "zámek, Velvarská silnice a Kozí hřbety",
     intro: [
-      "Horoměřice leží hned za severozápadní hranicí Prahy u Suchdola a Nebušic. Hlavní tepnou je Velvarská ulice, kudy se jezdí z Prahy na Kralupy nad Vltavou, a z obce vede i silnice směrem k letišti. Když se klíče zabouchnou doma před odjezdem nebo na parkovišti u obchodu, stačí zavolat – auto otevřeme bez poškození dveří i zámku.",
+      "Horoměřice leží hned za severozápadní hranicí Prahy u Suchdola a Nebušic. Hlavní tepnou je Velvarská ulice, kudy se jezdí z Prahy na Kralupy nad Vltavou, a z obce vede i silnice směrem k letišti. Když se klíče zabouchnou před domem těsně před odjezdem nebo na parkovišti u obchodu, stačí zavolat – auto otevřeme bez poškození dveří i zámku.",
       "V obci je základní škola, zdravotní středisko, pošta i stanice technické kontroly a auta tu parkují od rána do večera. Pomůžeme u zámku, u supermarketu Lidl poblíž Suchdolské ulice, u hotelu Modrá Stodola i u rybníka Pod Luky. Otevíráme osobní auta, SUV i dodávky, včetně vozů s bezklíčovým přístupem."
     ],
     hotspots: ["Velvarská ulice", "Zámek Horoměřice", "Supermarket Lidl u Suchdolské", "Modrá Stodola", "Rybník Pod Luky", "Kozí hřbety"],
     tip: "Velvarská ulice je hlavní tah z Prahy na Kralupy nad Vltavou. Pokud se vám klíče zabouchnou v autě, které stojí přímo u ní, čekejte na technika na chodníku nebo na parkovišti, ne u vozu ve vozovce.",
     faq: {
       question: "Pomůžete, když se mi klíče zabouchnou u stanice technické kontroly v Horoměřicích?",
-      answer: "Ano. Auto otevřeme přímo na místě, bez poškození dveří i zámku, takže prohlídku můžete dokončit nebo odjet. Při volání řekněte, že stojíte u STK, a pokud vůz blokuje stání, dejte vědět obsluze."
+      answer: "Ano. Auto otevřeme přímo na místě, takže prohlídku můžete dokončit nebo odjet. Při volání řekněte, že stojíte u STK, a pokud vůz blokuje stání, dejte vědět obsluze."
     }
   },
   {
@@ -315,7 +315,7 @@ export const pragueWestLocations: Location[] = [
     headline: "zámek, outlet a parkoviště u letiště",
     intro: [
       "Tuchoměřice leží v údolí Únětického potoka kousek od Letiště Václava Havla a od dálnice D7 s exitem 3 Kněževes. Na jejich území stojí nákupní centrum POP Airport s krytým zábavním parkem Majaland i parkoviště pro cestující na letiště. Zabouchnuté klíče nebo vybitý ovladač těsně před odletem či po návratu z dovolené vyřešíme nonstop a bez poškození.",
-      "V obci samotné pomáháme u zámku s kostelem sv. Víta, u železniční zastávky na trati od Hostivice i v Kněživce. Otevíráme osobní auta všech značek, rodinná SUV i dodávky, šetrně k zámkům a těsnění. Když se vrátíte z cesty a auto po týdnech na parkovišti nechce odemknout kvůli vybité baterii nebo zamrzlému zámku, přijedeme také."
+      "V obci samotné pomáháme u zámku s kostelem sv. Víta, u železniční zastávky na trati od Hostivice i v Kněživce. Otevíráme osobní auta všech značek, rodinná SUV i dodávky, šetrně k zámkům a těsnění. Přijedeme i tehdy, když se vrátíte z cesty a auto po týdnech na parkovišti kvůli vybité baterii nebo zamrzlému zámku nejde odemknout."
     ],
     hotspots: ["POP Airport", "Majaland Praha", "Parkoviště GO Parking", "Zámek Tuchoměřice", "Zastávka Tuchoměřice", "Exit 3 Kněževes na D7"],
     tip: "Parkoviště u letiště v Tuchoměřicích mají více sektorů označených písmeny. Když auto odstavujete, poznamenejte si písmeno sektoru – technik vás pak nebude hledat mezi řadami.",
@@ -333,7 +333,7 @@ export const pragueWestLocations: Location[] = [
     parts: ["Únětice"],
     headline: "pivovar, údolí potoka a Holý vrch",
     intro: [
-      "Únětice jsou malá obec v údolí Únětického potoka, kam o víkendech jezdí výletníci z Prahy – do Únětického pivovaru, na procházku údolím do Roztok nebo na Holý vrch, podle kterého se jmenuje únětická kultura. Historické jádro obce leží ve svahu a auta stojí v úzkých ulicích. I v úzké uličce ve svahu se k autu dostaneme a zabouchnuté dveře otevřeme bez poškození.",
+      "Únětice jsou malá obec v údolí Únětického potoka, kam o víkendech jezdí výletníci z Prahy – do Únětického pivovaru, na procházku údolím do Roztok nebo na Holý vrch, podle kterého se jmenuje únětická kultura. Historické jádro obce leží ve svahu a auta stojí v úzkých uličkách – i tam se k vozu dostaneme a zabouchnuté dveře otevřeme bez poškození.",
       "Vlak do Únětic nejezdí, nejbližší stanice je v Roztokách, a tak sem mnoho návštěvníků přijíždí autem nebo autobusem. Pomůžeme u pivovaru v Rýznerově ulici, u kostela Nanebevzetí Panny Marie i u Alšovy vyhlídky. Otevíráme auta všech značek, ať jde o zabouchnuté klíče, ztracený klíč, nebo porouchané centrální zamykání."
     ],
     hotspots: ["Únětický pivovar", "Kostel Nanebevzetí Panny Marie", "Holý vrch", "Údolí Únětického potoka", "Alšova vyhlídka"],
@@ -390,7 +390,7 @@ export const pragueWestLocations: Location[] = [
     parts: ["Slapy", "Přestavlky", "Záhoří", "Skalice", "Ždáň"],
     headline: "přehrada, kempy a letní lodní doprava",
     intro: [
-      "Slapy jsou vyhledávaným cílem u Slapské přehrady – v létě sem jezdí rodiny do kempů ve Skalici a na Ždáni, na výletní lodě i na golf. Auto pak celý den stojí u vody nebo u chaty a zabouchnuté klíče či klíč ztracený při koupání dokážou výlet pořádně zkomplikovat. Technik přijede za vámi a vůz otevře bez poškození zámků, těsnění i laku.",
+      "Slapy jsou vyhledávaným cílem u Slapské přehrady – v létě sem jezdí rodiny do kempů ve Skalici a na Ždáni, na výletní lodě i na golf. Auto pak celý den stojí u vody nebo u chaty a zabouchnuté klíče či klíč ztracený při koupání dokážou výlet pořádně zkomplikovat. Technik přijede za vámi až k vodě a auto otevře šetrně, bez škrábanců.",
       "Kromě samotné obce jezdíme do Přestavlk, Záhoří i do chatových oblastí u vody včetně Letoviska Slapy. Pomůžeme u přístavišť Skalice a Ždáň, u Motorestu Slapy, u zámku na jižním okraji obce i u golfového areálu. Otevíráme osobní auta, SUV i dodávky, ať jde o starší vůz, nebo moderní model s bezklíčovým přístupem."
     ],
     hotspots: ["Slapská přehrada", "Autokemp Slapy Skalice", "Autocamp Ždáň", "Přístaviště Skalice", "Golf Park Slapy Svatý Jan", "Motorest Slapy"],
@@ -428,8 +428,8 @@ export const pragueWestLocations: Location[] = [
     parts: ["Vestec", "Šátalka"],
     headline: "Vídeňská, BIOCEV a napojení na Pražský okruh",
     intro: [
-      "Vestec leží hned za jižní hranicí Prahy u Vídeňské ulice a Vestecké spojky, která navazuje na Pražský okruh. Podél silnice II/603 vyrostla komerční zóna, kam lidé zajíždějí na nákup i za prací, a právě na parkovištích se klíče zabouchnou nejsnáz. Ve Vestci otevíráme auta nonstop a bez poškození, ať stojíte u obchodu, u firmy, nebo před domem.",
-      "Každý den sem míří také vědci a studenti do biotechnologického centra BIOCEV a o víkendu lidé do sportovního a rekreačního areálu u Vesteckého rybníka s cyklostezkami. Klíč odložený v kufru při vykládání kola nebo sportovní tašky pak zůstane nedostupný. Pomůžeme ve Vestci i na Šátalce s osobním autem, dodávkou i vozem s bezklíčovým přístupem a cenu řekneme předem."
+      "Vestec leží hned za jižní hranicí Prahy u Vídeňské ulice a Vestecké spojky, která navazuje na Pražský okruh. Podél silnice II/603 vyrostla komerční zóna, kam lidé zajíždějí na nákup i za prací, a právě na parkovištích se klíče zabouchnou nejsnáz. Auta tu otevíráme nonstop a bez poškození, ať stojíte u obchodu, u firmy, nebo před domem.",
+      "Každý den sem míří také vědci a studenti do biotechnologického centra BIOCEV a o víkendu lidé do sportovního a rekreačního areálu u Vesteckého rybníka s cyklostezkami. Klíč odložený v kufru při vykládání kola nebo sportovní tašky pak zůstane nedostupný. Na Šátalce i v celém Vestci pomůžeme s osobním autem, dodávkou i vozem s bezklíčovým přístupem a cenu řekneme předem."
     ],
     hotspots: [
       "Biotechnologické centrum BIOCEV",

@@ -7,8 +7,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["Octavia", "Fabia", "Superb", "Rapid", "Kodiaq", "Karoq", "Felicia", "Yeti", "Kamiq", "Scala", "Roomster", "Enyaq"],
     headline: "Octavia, Fabia, Superb i systém KESSY",
     intro: [
-      "Škoda je na českých silnicích zdaleka nejrozšířenější značkou, takže není divu, že se zabouchnuté klíče často týkají právě Octavie, Fabie nebo Superbu. Stačí klíč na chvíli odložený v kufru, vybitá baterie v ovladači nebo nepozornost při tankování. Otevíráme nonstop a bez poškození novou Škodu Octavia z Mladé Boleslavi stejně jako starší Rapid, Yeti nebo Felicii, které po Praze a okolí jezdí dodnes. Cenu vám sdělíme předem.",
-      "U novějších modelů Škoda, jako jsou Kodiaq, Karoq, Kamiq nebo elektrický Enyaq, bývá často ve výbavě bezklíčový systém KESSY. Pohodlí má ale i stinnou stránku: klíč nosíte v kapse, a tak snadno zapomenete, kam jste ho při nakládání odložili. Vůz otevřeme tak, aby zámky, elektronika i lak zůstaly v původním stavu. Pokud jste klíč ztratili úplně, nový vám vyrobí autorizovaný servis Škoda.",
+      "Škoda je na českých silnicích zdaleka nejrozšířenější značkou, a tak se zabouchnuté klíče pochopitelně často týkají právě Octavie, Fabie nebo Superbu. Stačí klíč na chvíli odložený v kufru, vybitá baterie v ovladači nebo chvilka nepozornosti při tankování. Přijedeme nonstop k nové Octavii z Mladé Boleslavi stejně jako ke staršímu Rapidu, Yeti nebo Felicii, které po Praze a okolí jezdí dodnes, a cenu vám řekneme předem.",
+      "Novější modely, jako jsou Kodiaq, Karoq, Kamiq nebo elektrický Enyaq, mívají ve výbavě bezklíčový systém KESSY. Pohodlí má ale i stinnou stránku: klíč nosíte v kapse, a tak snadno zapomenete, kam jste ho při nakládání odložili. I takový vůz otevřeme tak, aby zámky, elektronika i lak zůstaly v původním stavu. Pokud jste klíč ztratili úplně, nový vám vyrobí autorizovaný servis Škoda.",
     ],
     lockTech: [
       {
@@ -21,7 +21,7 @@ export const brandPagesA: BrandPage[] = [
       },
       {
         title: "Skrytá vložka zámku",
-        text: "Na dveřích řidiče novějších modelů klasický zámek na první pohled nevidíte. Vložka je schovaná pod plastovou krytkou na konci kliky, která má ve spodní části otvor pro planžetu klíče. Starší Fabie, Octavie nebo Felicie mají zámek na klice viditelný.",
+        text: "U novějších modelů klasický zámek na dveřích řidiče na první pohled neuvidíte. Vložka je schovaná pod plastovou krytkou na konci kliky, která má ve spodní části otvor pro planžetu klíče. Starší Fabie, Octavie nebo Felicie mají zámek na klice viditelný.",
       },
     ],
     emergencyTip: "Vyjměte z klíče nouzovou planžetu a na klice dveří řidiče najděte krytku zámku – ve spodní části má otvor, do kterého planžetu zasunete a krytku opatrně vypáčíte směrem nahoru. Pod ní je klasická vložka, kterou vůz odemknete. Pokud klíč nereaguje, vyměňte baterii v ovladači, případně zkuste náhradní klíč z domova.",
@@ -34,11 +34,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Otevřete Octavii s KESSY, když je klíč zamčený uvnitř?",
-        answer: "Ano. Octavii i další modely Škoda s bezklíčovým systémem KESSY otevíráme nonstop a bez poškození zámků, těsnění či elektroniky. Klíč si pak jen vyzvednete z kabiny nebo z kufru a můžete pokračovat v cestě. Cenu vám sdělíme předem.",
+        answer: "Ano. S KESSY si poradíme u Octavie i u dalších modelů Škoda. Klíč si pak jen vyzvednete z kabiny nebo z kufru a můžete pokračovat v cestě.",
       },
       {
         question: "Proč u zamčené Škody nefungují ani vnitřní kliky?",
-        answer: "Jde o systém SAFE: po zamknutí vyřadí vnitřní kliky, takže zloději nepomůže ani rozbité okno – a vám by jen přidalo škodu. Sklo proto nerozbíjejte. Pokud je uvnitř dítě nebo zvíře a hrozí nebezpečí, volejte ihned 112, jinak vůz otevřeme bez poškození.",
+        answer: "Jde o systém SAFE: po zamknutí vyřadí vnitřní kliky, takže zloději nepomůže ani rozbité okno – a vám by jen přidělalo další škodu. Sklo proto nerozbíjejte. Pokud je uvnitř dítě nebo zvíře a hrozí nebezpečí, volejte ihned 112. V ostatních případech zavolejte nám – vůz otevřeme a sklo zůstane celé.",
       },
     ],
   },
@@ -49,8 +49,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["Golf", "Passat", "Polo", "Tiguan", "Touran", "Caddy", "Sharan", "T-Roc", "Touareg", "Transporter", "up!", "ID.4"],
     headline: "od Golfu po Tiguan s Keyless Access",
     intro: [
-      "Volkswagen patří v Česku k nejčastějším značkám – mezi novými auty i mezi ojetinami dovezenými ze zahraničí. Není proto divu, že se zabouchnuté klíče často týkají i majitelů Golfu, Passatu, Pola nebo Tiguanu. Otevíráme starší Passaty s vyklápěcím klíčem stejně jako nejnovější Passat, který se vyrábí v Bratislavě spolu se Škodou Superb – a u všech vozů VW bez poškození.",
-      "Moderní Volkswageny s Keyless Access odemknete pouhým uchopením kliky, klíč přitom zůstává v kapse. Právě tohle pohodlí ale vede k typickým situacím: klíč odložený v kufru, ovladač s vybitou baterií nebo spěch, při kterém klíč zůstane na sedadle Touranu. Volkswagen otevřeme bez poškození zámků i laku, nonstop a za cenu, kterou znáte předem.",
+      "Volkswagen patří v Česku k nejčastějším značkám – mezi novými auty i mezi ojetinami dovezenými ze zahraničí. Se zabouchnutými klíči se proto často potýkají i majitelé Golfu, Passatu, Pola nebo Tiguanu. Starší Passat s vyklápěcím klíčem otevřeme stejně šetrně jako ten nejnovější, který se vyrábí v Bratislavě spolu se Škodou Superb.",
+      "Moderní Volkswageny s Keyless Access odemknete pouhým uchopením kliky a klíč přitom zůstává v kapse. Právě tohle pohodlí ale vede k typickým situacím: klíč odložený v kufru, ovladač s vybitou baterií nebo spěch, při kterém klíč zůstane ležet na sedadle Touranu. Přijedeme ve dne i v noci a cenu vám řekneme dřív, než se do práce pustíme.",
     ],
     lockTech: [
       {
@@ -66,7 +66,7 @@ export const brandPagesA: BrandPage[] = [
         text: "Pojistka Safelock po zamknutí vyřadí vnitřní kliky, takže uvnitř nesmí nikdo zůstat. Vložka zámku dveří řidiče je u novějších modelů schovaná pod krytkou na klice, kterou lze sejmout planžetou klíče zasunutou zespodu do otvoru.",
       },
     ],
-    emergencyTip: "Vyklopte planžetu z klíče, zasuňte ji zespodu do otvoru krytky na klice dveří řidiče a krytku nadzvedněte – pod ní je vložka zámku. Po mechanickém odemčení se při otevření dveří může rozeznít alarm, který ztichne, jakmile zapnete zapalování. Nefunguje-li ani to, zkuste náhradní klíč nebo novou baterii v ovladači.",
+    emergencyTip: "Vyklopte planžetu z klíče, zasuňte ji zespodu do otvoru krytky na klice dveří řidiče a krytku nadzvedněte – pod ní je vložka zámku. Po mechanickém odemčení se při otevření dveří může rozeznít alarm, který ztichne, jakmile zapnete zapalování. Pokud nepomůže ani to, zkuste náhradní klíč nebo novou baterii v ovladači.",
     situations: [
       "Klíč zůstal v kufru Golfu a víko se samo zamklo",
       "Vybitý ovladač Keyless Access, Tiguan nereaguje na kliku",
@@ -76,11 +76,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Může se klíč zamknout v kufru Volkswagenu s Keyless Access?",
-        answer: "Ano. Podle návodu k obsluze se víko zavazadlového prostoru po zavření automaticky zamkne, i když v kufru leží platný klíč. Nenechávejte proto klíč na krytu zavazadel. Pokud se to už stalo a náhradní klíč nemáte po ruce, otevřeme Volkswagen nonstop a bez poškození.",
+        answer: "Ano. Podle návodu k obsluze se víko zavazadlového prostoru po zavření automaticky zamkne, i když v kufru leží platný klíč. Nenechávejte proto klíč na krytu zavazadel. Pokud už se to stalo a náhradní klíč nemáte po ruce, zavolejte nám a Volkswagen otevřeme.",
       },
       {
         question: "Poškodí otevření Golfu nebo Passatu pojistku Safelock či alarm?",
-        answer: "Ne. Otevíráme bez poškození zámků, klik, těsnění i elektroniky, takže pojistka Safelock, alarm i Keyless Access fungují dál stejně jako předtím. Cenu vám sdělíme ještě předtím, než se do otevírání pustíme.",
+        answer: "Ne. Zámky, kliky, těsnění ani elektronika při otevírání neutrpí, takže pojistka Safelock, alarm i Keyless Access fungují dál stejně jako předtím.",
       },
     ],
   },
@@ -90,8 +90,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["A4", "A6", "A3", "Q5", "Q7", "A5", "Q3", "A8", "A1", "Q2", "Q8", "Q4 e-tron"],
     headline: "od A4 Avant po Q7 s komfortním klíčem",
     intro: [
-      "Audi A6 a A4 Avant jsou oblíbenými společníky lidí, kteří najezdí hodně kilometrů po dálnicích i po městě. Klíč zabouchnutý v kombi na dálničním odpočívadle nebo před kanceláří ale umí zkomplikovat den komukoli. Vozy Audi otevíráme nonstop a bez poškození, ať jde o starší A4 a A3, nebo o současné Q5 či Q7.",
-      "Novější Audi mají často komfortní klíč, díky kterému stačí vzít za kliku a vůz se odemkne, u vybraných modelů lze jako klíč použít i telefon. Elektronika ale nepomůže, když se vybije baterie v ovladači nebo když klíč zůstane v zamčeném kufru Q5. Takový vůz otevřeme bez stop na laku a skle, klíč si vezmete a Audi funguje dál jako dřív. Cenu znáte předem.",
+      "Audi A6 a A4 Avant si oblíbili hlavně lidé, kteří najezdí hodně kilometrů po dálnicích i po městě. Klíč zabouchnutý v kombi na dálničním odpočívadle nebo před kanceláří ale dokáže pokazit den komukoli. Poradíme si se starší A4 a A3 stejně jako se současnými Q5 či Q7, a to v kteroukoli hodinu.",
+      "Novější Audi mají často komfortní klíč: stačí vzít za kliku a vůz se odemkne. U vybraných modelů lze jako klíč použít i telefon. Elektronika ale nepomůže, když se v ovladači vybije baterie nebo když klíč zůstane v zamčeném kufru Q5. Takový vůz otevřeme bez stop na laku i skle, vy si vezmete klíč a můžete jet. Cenu se dozvíte předem.",
     ],
     lockTech: [
       {
@@ -100,7 +100,7 @@ export const brandPagesA: BrandPage[] = [
       },
       {
         title: "Audi connect key v telefonu",
-        text: "U vybraných modelů, například u elektrických e-tronů, může jako klíč sloužit telefon. Přiložíte ho ke klice dveří řidiče s anténou NFC a pro nastartování ho položíte do přihrádky Audi phone box. Vybitý telefon ale znamená i nedostupný klíč.",
+        text: "U vybraných modelů, například u elektrických e-tronů, může jako klíč sloužit telefon. Přiložíte ho ke klice dveří řidiče, ve které je anténa NFC, a pro nastartování ho položíte do přihrádky Audi phone box. Když se ale telefon vybije, přijdete tím i o klíč.",
       },
       {
         title: "Mechanický klíč v ovladači",
@@ -117,11 +117,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Otevřete Audi s komfortním klíčem, když klíč zůstal uvnitř?",
-        answer: "Ano, a to bez poškození – elektronika, zámky ani senzory v klikách tím nijak netrpí. Po otevření si klíč jednoduše vezmete a komfortní klíč i všechny další funkce fungují jako dřív. Jezdíme nonstop každý den a cenu vám sdělíme předem.",
+        answer: "Ano, a elektronika, zámky ani senzory v klikách přitom nijak neutrpí. Po otevření si klíč jednoduše vezmete a komfortní klíč i všechny další funkce fungují jako dřív.",
       },
       {
         question: "Co dělat, když se vybije telefon s Audi connect key?",
-        answer: "Audi connect key komunikuje přes NFC, takže s úplně vybitým telefonem se vůz obvykle odemknout nedá. Zkuste telefon dobít nebo použít klasický ovladač, který k vozu patří. Pokud je ovladač doma nebo zamčený uvnitř, přijedeme a Audi otevřeme bez poškození, nonstop a za cenu sdělenou předem.",
+        answer: "Audi connect key komunikuje přes NFC, takže s úplně vybitým telefonem se vůz obvykle odemknout nedá. Zkuste telefon dobít nebo použít klasický ovladač, který k vozu patří. Pokud je ovladač doma nebo zamčený uvnitř, přijedeme a Audi vám otevřeme.",
       },
     ],
   },
@@ -132,8 +132,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["Leon", "Ibiza", "Ateca", "Arona", "Toledo", "Alhambra", "Altea", "Tarraco", "Cupra Formentor", "Cupra Born"],
     headline: "Leon, Ibiza, Ateca i vozy Cupra",
     intro: [
-      "Seat je technicky blízký Škodě a Volkswagenu, a tak Leon, Ibiza nebo Ateca používají podobné klíče a zámky jako jejich koncernoví sourozenci. Zajímavost na okraj: čtvrtá generace Seatu Toledo se v letech 2012–2019 vyráběla v Mladé Boleslavi spolu se Škodou Rapid. Ať máte zabouchnuté klíče v Toledu, Ibize nebo rodinné Alhambře, otevřeme vůz nonstop a bez poškození.",
-      "Od roku 2018 je Cupra samostatnou značkou, přesto má s modely Seat mnoho společného. Formentor, elektrický Born nebo nový Leon mívají bezklíčový přístup, starší vozy klasický vyklápěcí klíč. Pro otevření na tom nezáleží – vůz otevřeme bez poškození zámků i laku, ať už je klíč zamčený v kabině, nebo v kufru. Kolik to bude stát, víte ještě před příjezdem technika.",
+      "Seat má technicky blízko ke Škodě a Volkswagenu, a tak Leon, Ibiza nebo Ateca používají podobné klíče a zámky jako jejich koncernoví sourozenci. Zajímavost na okraj: čtvrtá generace Seatu Toledo se v letech 2012–2019 vyráběla v Mladé Boleslavi spolu se Škodou Rapid. Se zabouchnutými klíči v Toledu, Ibize nebo rodinné Alhambře za vámi přijedeme i o půlnoci nebo o víkendu.",
+      "Od roku 2018 je Cupra samostatnou značkou, přesto má s modely Seat mnoho společného. Formentor, elektrický Born nebo nový Leon mívají bezklíčový přístup, starší vozy klasický vyklápěcí klíč. Pro nás na tom nezáleží: vůz otevřeme bez poškození zámků i laku, ať je klíč zamčený v kabině, nebo v kufru. Kolik to bude stát, víte ještě před příjezdem technika.",
     ],
     lockTech: [
       {
@@ -146,7 +146,7 @@ export const brandPagesA: BrandPage[] = [
       },
       {
         title: "Nouzové startování u sloupku řízení",
-        text: "Když se baterie v klíči Kessy vybije, vůz lze obvykle přesto nastartovat: klíč se přiloží k označenému místu na sloupku řízení a stiskne se tlačítko startu. Přesné místo ukazuje návod k obsluze vašeho modelu.",
+        text: "Když se baterie v klíči Kessy vybije, vůz jde obvykle i tak nastartovat: klíč se přiloží k označenému místu na sloupku řízení a stiskne se tlačítko startu. Přesné místo ukazuje návod k obsluze vašeho modelu.",
       },
     ],
     emergencyTip: "Vyklopte nebo vysuňte z ovladače planžetu, zasuňte ji do drážky ve spodní hraně krytky na klice dveří řidiče a krytku opatrně vypáčte nahoru – pod ní je zámek, kterým vůz odemknete. Pokud klíč Kessy nereaguje kvůli vybité baterii, vyměňte ji, případně zkuste náhradní klíč z domova.",
@@ -159,11 +159,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Otevřete i vůz značky Cupra, třeba Formentor nebo Born?",
-        answer: "Ano. Cupra je od roku 2018 samostatná značka, ale s vozy Seat má mnoho společného. Formentor, Born i Leon otevíráme nonstop a bez poškození, stejně jako starší modely Seat. Cenu vám sdělíme předem, ještě než se do otevírání pustíme.",
+        answer: "Ano. Cupra sice od roku 2018 vystupuje jako samostatná značka, technicky má ale s vozy Seat mnoho společného. Formentor, Born i Leon proto otevíráme stejně jako starší modely Seat.",
       },
       {
         question: "Mám Seat Toledo z Mladé Boleslavi – poradíte si s ním?",
-        answer: "Samozřejmě. Toledo čtvrté generace (2012–2019) se vyrábělo v Mladé Boleslavi vedle Škody Rapid a technicky je jí velmi blízké. Otevřeme ho bez poškození stejně jako starší generace Toleda nebo další modely Seat. Cenu znáte ještě předtím, než začneme.",
+        answer: "Samozřejmě. Toledo čtvrté generace (2012–2019) se vyrábělo v Mladé Boleslavi vedle Škody Rapid a technicky má k ní velmi blízko. Otevřeme ho stejně jako starší generace Toleda nebo jiné modely Seat.",
       },
     ],
   },
@@ -173,8 +173,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["řada 3", "řada 5", "X5", "X3", "řada 1", "X1", "řada 7", "X6", "řada 2", "X4", "řada 4"],
     headline: "trojky, pětky, X5 i Komfortní přístup",
     intro: [
-      "BMW patří u nás k nejčastěji dováženým značkám ojetých aut a řadu 3, řadu 5 nebo X5 potkáte v Praze na každém kroku. Zabouchnutý klíč v trojce umí zkomplikovat den stejně jako u kteréhokoli jiného vozu, jen nikdo nechce riskovat škrábanec na drahém laku. BMW proto otevíráme bez poškození, nonstop a u starších generací E90 a F30 stejně jako u současných modelů.",
-      "Novější modely BMW nabízejí Komfortní přístup, díky kterému se vůz odemkne už při uchopení kliky, a také BMW Digital Key, který z telefonu nebo karty udělá klíč. Čím víc způsobů odemčení, tím víc situací, kdy se něco pokazí: vybitý ovladač, telefon bez baterie nebo klíč zapomenutý v kufru X3. Pomůžeme i majitelům X1 nebo řady 1 a cenu jim sdělíme předem.",
+      "BMW patří u nás k nejčastěji dováženým značkám ojetých aut a řadu 3, řadu 5 nebo X5 potkáte v Praze na každém kroku. Zabouchnutý klíč v trojce vás zdrží stejně jako v kterémkoli jiném autě, jen škrábanec na drahém laku nechce riskovat nikdo. Proto BMW otevíráme bez poškození – starší generace E90 a F30 stejně jako současné modely.",
+      "Novější modely BMW nabízejí Komfortní přístup, díky kterému se vůz odemkne už při uchopení kliky, a také BMW Digital Key, který z telefonu nebo karty udělá klíč. Čím víc způsobů odemčení, tím víc příležitostí, jak se něco pokazí: vybitý ovladač, telefon bez baterie nebo klíč zapomenutý v kufru X3. Nonstop přijedeme i k menší X1 nebo řadě 1 a cenu vám řekneme předem.",
     ],
     lockTech: [
       {
@@ -190,7 +190,7 @@ export const brandPagesA: BrandPage[] = [
         text: "V ovladači je schovaný integrovaný klíč, který se uvolní tlačítkem a vytáhne. Vložka zámku dveří řidiče je u novějších modelů pod krytkou na klice – u řady 3 G20 stačí kliku přitáhnout a krytku zezadu vytlačit prstem.",
       },
     ],
-    emergencyTip: "Stiskněte tlačítko na ovladači a vytáhněte integrovaný klíč, pak přitáhněte kliku dveří řidiče, sejměte krytku vložky a odemkněte – po otevření dveří se může rozeznít alarm. Když vůz kvůli vybité baterii v klíči nechce nastartovat, přiložte ovladač k místu, které návod označuje pro nouzové rozpoznání klíče (u řady modelů je na sloupku řízení).",
+    emergencyTip: "Stiskněte tlačítko na ovladači a vytáhněte integrovaný klíč, pak přitáhněte kliku dveří řidiče, sejměte krytku vložky a odemkněte – po otevření dveří se může rozeznít alarm. Když vůz kvůli vybité baterii v klíči nechce nastartovat, přiložte ovladač k místu, které návod označuje pro nouzové rozpoznání klíče (u mnoha modelů je na sloupku řízení).",
     situations: [
       "Klíč s Komfortním přístupem zůstal v kufru X5",
       "Vybitý ovladač, řada 3 nereaguje na uchopení kliky",
@@ -200,11 +200,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Otevřete BMW s Komfortním přístupem bez poškození?",
-        answer: "Ano. BMW s Komfortním přístupem i starší modely s klasickým ovladačem otevíráme tak, aby zámky, kliky se senzory, těsnění i lak zůstaly nepoškozené. Po otevření si klíč jen vezmete a všechno funguje jako dřív. Pracujeme nonstop a cenu vám sdělíme předem.",
+        answer: "Ano. BMW s Komfortním přístupem i starší modely s klasickým ovladačem otevíráme tak, že zámky, kliky se senzory, těsnění ani lak neutrpí. Po otevření si klíč jen vezmete a všechno funguje jako dřív.",
       },
       {
         question: "Vybil se mi telefon s BMW Digital Key. Co mám dělat?",
-        answer: "Pokud máte kartu Key Card, přiložte ji ke klice dveří řidiče – funguje nezávisle na telefonu. Pomoci může i klasický ovladač nebo náhradní klíč z domova. Když nic z toho není po ruce, přijedeme nonstop a BMW otevřeme bez poškození.",
+        answer: "Pokud máte kartu Key Card, přiložte ji ke klice dveří řidiče – funguje nezávisle na telefonu. Pomoci může i klasický ovladač nebo náhradní klíč z domova. Když nic z toho nemáte po ruce, přijedeme a BMW otevřeme.",
       },
     ],
   },
@@ -214,8 +214,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["třída C", "třída E", "GLC", "třída A", "třída B", "GLE", "ML", "třída S", "CLA", "GLA", "Sprinter", "třída V"],
     headline: "třída C, E, GLC i KEYLESS-GO",
     intro: [
-      "Mercedes-Benz patří u nás k pětici nejčastěji dovážených značek ojetých aut a typickými zástupci na silnicích jsou třída C, třída E a SUV GLC. Nechybí ani menší třída A či B nebo starší ML. Když klíč zůstane v zamčeném Mercedesu, otevřeme ho nonstop a bez poškození – bez rozbitého skla i škrábanců – a cenu vám sdělíme předem.",
-      "Řada novějších Mercedesů má systém KEYLESS-GO a nejnovější modely umí používat i digitální klíč v telefonu. Díky tomu se ale klíč snadno zapomene v tašce v kufru a vybitá baterie v ovladači dokáže zablokovat přístup k vozu. Mercedes otevřeme tak, aby zámky, kliky i lak zůstaly netknuté, ať máte starší třídu C, nebo novou třídu E s výsuvnými klikami.",
+      "Mercedes-Benz patří u nás k pětici nejčastěji dovážených značek ojetých aut a na silnicích ho typicky zastupují třída C, třída E a SUV GLC. Nechybí ani menší třída A či B nebo starší ML. Pokud vám klíč zůstane v zamčeném Mercedesu, přijedeme v kteroukoli denní i noční hodinu a cenu vám řekneme předem.",
+      "Řada novějších Mercedesů má systém KEYLESS-GO a nejnovější modely umí používat i digitální klíč v telefonu. Právě proto se ale klíč snadno zapomene v tašce v kufru a vybitá baterie v ovladači vás může od vozu úplně odříznout. Starší třídu C i novou třídu E s výsuvnými klikami otevřeme tak, aby zámky, kliky i lak zůstaly netknuté.",
     ],
     lockTech: [
       {
@@ -228,7 +228,7 @@ export const brandPagesA: BrandPage[] = [
       },
       {
         title: "Výsuvné kliky novějších modelů",
-        text: "Nová třída E a další novější modely mají kliky zapuštěné do dveří, které se vysunou až po odemčení. Pro nouzové odemčení mají v návodu k obsluze vlastní postup, proto se vyplatí ho znát dřív, než se baterie v klíči vybije.",
+        text: "Nová třída E a další novější modely mají kliky zapuštěné do dveří, které se vysunou až po odemčení. Pro nouzové odemčení mají v návodu k obsluze vlastní postup a vyplatí se ho znát dřív, než se baterie v klíči vybije.",
       },
     ],
     emergencyTip: "Posuňte pojistku na klíči a vytáhněte nouzový klíč. Zasuňte ho do otvoru v krytce zámku na klice dveří řidiče, přitáhněte kliku a krytku stáhněte – pod ní je vložka zámku. Pokud KEYLESS-GO nereaguje, zkuste nejdřív stisknout tlačítko na ovladači nebo vyměnit baterii, případně použijte náhradní klíč.",
@@ -241,11 +241,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Proč Mercedes s KEYLESS-GO nereaguje na uchopení kliky?",
-        answer: "Často jde o vybitou baterii v klíči, nebo o vypnutou funkci KEYLESS-GO – ta se vypne dvojím rychlým stiskem tlačítka zamknutí. Zkuste stisknout tlačítko odemknutí na ovladači nebo použít nouzový klíč. Pokud nepomůže nic, Mercedes otevřeme nonstop a bez poškození.",
+        answer: "Často jde o vybitou baterii v klíči nebo o vypnutou funkci KEYLESS-GO – tu vypne dvojí rychlý stisk tlačítka zamknutí. Zkuste stisknout tlačítko odemknutí na ovladači nebo použít nouzový klíč. Pokud nezabere nic z toho, přijedeme a Mercedes otevřeme.",
       },
       {
         question: "Kde seženu nový klíč k Mercedesu, když ten původní ztratím?",
-        answer: "U novějších Mercedesů se náhradní klíč objednává přes autorizovaný servis Mercedes-Benz na základě VIN a dokladů k vozu. My klíče nevyrábíme – pokud se ale potřebujete dostat do zamčeného auta třeba pro doklady nebo náhradní klíč, otevřeme ho bez poškození.",
+        answer: "U novějších Mercedesů se náhradní klíč objednává přes autorizovaný servis Mercedes-Benz na základě VIN a dokladů k vozu. My klíče nevyrábíme – pokud se ale potřebujete dostat do zamčeného auta třeba pro doklady nebo náhradní klíč, rádi vám ho otevřeme.",
       },
     ],
   },
@@ -255,7 +255,7 @@ export const brandPagesA: BrandPage[] = [
     models: ["Astra", "Corsa", "Insignia", "Zafira", "Vectra", "Meriva", "Mokka", "Grandland", "Crossland", "Combo", "Signum"],
     headline: "Astra, Corsa, Insignia i Keyless Open & Start",
     intro: [
-      "Opel Astra patřila dlouhá léta k nejrozšířenějším autům v Česku a spolu s Corsou, Insignií nebo Zafirou ji potkáte na každém kroku. Majitelé starších Opelů znají typický klíč s výklopnou čepelí, novější modely mají elektronický klíč pro bezklíčový přístup. Ať se vám klíče zabouchly v deset let staré Astře, nebo v novém Grandlandu, otevřeme vůz nonstop a bez poškození.",
+      "Opel Astra patřila dlouhá léta k nejrozšířenějším autům v Česku a spolu s Corsou, Insignií nebo Zafirou ji dodnes vídáte všude kolem. Majitelé starších Opelů znají typický klíč s výklopnou čepelí, novější modely mají elektronický klíč pro bezklíčový přístup. Se zabouchnutými klíči v deset let staré Astře si poradíme stejně jako v novém Grandlandu, a to 24 hodin denně.",
       "Od roku 2017 patří Opel do skupiny PSA, dnes Stellantis, a nové Astry a Corsy sdílejí techniku s Peugeoty. Bezklíčový systém Keyless Open & Start pozná klíč v kapse a některé modely se po odchodu umí samy zamknout – dokonce i tehdy, když uvnitř zůstal druhý klíč. Opel otevřeme bez škod na zámcích, laku i elektronice a cenu vám řekneme předem.",
     ],
     lockTech: [
@@ -272,7 +272,7 @@ export const brandPagesA: BrandPage[] = [
         text: "Čepel se z elektronického klíče vytáhne po stisku tlačítka na jeho zadní straně. Válcová vložka zámku ve dveřích řidiče je zakrytá krytkou – čepel se zasune do prohlubně v její spodní části a krytka se natočením sejme.",
       },
     ],
-    emergencyTip: "Stiskněte tlačítko na zadní straně elektronického klíče a vytáhněte čepel, zasuňte ji do prohlubně ve spodní části krytky na klice dveří řidiče, krytku sejměte a vůz odemkněte ve vložce zámku – ochrana proti odcizení se vypne po zapnutí zapalování. U starších Opelů stačí vyklopit čepel tlačítkem a odemknout přímo zámek na klice.",
+    emergencyTip: "Stiskněte tlačítko na zadní straně elektronického klíče a vytáhněte čepel. Zasuňte ji do prohlubně ve spodní části krytky na klice dveří řidiče, krytku sejměte a vůz odemkněte ve vložce zámku – ochrana proti odcizení se vypne po zapnutí zapalování. U starších Opelů stačí vyklopit čepel tlačítkem a odemknout přímo zámek na klice.",
     situations: [
       "Insignia se sama zamkla s druhým klíčem uvnitř",
       "Klíč zapomenutý v kufru Astry Sports Tourer",
@@ -282,11 +282,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Proč se můj Opel zamkl, když byl uvnitř druhý klíč?",
-        answer: "Za to může pasivní zamykání. Podle návodu k obsluze se vůz zamkne, pokud byly uvnitř dva nebo více elektronických klíčů a vy jeden odnesete – druhý pak zůstane v zamčeném autě. Funkci lze vypnout v nastavení vozidla. Pokud se to už stalo, otevřeme Opel bez poškození.",
+        answer: "Za to může pasivní zamykání. Podle návodu k obsluze se vůz zamkne, pokud byly uvnitř dva nebo více elektronických klíčů a vy jeden odnesete – druhý pak zůstane v zamčeném autě. Funkci lze vypnout v nastavení vozidla. Pokud už se to stalo, zavolejte nám a Opel otevřeme.",
       },
       {
         question: "Otevřete i novou Astru nebo Corsu ze skupiny Stellantis?",
-        answer: "Ano. Současná Astra je technicky příbuzná s Peugeotem 308 a Corsa s Peugeotem 208. Novější i starší Opely – třeba Astry, Vectry nebo Zafiry – otevíráme nonstop, bez poškození a za cenu sdělenou předem.",
+        answer: "Ano. Současná Astra je technicky příbuzná s Peugeotem 308 a Corsa s Peugeotem 208. S novými Opely si poradíme stejně jako se staršími Astrami, Vectrami nebo Zafirami.",
       },
     ],
   },
@@ -296,8 +296,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["XC60", "XC90", "V60", "V90", "V70", "V40", "XC40", "S60", "S80", "XC70", "V50", "EX30"],
     headline: "od kombi V70 po SUV XC90",
     intro: [
-      "Volvo si v Česku oblíbili hlavně řidiči, kteří chtějí prostorné a bezpečné kombi nebo SUV. Typicky jde o XC60, XC90 a kombi V60 či V90, po silnicích ale stále jezdí i spousta starších V70, S80 nebo V40. Když se klíč zamkne ve Volvu, otevřeme vůz nonstop, bez poškození a za cenu, kterou znáte předem.",
-      "Novější modely Volvo mají zamykání a odemykání bez klíče Passive Entry, odnímatelnou čepel v dálkovém klíči a k některým se dodává i malý voděodolný Key Tag bez tlačítek. Systém je chytrý, ale má svá úskalí – například zámek dveří řidiče u současných SUV Volvo na první pohled vůbec nenajdete. Takové situace vyřešíme bez škrábanců a bez rozbitého skla.",
+      "Volvo si v Česku oblíbili hlavně řidiči, kteří chtějí prostorné a bezpečné kombi nebo SUV. Typicky jde o XC60, XC90 a kombi V60 či V90, po silnicích ale pořád jezdí i spousta starších V70, S80 nebo V40. Zůstal vám klíč zamčený ve Volvu? Přijedeme kdykoli, i v noci, a cenu vám řekneme předem.",
+      "Novější vozy Volvo mají bezklíčové zamykání a odemykání Passive Entry, v dálkovém klíči odnímatelnou čepel a k některým se dodává i malý voděodolný Key Tag bez tlačítek. Systém je chytrý, ale má svá úskalí – například zámek dveří řidiče u současných SUV Volvo na první pohled vůbec nenajdete. I s tím si poradíme, bez škrábanců a bez rozbitého skla.",
     ],
     lockTech: [
       {
@@ -323,11 +323,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Proč se Volvo zamklo i s klíčem v kufru?",
-        answer: "Pokud vůz zamknete ve chvíli, kdy jsou dveře zavazadlového prostoru otevřené, zamknou se po zavření také. Když při tom klíč zůstane uvnitř, je celé Volvo zamčené – na to upozorňuje i návod k obsluze. Pokud nemáte náhradní klíč, otevřeme vůz nonstop a bez poškození.",
+        answer: "Pokud vůz zamknete ve chvíli, kdy jsou dveře zavazadlového prostoru otevřené, zamknou se po zavření také. Zůstane-li přitom klíč uvnitř, je zamčené celé Volvo – upozorňuje na to i návod k obsluze. Bez náhradního klíče vám vůz otevřeme my.",
       },
       {
         question: "Zamkl jsem Volvo druhým klíčem a Key Tag zůstal uvnitř. Vadí to?",
-        answer: "Podle Volva se klíč nebo Key Tag ponechaný ve voze po zamčení druhým klíčem a zapnutí alarmu deaktivuje, takže auto zůstane zabezpečené. K vozu se pak dostanete jen klíčem, který máte u sebe. Pokud ho nemáte, otevřeme Volvo bez poškození.",
+        answer: "Podle Volva se klíč nebo Key Tag ponechaný ve voze po zamčení druhým klíčem a zapnutí alarmu deaktivuje, takže auto zůstane zabezpečené. K vozu se pak dostanete jen klíčem, který máte u sebe. Pokud u sebe žádný nemáte, zavolejte nám.",
       },
     ],
   },
@@ -337,8 +337,8 @@ export const brandPagesA: BrandPage[] = [
     models: ["308", "208", "3008", "206", "207", "307", "2008", "5008", "508", "Partner", "107", "108"],
     headline: "od 107 z Kolína po 3008",
     intro: [
-      "Peugeot má k Česku blízko: malé modely 107 a 108 se vyráběly v Kolíně a dodnes jsou běžnými městskými auty. Na silnicích ale potkáte i spoustu Peugeotů 308, 208, 206 nebo SUV 3008. Když se vám klíč zabouchne v kterémkoli z nich, otevřeme auto nonstop a bez poškození, ať máte klasický ovladač, nebo elektronický klíč.",
-      "Novější modely Peugeot nabízejí systém Přístup a startování bez klíče: vůz se odemkne, když vsunete ruku za kliku, a nastartuje se tlačítkem. Méně známé je, že po 21 dnech bez použití přejde bezklíčová funkce do úsporného režimu, takže vůz po dovolené najednou nereaguje. Peugeot otevřeme bez poškození zámků i laku, ať jde o starší 206, nebo nejnovější 2008, a cenu vám sdělíme předem.",
+      "Peugeot má k Česku blízko: malé modely 107 a 108 se vyráběly v Kolíně a dodnes jsou běžnými městskými auty. Na silnicích ale potkáte i spoustu Peugeotů 308, 208, 206 nebo SUV 3008. Otevřeme kterýkoli z nich, ať má klasický ovladač, nebo elektronický klíč – a přijedeme klidně i uprostřed noci.",
+      "Novější modely Peugeot nabízejí systém Přístup a startování bez klíče: vůz se odemkne, když vsunete ruku za kliku, a startuje se tlačítkem. Méně známé je, že po 21 dnech bez použití přejde bezklíčová funkce do úsporného režimu, takže vůz po dovolené najednou nereaguje. Starší 206 i nejnovější 2008 otevřeme bez poškození zámků i laku a cenu vám řekneme předem.",
     ],
     lockTech: [
       {
@@ -364,11 +364,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Proč Peugeot po delším stání nereaguje na bezklíčové odemykání?",
-        answer: "Po 21 dnech bez použití přejdou funkce hands-free do úsporného režimu. Obnovíte je stiskem libovolného tlačítka na dálkovém ovladači. Pokud nepomůže ani to, zkuste integrovaný klíč nebo výměnu baterie. Když se do vozu nedostanete, otevřeme Peugeot nonstop a bez poškození.",
+        answer: "Po 21 dnech bez použití přejdou funkce hands-free do úsporného režimu. Obnovíte je stiskem libovolného tlačítka na dálkovém ovladači. Pokud nepomůže ani to, zkuste integrovaný klíč nebo výměnu baterie. Když se ani tak do vozu nedostanete, přijedeme a otevřeme ho my.",
       },
       {
         question: "Otevřete i Peugeot 107 nebo 108 z kolínské továrny?",
-        answer: "Ano. Malé Peugeoty 107 a 108 se vyráběly v Kolíně spolu s Citroënem C1 a Toyotou Aygo. Otevřeme je bez poškození stejně jako větší modely 308 nebo 3008, nonstop a za cenu, kterou vám sdělíme předem.",
+        answer: "Ano. Malé Peugeoty 107 a 108 se vyráběly v Kolíně spolu s Citroënem C1 a Toyotou Aygo. Otevřeme je stejně jako větší modely 308 nebo 3008.",
       },
     ],
   },
@@ -378,13 +378,13 @@ export const brandPagesA: BrandPage[] = [
     models: ["C4", "C3", "Berlingo", "C5", "Xsara Picasso", "C4 Picasso", "C1", "C5 Aircross", "C3 Aircross", "C4 Cactus", "C8", "Xsara"],
     headline: "Berlingo, C4 Picasso i superzamykání",
     intro: [
-      "Citroën je známý důrazem na pohodlí a praktičnost a jeho nejznámějšími modely u nás jsou rodinná auta: Berlingo, C4 Picasso, Xsara Picasso nebo C5 Aircross. Právě v nich se klíče snadno zamknou při nakládání kočárku, nákupu nebo sportovní výbavy. Když se vám to stane, otevřeme Citroën nonstop a bez poškození, ať je klíč v kabině, nebo v kufru.",
-      "Mezi menšími vozy je běžný C3 a také Citroën C1, který se dlouhá léta vyráběl v Kolíně. Novější Citroëny mohou mít systém Odemykání a startování bez klíče, ostatní verze vyklápěcí klíč a starší modely superzamykání, které po dvojím zamknutí vyřadí vnitřní kliky. Ať máte kterýkoli z nich, cenu vám řekneme předem a vůz otevřeme bez škrábanců.",
+      "Citroën sází na pohodlí a praktičnost a u nás ho nejvíc proslavila rodinná auta: Berlingo, C4 Picasso, Xsara Picasso nebo C5 Aircross. Právě v nich se klíče snadno zamknou při nakládání kočárku, nákupu nebo sportovní výbavy. Ať klíč zůstal v kabině, nebo v kufru, přijedeme za vámi nonstop a pomůžeme vám se k němu dostat.",
+      "Z menších vozů je u nás běžný C3 a také Citroën C1, který se dlouhá léta vyráběl v Kolíně. Novější Citroëny mohou mít systém Odemykání a startování bez klíče, ostatní verze vyklápěcí klíč a starší modely superzamykání, které po dvojím zamknutí vyřadí vnitřní kliky. S každým z těchto systémů si poradíme bez škrábanců a cenu vám řekneme předem.",
     ],
     lockTech: [
       {
         title: "Odemykání a startování bez klíče",
-        text: "S elektronickým klíčem v kapse se vůz odemkne rukou za klikou předních dveří nebo tlačítkem u zadních výklopných dveří. Klíč je zároveň dálkovým ovladačem a mechanickou čepel v něm vysunete posunutím a přidržením tlačítka.",
+        text: "S elektronickým klíčem v kapse vůz odemknete tak, že vsunete ruku za kliku předních dveří nebo stisknete tlačítko u zadních výklopných dveří. Klíč je zároveň dálkovým ovladačem a mechanickou čepel v něm vysunete posunutím a přidržením tlačítka.",
       },
       {
         title: "Superzamykání u starších modelů",
@@ -395,7 +395,7 @@ export const brandPagesA: BrandPage[] = [
         text: "Když současné Berlingo zamknete i odemknete mechanicky klíčem, odemknou se jen přední a boční posuvné dveře. Křídlové nebo výklopné zadní dveře zůstanou zamčené, dokud nezapnete zapalování.",
       },
     ],
-    emergencyTip: "Vyklopte čepel klíče tlačítkem, u elektronického klíče ji vysuňte posunutím a přidržením tlačítka, a odemkněte zámek dveří řidiče. Pokud má vůz alarm, po otevření dveří se rozezní siréna – vypnete ji zapnutím zapalování. Když se do auta nedostanete ani tak, zkuste náhradní klíč nebo novou baterii v ovladači.",
+    emergencyTip: "Vyklopte čepel klíče tlačítkem (u elektronického klíče ji vysuňte posunutím a přidržením tlačítka) a odemkněte zámek dveří řidiče. Pokud má vůz alarm, po otevření dveří se rozezní siréna – vypnete ji zapnutím zapalování. Když se do auta nedostanete ani tak, zkuste náhradní klíč nebo novou baterii v ovladači.",
     situations: [
       "Klíč zamčený v kufru Berlinga při nakládání kočárku",
       "Zabouchnuté klíče v Xsaře Picasso nebo C4 Picasso",
@@ -405,11 +405,11 @@ export const brandPagesA: BrandPage[] = [
     faq: [
       {
         question: "Co je superzamykání u Citroënu a proč nejdou dveře otevřít zevnitř?",
-        answer: "Superzamykání, u novějších modelů nazývané dvojité zamykání, se zapne druhým stiskem tlačítka zamknutí. Vyřadí vnitřní kliky i tlačítko centrálního zamykání, aby vůz nešel otevřít ani přes rozbité okno. Odemknete ho ovladačem nebo klíčem; pokud nemáte ani jedno, otevřeme Citroën bez poškození.",
+        answer: "Superzamykání, u novějších modelů nazývané dvojité zamykání, se zapne druhým stiskem tlačítka zamknutí. Vyřadí vnitřní kliky i tlačítko centrálního zamykání, aby vůz nešel otevřít ani přes rozbité okno. Odemknete ho ovladačem nebo klíčem; pokud nemáte po ruce ani jedno, otevřeme ho my.",
       },
       {
         question: "Otevřete Berlingo, když jsou klíče zamčené v zavazadlovém prostoru?",
-        answer: "Ano. Berlingo otevřeme bez poškození, ať máte verzi s výklopnými, nebo s křídlovými zadními dveřmi. Klíč si pak vyndáte a vůz funguje jako dřív. Pracujeme nonstop a cenu otevření vám sdělíme předem.",
+        answer: "Ano, ať máte verzi s výklopnými, nebo s křídlovými zadními dveřmi. Po otevření si klíč jen vyndáte a Berlingo funguje dál jako dřív.",
       },
     ],
   },
