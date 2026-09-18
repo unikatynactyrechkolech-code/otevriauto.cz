@@ -5,6 +5,7 @@ import Situations from "@/components/Situations";
 import DamageFree from "@/components/DamageFree";
 import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
+import Team from "@/components/Team";
 import PricingPreview from "@/components/PricingPreview";
 import WarningBox from "@/components/WarningBox";
 import Tips from "@/components/Tips";
@@ -29,6 +30,7 @@ export default function Home() {
         <DamageFree />
         <Brands />
         <HowItWorks />
+        <Team />
         <PricingPreview />
         <WarningBox />
         <Tips />

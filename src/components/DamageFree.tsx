@@ -22,9 +22,9 @@ export default function DamageFree() {
             {vehicleTypes.map((type) => (
               <li
                 key={type}
-                className="flex items-baseline gap-3 border-b border-black/5 pb-3 text-sm font-semibold text-ink"
+                className="flex items-baseline gap-3 border-b border-black pb-3 text-sm font-semibold text-ink"
               >
-                <span className="text-brand-dark">—</span>
+                <span className="text-black">—</span>
                 {type}
               </li>
             ))}

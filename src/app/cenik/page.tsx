@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import PriceTable from "@/components/PriceTable";
 import HowItWorks from "@/components/HowItWorks";
+import Team from "@/components/Team";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -104,7 +105,7 @@ export default function PricingPage() {
               {travelAndPayment.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-black/5 bg-white p-4 text-center sm:p-6"
+                  className="rounded-none border-2 border-black bg-white p-4 text-center sm:p-6"
                 >
                   <h3 className="font-heading text-base font-bold text-black sm:text-lg">{item.title}</h3>
                   <p className="mt-2 text-sm text-black">{item.text}</p>
@@ -116,6 +117,7 @@ export default function PricingPage() {
 
         <LocationFaq title="Časté dotazy k cenám" items={faq} />
         <HowItWorks />
+        <Team />
         <NearbyLocations
           title="Kam jezdíme"
           description="Výběr lokalit v Praze a Středočeském kraji, kde auta otevíráme za stejné ceny"

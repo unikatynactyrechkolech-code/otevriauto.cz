@@ -35,9 +35,9 @@ export default function PageHero({ title, breadcrumbs, arrival, extraStat, image
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/90" />
 
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 pb-14 pt-12 text-center sm:px-6 sm:pb-20 sm:pt-16 lg:px-8">
+        <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 pb-14 pt-12 text-left sm:px-6 sm:pb-20 sm:pt-16 lg:px-8">
           <nav aria-label="Drobečková navigace">
-            <ol className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-white">
+            <ol className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-white">
               {breadcrumbs.map((crumb) => (
                 <Fragment key={crumb.href}>
                   <li>
@@ -54,18 +54,19 @@ export default function PageHero({ title, breadcrumbs, arrival, extraStat, image
             </ol>
           </nav>
 
-          <h1 className="mt-6 font-heading text-4xl font-extrabold uppercase leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 max-w-4xl font-heading text-4xl font-black uppercase leading-[0.95] tracking-tight text-white sm:text-5xl lg:text-7xl">
             {title}
           </h1>
         </div>
       </section>
 
+      <div aria-hidden="true" className="hazard h-3" />
       <section className="bg-black">
-        <dl className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-5 px-4 py-6 text-center sm:px-6 lg:grid-cols-4 lg:px-8">
+        <dl className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-5 px-4 py-6 text-left sm:px-6 lg:grid-cols-4 lg:px-8">
           {stats.map(({ label, value }) => (
             <div key={label}>
               <dt className="text-[11px] font-bold uppercase tracking-wider text-white">{label}</dt>
-              <dd className="mt-1 text-sm font-bold text-white sm:text-base">{value}</dd>
+              <dd className="mt-1 font-heading text-base font-black text-brand sm:text-lg">{value}</dd>
             </div>
           ))}
         </dl>

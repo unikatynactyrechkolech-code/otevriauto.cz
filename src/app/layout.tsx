@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Mulish, Poppins } from "next/font/google";
+import { Archivo, IBM_Plex_Sans } from "next/font/google";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
-const mulish = Mulish({
-  variable: "--font-mulish",
+const plex = IBM_Plex_Sans({
+  variable: "--font-plex",
   subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin", "latin-ext"],
-  weight: ["500", "600", "700", "800"],
+  weight: ["700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="cs"
-      className={`${mulish.variable} ${poppins.variable} h-full antialiased`}
+      className={`${plex.variable} ${archivo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink">{children}</body>
     </html>

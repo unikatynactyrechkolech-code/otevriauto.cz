@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
+import Team from "@/components/Team";
 import WarningBox from "@/components/WarningBox";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
@@ -103,6 +104,7 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
         <BrandIntro brand={brand} />
         <BrandLockTech brand={brand} />
         <HowItWorks title={`Jak probíhá otevření auta ${brand.name}`} arrival={PRAGUE_ARRIVAL} />
+        <Team />
         <WarningBox />
         <LocationFaq title={`Časté dotazy – otevření auta ${brand.name}`} items={faq} />
         <Brands

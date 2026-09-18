@@ -82,7 +82,7 @@ export default function PragueMap({ currentSlug }: PragueMapProps) {
           </g>
         ) : null}
       </svg>
-      <div className="flex items-baseline justify-between gap-4 border-t border-brand/40 px-5 py-4 sm:px-6">
+      <div className="flex items-baseline justify-between gap-4 border-t border-brand px-5 py-4 sm:px-6">
         <p className="font-heading text-lg font-bold text-white sm:text-xl">Dojezd {PRAGUE_ARRIVAL}</p>
         <p className="text-sm text-white">v celé Praze · najeďte na obvod</p>
       </div>

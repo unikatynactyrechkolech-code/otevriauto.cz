@@ -50,14 +50,14 @@ export default function Situations() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Typické situace, kdy pomáháme"
-          description="Zkušený zámečník pro oblast Josefov, Hradčany, Malá Strana, Nové Město a Staré Město vám pomůže rychle a bez poškození karoserie nebo zámku."
+          description="Andrej a Artur Husakovi vám v Josefově, na Hradčanech, na Malé Straně i na Novém a Starém Městě pomůžou rychle a bez poškození karoserie nebo zámku."
         />
 
         <div className="mt-10 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4">
           {tiles.map((tile) => (
             <div
               key={tile.title}
-              className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
+              className="group relative aspect-[4/5] overflow-hidden rounded-none"
             >
               <Image
                 src={tile.image}
@@ -75,7 +75,7 @@ export default function Situations() {
           ))}
         </div>
 
-        <div className="mt-10 border-t border-black/5 pt-8">
+        <div className="mt-10 border-t border-black pt-8">
           <h3 className="font-heading text-xl font-bold text-black">Další důvody</h3>
           <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
             {extra.map((item) => (

@@ -23,7 +23,7 @@ export default function PricingPreview() {
         <div className="mt-8 flex justify-center">
           <Link
             href="/cenik"
-            className="rounded-full bg-brand px-7 py-3.5 text-base font-bold text-black transition hover:bg-brand-dark"
+            className="rounded-none border-2 border-black bg-brand px-7 py-3.5 text-base font-bold text-black transition hover:bg-brand-dark shadow-hard-sm"
           >
             Zobrazit celý ceník
           </Link>

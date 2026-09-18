@@ -22,7 +22,7 @@ export default function CtaBanner() {
 
         <a
           href={siteConfig.phoneHref}
-          className="mt-2 flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-black transition hover:bg-brand-dark"
+          className="mt-2 flex items-center gap-2 rounded-none border-2 border-black bg-brand px-8 py-4 text-base font-bold text-black transition hover:bg-brand-dark shadow-hard-sm"
         >
           <PhoneIcon className="h-4 w-4" />
           Volejte {siteConfig.phone}

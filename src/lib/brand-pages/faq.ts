@@ -12,7 +12,7 @@ export function buildBrandFaq(brand: BrandPage, arrival: string): FaqItem[] {
     },
     {
       question: "Za jak dlouho jste u auta?",
-      answer: `Kdekoli v Praze bývá technik u auta zpravidla za ${arrival}, do okolních měst a obcí podle vzdálenosti. Jezdíme nonstop – v noci, o víkendech i o svátcích.`,
+      answer: `Kdekoli v Praze bývá Andrej nebo Artur u auta zpravidla za ${arrival}, do okolních měst a obcí podle vzdálenosti. Jezdíme nonstop – v noci, o víkendech i o svátcích.`,
     },
     {
       question: "Kolik otevření auta stojí?",

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
+import Team from "@/components/Team";
 import WarningBox from "@/components/WarningBox";
 import CoverageAreas from "@/components/CoverageAreas";
 import PragueDistrictsMap from "@/components/PragueDistrictsMap";
@@ -115,6 +116,7 @@ export default function LocationPage({ location }: { location: Location }) {
           description="Od Škody a Volkswagenu přes BMW a Mercedes-Benz až po Teslu nebo Porsche – otevíráme osobní auta, SUV i dodávky, včetně vozů s bezklíčovým přístupem."
         />
         <HowItWorks title={`U auta ${location.locative} jsme za ${arrival}`} arrival={arrival} />
+        <Team />
         <WarningBox />
         <CoverageAreas
           title={`Kam všude ${location.locative} jezdíme`}

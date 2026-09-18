@@ -16,14 +16,30 @@
   --color-brand-dark: var(--color-brand-dark);
   --color-ink: var(--color-ink);
   --color-ink-soft: var(--color-ink-soft);
-  --font-sans: var(--font-mulish);
-  --font-heading: var(--font-poppins);
+  --font-sans: var(--font-plex);
+  --font-heading: var(--font-archivo);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Signature motif: diagonal hazard stripes in the brand yellow and black. */
+@utility hazard {
+  background: repeating-linear-gradient(-45deg, #f2b705 0 14px, #0a0a0a 14px 28px);
+}
+
+/* Hard offset shadows instead of soft SaaS blur. */
+@utility shadow-hard {
+  box-shadow: 6px 6px 0 0 #0a0a0a;
+}
+@utility shadow-hard-sm {
+  box-shadow: 4px 4px 0 0 #0a0a0a;
+}
+@utility shadow-hard-brand {
+  box-shadow: 6px 6px 0 0 #f2b705;
 }
 
 @theme {

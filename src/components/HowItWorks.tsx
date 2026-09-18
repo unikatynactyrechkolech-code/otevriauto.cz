@@ -18,8 +18,8 @@ function buildSteps(arrival: string) {
       text: "Před výjezdem sdělíme orientační cenu zásahu.",
     },
     {
-      title: "Technik dorazí",
-      text: `Zámečník dorazí zpravidla za ${arrival}.`,
+      title: "Andrej nebo Artur vyrazí",
+      text: `Jeden z bratrů je u vás zpravidla za ${arrival}.`,
     },
     {
       title: "Otevření vozidla",
@@ -61,7 +61,7 @@ export default function HowItWorks({
             {steps.map((step, index) => (
               <div
                 key={step.title}
-                className="flex items-baseline gap-5 border-b border-black/5 py-5 first:pt-0"
+                className="flex items-baseline gap-5 border-b border-black py-5 first:pt-0"
               >
                 <span className="font-heading text-2xl font-extrabold text-brand shrink-0 sm:text-3xl">
                   {String(index + 1).padStart(2, "0")}
@@ -73,7 +73,7 @@ export default function HowItWorks({
               </div>
             ))}
 
-            <p className="mt-8 rounded-2xl border border-brand/30 bg-brand/10 px-6 py-4 text-sm font-semibold text-ink-soft">
+            <p className="mt-8 rounded-none border border-brand bg-brand/10 px-6 py-4 text-sm font-semibold text-ink-soft">
               Cena je vždy dohodnuta před zahájením práce a během zásahu se nemění.
             </p>
           </div>

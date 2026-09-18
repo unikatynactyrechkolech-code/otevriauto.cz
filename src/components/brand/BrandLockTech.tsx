@@ -20,7 +20,7 @@ export default function BrandLockTech({ brand }: BrandLockTechProps) {
           {brand.lockTech.map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-black/5 bg-white p-6"
+              className="rounded-none border-2 border-black bg-white p-6 shadow-hard"
             >
               <h3 className="font-heading text-lg font-bold text-ink">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink">{item.text}</p>
@@ -35,9 +35,9 @@ export default function BrandLockTech({ brand }: BrandLockTechProps) {
           {brand.situations.map((situation) => (
             <li
               key={situation}
-              className="flex items-center gap-4 rounded-2xl border border-black/5 bg-white px-6 py-5 text-sm font-semibold text-ink sm:text-base"
+              className="flex items-center gap-4 rounded-none border-2 border-black bg-white px-6 py-5 text-sm font-semibold text-ink sm:text-base"
             >
-              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand text-black">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-none bg-brand text-black">
                 <CheckIcon className="h-3.5 w-3.5" />
               </span>
               {situation}

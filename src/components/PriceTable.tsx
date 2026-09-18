@@ -2,7 +2,7 @@ import { priceList } from "@/lib/pricing";
 
 export default function PriceTable() {
   return (
-    <div className="overflow-hidden rounded-2xl border border-black/10 bg-white">
+    <div className="overflow-hidden border-2 border-black bg-white shadow-hard">
       <h3 className="bg-ink px-4 py-4 font-heading text-lg font-bold text-white sm:px-6">
         Otevírání aut / automobilů
       </h3>
@@ -14,7 +14,7 @@ export default function PriceTable() {
         {priceList.map((row) => (
           <li
             key={row.service}
-            className="flex items-center justify-between gap-4 border-t border-black/10 px-4 py-4 text-sm text-black sm:px-6 sm:text-base"
+            className="flex items-center justify-between gap-4 border-t border-black px-4 py-4 text-sm text-black sm:px-6 sm:text-base"
           >
             <span>{row.service}</span>
             <span className="shrink-0 whitespace-nowrap font-heading font-bold">{row.price}</span>
