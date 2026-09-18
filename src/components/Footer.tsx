@@ -10,7 +10,7 @@ const quickLinks = [
 
 const usefulLinks = [
   { href: "/#kontakt", label: "Kontakt" },
-  { href: "#", label: "Ceník služeb" },
+  { href: "/cenik", label: "Ceník služeb" },
   { href: "#", label: "Časté dotazy" },
   { href: "#", label: "Ochrana osobních údajů" },
 ];
@@ -26,8 +26,8 @@ export default function Footer() {
               otevriauto.cz
             </Link>
             <p className="mt-4 max-w-xs text-sm text-white">
-              Nouzové otevírání aut v Praze 1 – nonstop, šetrně a bez poškození
-              vozidla. Spolehněte se na odborníky s praxí.
+              Nouzové otevírání aut v Praze a Středočeském kraji – nonstop,
+              šetrně a bez poškození vozidla.
             </p>
           </div>
 
@@ -66,16 +66,32 @@ export default function Footer() {
               Kontakt
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-white">
-              <li>{siteConfig.phone}</li>
-              <li>{siteConfig.email}</li>
-              <li>Praha a Středočeský kraj</li>
+              <li>
+                <a href={siteConfig.phoneHref} className="transition hover:text-brand">
+                  {siteConfig.phone}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${siteConfig.email}`} className="break-all transition hover:text-brand">
+                  {siteConfig.email}
+                </a>
+              </li>
+              <li>
+                {siteConfig.address.street}, {siteConfig.address.city}, {siteConfig.address.postalCode}
+              </li>
+              <li>IČO: {siteConfig.ico}</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-xs text-white sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. Všechna práva vyhrazena.</p>
-          <p>Nouzové otevírání aut v Praze a Středočeském kraji · nonstop 24/7</p>
+          <p>
+            Stránky vytvořil{" "}
+            <a href="https://webpojede.cz" className="font-bold text-brand transition hover:text-brand-dark">
+              webpojede.cz
+            </a>
+          </p>
         </div>
       </div>
     </footer>

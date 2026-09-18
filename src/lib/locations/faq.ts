@@ -1,3 +1,4 @@
+import { priceFaqAnswer } from "../pricing";
 import type { Location } from "./types";
 
 export type FaqItem = { question: string; answer: string };
@@ -20,8 +21,7 @@ export function buildLocationFaq(location: Location, arrival: string): FaqItem[]
     },
     {
       question: "Kolik otevření auta stojí?",
-      answer:
-        "Cenu vám sdělíme předem do telefonu podle typu vozu, denní doby a místa zásahu. Na ceně se dohodneme před zahájením práce a během zásahu se už nemění.",
+      answer: priceFaqAnswer,
     },
     {
       question: "Nepoškodíte při otevírání dveře nebo elektroniku?",

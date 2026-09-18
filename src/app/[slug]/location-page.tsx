@@ -6,7 +6,7 @@ import HowItWorks from "@/components/HowItWorks";
 import WarningBox from "@/components/WarningBox";
 import CoverageAreas from "@/components/CoverageAreas";
 import CtaBanner from "@/components/CtaBanner";
-import ContactForm from "@/components/ContactForm";
+import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
@@ -58,6 +58,14 @@ export default function LocationPage({ location }: { location: Location }) {
         url: pageUrl,
         telephone: siteConfig.phoneHref.replace("tel:", ""),
         email: siteConfig.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.address.street,
+          addressLocality: siteConfig.address.city,
+          postalCode: siteConfig.address.postalCode,
+          addressCountry: "CZ",
+        },
+        priceRange: "900–2500 Kč",
         openingHours: "Mo-Su 00:00-23:59",
         areaServed: [location.name, ...location.parts.filter((part) => part !== location.name)].map(
           (name) => ({ "@type": "Place", name }),
@@ -115,7 +123,7 @@ export default function LocationPage({ location }: { location: Location }) {
         <LocationFaq title={`Časté dotazy – autozámečník ${location.name}`} items={faq} />
         <NearbyLocations name={location.name} locations={nearbyLocations(location)} />
         <CtaBanner />
-        <ContactForm />
+        <Contact />
         <LocationsDirectory currentSlug={location.slug} />
       </main>
       <Footer />

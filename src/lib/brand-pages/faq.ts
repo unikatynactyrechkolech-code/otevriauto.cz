@@ -1,4 +1,5 @@
 import type { FaqItem } from "../locations/faq";
+import { priceFaqAnswer } from "../pricing";
 import type { BrandPage } from "./types";
 
 export function buildBrandFaq(brand: BrandPage, arrival: string): FaqItem[] {
@@ -14,8 +15,7 @@ export function buildBrandFaq(brand: BrandPage, arrival: string): FaqItem[] {
     },
     {
       question: "Kolik otevření auta stojí?",
-      answer:
-        "Cenu vám sdělíme předem do telefonu podle typu vozu, denní doby a místa zásahu. Na ceně se dohodneme před zahájením práce a během zásahu se už nemění.",
+      answer: priceFaqAnswer,
     },
   ];
 }

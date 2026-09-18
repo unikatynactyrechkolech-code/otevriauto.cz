@@ -11,7 +11,7 @@ export default function CtaBanner() {
         alt="Řidič volá nonstop autozámečníka u zaparkovaného auta"
         fill
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-[50%_30%]"
       />
       <div className="absolute inset-0 bg-black/70" />
 

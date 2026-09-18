@@ -5,7 +5,7 @@ import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
 import WarningBox from "@/components/WarningBox";
 import CtaBanner from "@/components/CtaBanner";
-import ContactForm from "@/components/ContactForm";
+import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
@@ -54,6 +54,14 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
           name: siteConfig.name,
           url: siteConfig.url,
           telephone: siteConfig.phoneHref.replace("tel:", ""),
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: siteConfig.address.street,
+            addressLocality: siteConfig.address.city,
+            postalCode: siteConfig.address.postalCode,
+            addressCountry: "CZ",
+          },
+          priceRange: "900–2500 Kč",
           openingHours: "Mo-Su 00:00-23:59",
         },
       },
@@ -103,7 +111,7 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
           description="Vyberte značku svého vozu – u nejrozšířenějších značek najdete podrobnosti o klíčích, zámcích a nejčastějších modelech."
         />
         <CtaBanner />
-        <ContactForm />
+        <Contact />
         <LocationsDirectory />
       </main>
       <Footer />

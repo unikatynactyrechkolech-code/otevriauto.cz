@@ -4,11 +4,12 @@ import Situations from "@/components/Situations";
 import DamageFree from "@/components/DamageFree";
 import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
+import PricingPreview from "@/components/PricingPreview";
 import WarningBox from "@/components/WarningBox";
 import Tips from "@/components/Tips";
 import CoverageAreas from "@/components/CoverageAreas";
 import CtaBanner from "@/components/CtaBanner";
-import ContactForm from "@/components/ContactForm";
+import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
 import MobileCallBar from "@/components/MobileCallBar";
@@ -23,11 +24,12 @@ export default function Home() {
         <DamageFree />
         <Brands />
         <HowItWorks />
+        <PricingPreview />
         <WarningBox />
         <Tips />
         <CoverageAreas />
         <CtaBanner />
-        <ContactForm />
+        <Contact />
         <LocationsDirectory />
       </main>
       <Footer />
