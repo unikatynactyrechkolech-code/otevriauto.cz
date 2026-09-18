@@ -19,7 +19,7 @@ function buildSteps(arrival: string) {
     },
     {
       title: "Andrej nebo Artur vyrazí",
-      text: `Jeden z bratrů je u vás zpravidla za ${arrival}.`,
+      text: `Jeden z nich je u vás zpravidla za ${arrival}.`,
     },
     {
       title: "Otevření vozidla",

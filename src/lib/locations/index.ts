@@ -4,6 +4,11 @@ import { pragueEastLocations } from "./praha-vychod";
 import { locationsA, okresInfosA } from "./stredocesky-a";
 import { locationsB, okresInfosB } from "./stredocesky-b";
 import { locationsC, okresInfosC } from "./stredocesky-c";
+import { quartersA } from "./ctvrti-a";
+import { quartersB } from "./ctvrti-b";
+import { quartersC } from "./ctvrti-c";
+import { quartersD } from "./ctvrti-d";
+import { quartersE } from "./ctvrti-e";
 import { PRAGUE_ARRIVAL, PRAGUE_DISTRICT_ARRIVAL } from "../prague-arrival";
 import type { Location, RegionId } from "./types";
 
@@ -39,10 +44,13 @@ export const districts: Region[] = [...okresInfosA, ...okresInfosB, ...okresInfo
 
 export const regions: Region[] = [prague, ...districts];
 
-export const allLocations: Location[] = regions.flatMap((region) => region.locations);
+/** Prague quarters (e.g. Josefov) with their own page under a Praha 1–22 district. */
+export const quarters: Location[] = [...quartersA, ...quartersB, ...quartersC, ...quartersD, ...quartersE];
+
+/** Every location with a page: districts, towns and Prague quarters. */
+export const allLocations: Location[] = [...regions.flatMap((region) => region.locations), ...quarters];
 
 const ROUTE_PREFIX = "autozamecnik-";
-
 
 // The locksmith is based in Hostivař (Herbenova, Praha 10); estimates outside Prague start there.
 const BASE: [number, number] = [50.0505, 14.5215];
@@ -65,6 +73,16 @@ export function getRegion(id: RegionId) {
   return regions.find((region) => region.id === id)!;
 }
 
+/** The Praha 1–22 page a quarter belongs to. */
+export function getDistrictOf(quarter: Location): Location | undefined {
+  return quarter.district ? prague.locations.find((location) => location.slug === quarter.district) : undefined;
+}
+
+/** A quarter page by its display name, e.g. "Josefov". */
+export function getQuarterByName(name: string): Location | undefined {
+  return quarters.find((quarter) => quarter.name === name);
+}
+
 function distanceKm([lat1, lng1]: [number, number], [lat2, lng2]: [number, number]): number {
   const toRad = (deg: number) => (deg * Math.PI) / 180;
   const dLat = toRad(lat2 - lat1);
@@ -79,7 +97,7 @@ function distanceKm([lat1, lng1]: [number, number], [lat2, lng2]: [number, numbe
 // crow flies: 5 min to set off, 1.1 min per km for the first 20 km, 0.9 min per km beyond that on
 // motorways. Shown as a window rounded to 5 minutes, 10 minutes wide nearby and 15 further out.
 export function arrivalWindow(location: Location): string {
-  if (location.region === "praha") return PRAGUE_DISTRICT_ARRIVAL[location.slug] ?? PRAGUE_ARRIVAL;
+  if (location.region === "praha") return PRAGUE_DISTRICT_ARRIVAL[location.district ?? location.slug] ?? PRAGUE_ARRIVAL;
   const km = distanceKm(BASE, location.geo);
   const minutes = 5 + 1.1 * Math.min(km, 20) + 0.9 * Math.max(km - 20, 0);
   const from = Math.max(10, Math.round(minutes / 5) * 5);

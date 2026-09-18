@@ -30,9 +30,11 @@ export type Location = {
   /** Locative with preposition, e.g. "v Praze 1" or "ve Zdibech". */
   locative: string;
   region: RegionId;
+  /** Quarter pages only: slug of the Prague district page the quarter belongs to, e.g. "praha-1". */
+  district?: string;
   /** Approximate centre as [lat, lng]; drives distance, arrival time and nearby pages. */
   geo: [number, number];
-  /** Quarters or parts of the municipality listed under "Oblasti, které pokrýváme". */
+  /** Quarters or parts of the municipality listed under "Oblasti, které pokrýváme"; empty for quarter pages. */
   parts: string[];
   /** Short unique hook appended to the intro heading. */
   headline: string;

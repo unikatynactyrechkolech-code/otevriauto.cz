@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 import { siteConfig } from "@/lib/site-config";
-import { allLocations, locationPath } from "@/lib/locations";
+import { allLocations, getQuarterByName, locationPath } from "@/lib/locations";
 
 type CoverageAreasProps = {
   title?: string;
@@ -15,6 +15,8 @@ type CoverageAreasProps = {
 function areaHref(area: string, currentSlug?: string): string {
   if (area === "Celá Praha") return "/#lokality-praha";
   if (area === "Středočeský kraj") return "/#lokality";
+  const quarter = getQuarterByName(area);
+  if (quarter && quarter.slug !== currentSlug) return locationPath(quarter);
   const location = allLocations.find((candidate) => candidate.name === area || candidate.parts.includes(area));
   if (!location) return "/#lokality";
   return location.slug === currentSlug ? `/#lokality-${location.region}` : locationPath(location);
@@ -37,7 +39,7 @@ export default function CoverageAreas({
               <Link
                 key={area}
                 href={areaHref(area, currentSlug)}
-                className="rounded-full bg-neutral-200 px-4 py-2.5 text-sm font-bold text-ink transition hover:bg-brand"
+                className="rounded-md bg-neutral-200 px-4 py-2.5 text-sm font-bold text-ink transition hover:bg-brand"
               >
                 {area}
               </Link>

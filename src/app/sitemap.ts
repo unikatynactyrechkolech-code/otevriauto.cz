@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...allLocations.map((location) => ({
       url: `${siteConfig.url}${locationPath(location)}`,
       changeFrequency: "monthly" as const,
-      priority: location.region === "praha" ? 0.9 : 0.8,
+      priority: location.district ? 0.7 : location.region === "praha" ? 0.9 : 0.8,
     })),
     ...allBrandPages.map((brand) => ({
       url: `${siteConfig.url}${brandPath(brand)}`,

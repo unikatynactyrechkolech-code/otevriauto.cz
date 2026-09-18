@@ -20,6 +20,7 @@ import NearbyLocations from "@/components/location/NearbyLocations";
 import {
   allLocations,
   arrivalWindow,
+  getDistrictOf,
   getRegion,
   locationPath,
   relatedLocations,
@@ -33,8 +34,12 @@ import { images } from "@/lib/images";
 const heroImages = [images.hero, images.nightRoad, images.dashboard, images.wheel, images.keys];
 
 export function locationMetadata(location: Location): Metadata {
-  const title = `Autozámečník ${location.name} – otevření auta nonstop`;
-  const description = `Autozámečník ${location.locative} nonstop: otevření auta bez poškození, všechny značky. ${location.parts.slice(0, 3).join(", ")} a okolí – příjezd do ${arrivalWindow(location)}. Volejte ${siteConfig.phone}.`;
+  const district = getDistrictOf(location);
+  const title = district
+    ? `Autozámečník ${location.name} (${district.name}) – otevření auta nonstop`
+    : `Autozámečník ${location.name} – otevření auta nonstop`;
+  const area = district ? `${location.name}, ${district.name}` : location.parts.slice(0, 3).join(", ");
+  const description = `Autozámečník ${location.locative} nonstop: otevření auta bez poškození, všechny značky. ${area} a okolí – příjezd do ${arrivalWindow(location)}. Volejte ${siteConfig.phone}.`;
   const path = locationPath(location);
 
   return {
@@ -48,6 +53,13 @@ export function locationMetadata(location: Location): Metadata {
 export default function LocationPage({ location }: { location: Location }) {
   const region = getRegion(location.region);
   const regionHref = `/#lokality-${region.id}`;
+  const district = getDistrictOf(location);
+  const siblings = district ? district.parts.filter((part) => part !== location.name) : [];
+  const breadcrumbs = [
+    { label: "Domů", href: "/" },
+    { label: region.name, href: regionHref },
+    ...(district ? [{ label: district.name, href: locationPath(district) }] : []),
+  ];
   const arrival = arrivalWindow(location);
   const faq = buildLocationFaq(location, arrival);
   const pageUrl = `${siteConfig.url}${locationPath(location)}`;
@@ -77,9 +89,13 @@ export default function LocationPage({ location }: { location: Location }) {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Domů", item: siteConfig.url },
-          { "@type": "ListItem", position: 2, name: region.name, item: `${siteConfig.url}${regionHref}` },
-          { "@type": "ListItem", position: 3, name: `Autozámečník ${location.name}`, item: pageUrl },
+          ...breadcrumbs.map((crumb, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: crumb.label,
+            item: `${siteConfig.url}${crumb.href === "/" ? "" : crumb.href}`,
+          })),
+          { "@type": "ListItem", position: breadcrumbs.length + 1, name: `Autozámečník ${location.name}`, item: pageUrl },
         ],
       },
       {
@@ -100,12 +116,9 @@ export default function LocationPage({ location }: { location: Location }) {
       <main className="flex-1">
         <PageHero
           title={`Autozámečník ${location.name}`}
-          breadcrumbs={[
-            { label: "Domů", href: "/" },
-            { label: region.name, href: regionHref },
-          ]}
+          breadcrumbs={breadcrumbs}
           arrival={arrival}
-          extraStat={{ label: "Značky", value: "Všechny značky aut" }}
+          extraStat={district ? { label: "Obvod", value: district.name } : { label: "Značky", value: "Všechny značky aut" }}
           image={heroImages[allLocations.indexOf(location) % heroImages.length]}
           imageAlt={`Autozámečník ${location.name} – nouzové otevření auta`}
         />
@@ -118,13 +131,22 @@ export default function LocationPage({ location }: { location: Location }) {
         <HowItWorks title={`U auta ${location.locative} jsme za ${arrival}`} arrival={arrival} />
         <Team />
         <WarningBox />
-        <CoverageAreas
-          title={`Kam všude ${location.locative} jezdíme`}
-          description="Vyjíždíme nonstop ve dne, v noci i o svátcích – k autu na ulici, na parkovišti i v podzemní garáži."
-          areas={location.parts}
-          currentSlug={location.slug}
-        />
-        {location.region === "praha" ? <PragueDistrictsMap currentSlug={location.slug} /> : null}
+        {district ? (
+          <CoverageAreas
+            title={siblings.length > 0 ? `Další části obvodu ${district.name}` : `Celý obvod ${district.name}`}
+            description="Jezdíme do všech čtvrtí obvodu nonstop – k autu na ulici, na parkovišti i v podzemní garáži."
+            areas={siblings.length > 0 ? siblings : [district.name]}
+            currentSlug={location.slug}
+          />
+        ) : (
+          <CoverageAreas
+            title={`Kam všude ${location.locative} jezdíme`}
+            description="Vyjíždíme nonstop ve dne, v noci i o svátcích – k autu na ulici, na parkovišti i v podzemní garáži."
+            areas={location.parts}
+            currentSlug={location.slug}
+          />
+        )}
+        {location.region === "praha" ? <PragueDistrictsMap currentSlug={location.district ?? location.slug} /> : null}
         <LocationFaq title={`Časté dotazy k otevírání aut ${location.locative}`} items={faq} />
         <NearbyLocations
           title="Další lokality, kam jezdíme"

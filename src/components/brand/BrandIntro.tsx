@@ -32,7 +32,7 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
                 <li key={model}>
                   <a
                     href="#kontakt"
-                    className="inline-block rounded-full bg-neutral-200 px-3 py-1.5 text-sm font-bold text-ink transition hover:bg-brand"
+                    className="inline-block rounded-md bg-neutral-200 px-3 py-1.5 text-sm font-bold text-ink transition hover:bg-brand"
                   >
                     {model.startsWith(brand.name) ? model : `${brand.name} ${model}`}
                   </a>

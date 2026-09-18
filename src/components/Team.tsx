@@ -8,23 +8,20 @@ export default function Team() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Kdo vám přijede"
-          description="Žádný dispečink ani subdodavatel. Auta v Praze a okolí otevírají dva bratři z Ukrajiny, kteří tu žijí a pracují."
+          description="Jsme rodinná firma bez dispečinku a subdodavatelů. K vašemu autu přijede Andrej Husak nebo jeho syn Artur."
         />
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:max-w-4xl">
           {team.map((person) => (
             <article key={person.name} className="border border-black/10 bg-white">
-              <div className="relative aspect-[4/3] overflow-hidden bg-ink">
-                {person.photo ? (
-                  <Image src={person.photo} alt={person.name} fill sizes="(min-width: 640px) 50vw, 100vw" className="object-cover" />
-                ) : (
-                  <div className="flex h-full flex-col items-start justify-between p-5">
-                    <span className="font-heading text-6xl font-extrabold text-brand sm:text-7xl">{person.initials}</span>
-                    <span className="border border-brand px-2 py-1 text-[11px] font-bold uppercase tracking-wider text-brand">
-                      Fotka brzy
-                    </span>
-                  </div>
-                )}
+              <div className="relative aspect-[4/5] bg-neutral-100">
+                <Image
+                  src={person.photo}
+                  alt={`${person.name} – ${person.role}`}
+                  fill
+                  sizes="(min-width: 1024px) 28rem, (min-width: 640px) 50vw, 100vw"
+                  className="object-contain object-bottom"
+                />
               </div>
               <div className="p-5 sm:p-6">
                 <h3 className="font-heading text-2xl font-bold text-ink">{person.name}</h3>

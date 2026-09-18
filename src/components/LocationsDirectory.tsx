@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { districts, locationPath, prague } from "@/lib/locations";
+import { districts, getQuarterByName, locationPath, prague } from "@/lib/locations";
 import SectionHeading from "./SectionHeading";
 import MapPinIcon from "./MapPinIcon";
 import { siteConfig } from "@/lib/site-config";
@@ -11,7 +11,7 @@ type LocationsDirectoryProps = {
 
 export default function LocationsDirectory({ currentSlug }: LocationsDirectoryProps) {
   const chipClass = (active: boolean) =>
-    `rounded-full px-2 py-0.5 text-[11px] font-semibold transition sm:px-3 sm:py-1 sm:text-sm ${
+    `rounded-md px-2 py-0.5 text-[11px] font-semibold transition sm:px-3 sm:py-1 sm:text-sm ${
       active
         ? "bg-brand text-black"
         : "bg-white/10 text-white hover:bg-brand/25 hover:text-white"
@@ -51,11 +51,18 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
                   {location.name}
                 </Link>
                 <div className="mt-1.5 flex flex-wrap gap-1 sm:mt-2 sm:gap-1.5">
-                  {location.parts.map((part) => (
-                    <Link key={part} href={locationPath(location)} className={chipClass(false)}>
+                  {location.parts.map((part) => {
+                    const quarter = getQuarterByName(part);
+                    return (
+                    <Link
+                      key={part}
+                      href={locationPath(quarter ?? location)}
+                      className={chipClass(quarter?.slug === currentSlug)}
+                    >
                       {part}
                     </Link>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
@@ -90,7 +97,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
                   {district.otherTowns.map((town) => (
                     <span
                       key={town}
-                      className="rounded-full border border-white/20 px-2 py-0.5 text-[11px] text-white sm:px-3 sm:py-1 sm:text-sm"
+                      className="rounded-md border border-white/20 px-2 py-0.5 text-[11px] text-white sm:px-3 sm:py-1 sm:text-sm"
                     >
                       {town}
                     </span>
