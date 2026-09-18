@@ -1,12 +1,17 @@
-// Builds the header logo from public/logo.svg and every favicon from the square public/logo-icon.svg.
-// Run with `npm run icons` after changing either file.
+// Builds the header logo and every favicon from public/logo.svg. Run with `npm run icons` after changing it.
 import { readFileSync, writeFileSync } from "node:fs";
 import sharp from "sharp";
 
 const svg = readFileSync("public/logo.svg");
-const iconSvg = readFileSync("public/logo-icon.svg");
 
-const png = (source, size) => sharp(source, { density: 1200 }).resize(size, size).png().toBuffer();
+// The logo is wider than tall; icons centre it in a square with a little breathing room.
+const png = (source, size) =>
+  sharp(source, { density: 1200 })
+    .resize(Math.round(size * 0.92), Math.round(size * 0.92), { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .extend({ top: 0, bottom: 0, left: 0, right: 0 })
+    .resize(size, size, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .png()
+    .toBuffer();
 
 // ICO container with PNG-encoded images (supported by every current browser and search engine).
 function toIco(images) {
@@ -30,20 +35,20 @@ function toIco(images) {
 }
 
 const sizes = [16, 32, 48];
-const icoImages = await Promise.all(sizes.map(async (size) => ({ size, data: await png(iconSvg, size) })));
+const icoImages = await Promise.all(sizes.map(async (size) => ({ size, data: await png(svg, size) })));
 writeFileSync("src/app/favicon.ico", toIco(icoImages));
 
-writeFileSync("src/app/icon.svg", iconSvg);
+writeFileSync("src/app/icon.svg", svg);
 
 // Transparent PNG logo for the header and footer, trimmed to the artwork so it lines up with text.
 // The file name changes with the artwork so no browser or image cache serves an old version.
-const trimmed = await sharp(await png(svg, 1024)).trim().png().toBuffer();
+const trimmed = await sharp(svg, { density: 1200 }).resize({ width: 1024 }).trim().png().toBuffer();
 const logo = await sharp(trimmed).resize({ height: 96 }).png().toBuffer({ resolveWithObject: true });
 writeFileSync("public/logo-auto-klic.png", logo.data);
 console.log(`public/logo-auto-klic.png is ${logo.info.width}x${logo.info.height}`);
 
 // iOS fills transparent icons with black anyway, so the touch icon gets an explicit black square.
-const glyph = await png(iconSvg, 150);
+const glyph = await png(svg, 150);
 const appleIcon = await sharp({ create: { width: 180, height: 180, channels: 4, background: "#0a0a0a" } })
   .composite([{ input: glyph, left: 15, top: 15 }])
   .png()

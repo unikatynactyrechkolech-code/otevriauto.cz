@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold text-white">
-              <Image src="/logo-auto-klic.png" alt="" width={52} height={24} unoptimized />
+              <Image src="/logo-auto-klic.png" alt="" width={27} height={16} unoptimized />
               otevriauto.cz
             </Link>
             <p className="mt-4 max-w-xs text-sm text-white">

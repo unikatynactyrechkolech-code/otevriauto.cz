@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 18 62 37">
   <g fill="#F2B705">
-    <!-- Car seen from the front. -->
-    <path transform="translate(0.5 11.5) scale(0.56)" fill-rule="evenodd" d="M4 34Q4 30 8 30H11L14.5 20.5Q15.3 18 18 18H34Q36.7 18 37.5 20.5L41 30H44Q48 30 48 34V45Q48 47 46 47H6Q4 47 4 45ZM17.5 21.5H34.5L37.6 29H14.4ZM7.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM37.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM19 35H33Q34 35 34 36V39Q34 40 33 40H19Q18 40 18 39V36Q18 35 19 35ZM9 42.5H43V44H9ZM7 47H15V53Q15 55 13 55H9Q7 55 7 53ZM37 47H45V53Q45 55 43 55H39Q37 55 37 53Z"/>
-    <!-- Tiny car key, tilted upwards with the blade pointing at the car. -->
-    <g transform="translate(37 34) rotate(-32) scale(0.6)">
+    <path fill-rule="evenodd" d="M4 34Q4 30 8 30H11L14.5 20.5Q15.3 18 18 18H34Q36.7 18 37.5 20.5L41 30H44Q48 30 48 34V45Q48 47 46 47H6Q4 47 4 45ZM17.5 21.5H34.5L37.6 29H14.4ZM7.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM37.8 37.5a3.2 3.2 0 1 0 6.4 0a3.2 3.2 0 1 0-6.4 0ZM19 35H33Q34 35 34 36V39Q34 40 33 40H19Q18 40 18 39V36Q18 35 19 35ZM9 42.5H43V44H9ZM7 47H15V53Q15 55 13 55H9Q7 55 7 53ZM37 47H45V53Q45 55 43 55H39Q37 55 37 53Z"/>
+    <g transform="translate(56 31) rotate(-25) scale(0.62)">
       <path fill-rule="evenodd" d="M6 -4.2H17Q19.6 -4.2 19.6 -1.6V1.6Q19.6 4.2 17 4.2H6Q3.4 4.2 3.4 1.6V-1.6Q3.4 -4.2 6 -4.2ZM9.6 -1.3a1.3 1.3 0 1 0 0 2.6a1.3 1.3 0 1 0 0-2.6ZM13.6 -1.3a1.3 1.3 0 1 0 0 2.6a1.3 1.3 0 1 0 0-2.6Z"/><path d="M-6 -1.3H3.6V1.3H-1.5V2.8H-3.3V1.3H-6Z"/>
     </g>
   </g>

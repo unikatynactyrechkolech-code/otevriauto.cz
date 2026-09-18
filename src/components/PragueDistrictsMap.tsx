@@ -15,7 +15,7 @@ export default function PragueDistrictsMap({ currentSlug }: PragueDistrictsMapPr
         <SectionHeading
           align="center"
           title={`Dojezd ${PRAGUE_ARRIVAL} po celé Praze`}
-          description="Klikněte na obvod – ke každému máme stránku s místy, kde nejčastěji otevíráme auta."
+          description="Najeďte na obvod a uvidíte odhadovaný dojezd z naší základny v Hostivaři. Kliknutím otevřete stránku obvodu."
         />
         <div className="mt-10">
           <PragueMap currentSlug={currentSlug} />
