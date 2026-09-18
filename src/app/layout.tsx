@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: "Otevírání aut Praha 1 | Nouzové otevření vozidla 24/7",
   description:
-    "Nouzové otevírání aut v Praze 1 – Staré Město, Josefov, Malá Strana, Hradčany a Nové Město. Bez poškození, nonstop 24/7, dojezd 10–50 minut po celé Praze. Volejte 734 565 987.",
+    "Nouzové otevírání aut v Praze 1 – Staré Město, Josefov, Malá Strana, Hradčany a Nové Město. Bez poškození, nonstop 24/7, dojezd 10–40 minut po celé Praze. Volejte 734 565 987.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

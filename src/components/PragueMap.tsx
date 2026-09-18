@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MAP_HEIGHT, MAP_WIDTH, pragueMap } from "@/lib/prague-map";
+import { cells, MAP_HEIGHT, MAP_WIDTH, outline } from "@/lib/prague-map-data";
 import { PRAGUE_ARRIVAL } from "@/lib/locations";
 
 type PragueMapProps = {
@@ -17,7 +17,7 @@ export default function PragueMap({ currentSlug }: PragueMapProps) {
         role="img"
         aria-label="Mapa Prahy s obvody Praha 1 až Praha 22"
       >
-        {pragueMap.cells.map((cell) => {
+        {cells.map((cell) => {
           const active = cell.slug === currentSlug;
           return (
             <Link key={cell.slug} href={`/autozamecnik-${cell.slug}`} className="group">
@@ -33,21 +33,14 @@ export default function PragueMap({ currentSlug }: PragueMapProps) {
                 y={cell.labelAt[1]}
                 textAnchor="middle"
                 dominantBaseline="central"
-                className={`pointer-events-none font-heading text-[15px] font-bold ${active ? "fill-black" : "fill-white"}`}
+                className={`pointer-events-none font-heading text-[14px] font-bold ${active ? "fill-black" : "fill-brand"}`}
               >
                 {cell.label}
               </text>
             </Link>
           );
         })}
-        <path d={pragueMap.outline} fill="none" strokeWidth={4} strokeLinejoin="round" className="pointer-events-none stroke-brand" />
-        <path
-          d={pragueMap.river}
-          fill="none"
-          strokeWidth={1.5}
-          strokeDasharray="4 3"
-          className="pointer-events-none stroke-brand opacity-60"
-        />
+        <path d={outline} fill="none" strokeWidth={4} strokeLinejoin="round" className="pointer-events-none stroke-brand" />
       </svg>
       <div className="flex items-baseline justify-between gap-4 border-t border-brand/40 px-5 py-4 sm:px-6">
         <p className="font-heading text-lg font-bold text-white sm:text-xl">Dojezd {PRAGUE_ARRIVAL}</p>

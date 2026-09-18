@@ -42,10 +42,10 @@ export const allLocations: Location[] = regions.flatMap((region) => region.locat
 const ROUTE_PREFIX = "autozamecnik-";
 
 // Arrival window promised anywhere in Prague.
-export const PRAGUE_ARRIVAL = "10–50 minut";
+export const PRAGUE_ARRIVAL = "10–40 minut";
 
-// Staroměstské náměstí – the point arrival estimates outside Prague are measured from.
-const PRAGUE_CENTRE: [number, number] = [50.0875, 14.4213];
+// The locksmith is based in Hostivař (Herbenova, Praha 10); estimates outside Prague start there.
+const BASE: [number, number] = [50.0505, 14.5215];
 
 export function locationRouteSlug(location: Location): string {
   return `${ROUTE_PREFIX}${location.slug}`;
@@ -75,12 +75,12 @@ function distanceKm([lat1, lng1]: [number, number], [lat2, lng2]: [number, numbe
   return 6371 * 2 * Math.asin(Math.sqrt(a));
 }
 
-// Rough dispatch estimate from central Prague as the crow flies: 15 min base, 1.2 min per km
+// Rough dispatch estimate from the base as the crow flies: 15 min base, 1.2 min per km
 // for the first 20 km of city traffic, 0.9 min per km beyond that on motorways. Shown as
 // a 15-minute window rounded to 5 minutes (e.g. "40–55 minut").
 export function arrivalWindow(location: Location): string {
   if (location.region === "praha") return PRAGUE_ARRIVAL;
-  const km = distanceKm(PRAGUE_CENTRE, location.geo);
+  const km = distanceKm(BASE, location.geo);
   const minutes = 15 + 1.2 * Math.min(km, 20) + 0.9 * Math.max(km - 20, 0);
   const from = Math.max(15, Math.round(minutes / 5) * 5);
   return `${from}–${from + 15} minut`;

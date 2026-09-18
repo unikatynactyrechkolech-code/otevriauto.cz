@@ -41,7 +41,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 font-heading text-lg font-bold text-black"
           >
-            <Image src="/logo-auto-klic.png" alt="" width={63} height={24} unoptimized />
+            <Image src="/logo-auto-klic.png" alt="" width={52} height={24} unoptimized />
             otevriauto.cz
           </Link>
 
