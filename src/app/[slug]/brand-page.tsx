@@ -8,7 +8,7 @@ import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
-import MobileCallBar from "@/components/MobileCallBar";
+import CallButton from "@/components/CallButton";
 import JsonLd from "@/components/JsonLd";
 import LocationFaq from "@/components/location/LocationFaq";
 import BrandIntro from "@/components/brand/BrandIntro";
@@ -115,7 +115,7 @@ export default function BrandPageView({ brand }: { brand: BrandPage }) {
         <LocationsDirectory />
       </main>
       <Footer />
-      <MobileCallBar />
+      <CallButton />
     </>
   );
 }

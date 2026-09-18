@@ -25,3 +25,25 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  --animate-ring: ring 2.4s ease-in-out infinite;
+
+  @keyframes ring {
+    0%,
+    40%,
+    100% {
+      transform: rotate(0deg);
+    }
+    5%,
+    15%,
+    25% {
+      transform: rotate(-14deg);
+    }
+    10%,
+    20%,
+    30% {
+      transform: rotate(14deg);
+    }
+  }
+}

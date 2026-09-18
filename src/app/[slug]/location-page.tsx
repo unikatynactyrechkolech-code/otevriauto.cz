@@ -9,7 +9,7 @@ import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
-import MobileCallBar from "@/components/MobileCallBar";
+import CallButton from "@/components/CallButton";
 import JsonLd from "@/components/JsonLd";
 import LocationIntro from "@/components/location/LocationIntro";
 import LocationServices from "@/components/location/LocationServices";
@@ -127,7 +127,7 @@ export default function LocationPage({ location }: { location: Location }) {
         <LocationsDirectory currentSlug={location.slug} />
       </main>
       <Footer />
-      <MobileCallBar />
+      <CallButton />
     </>
   );
 }

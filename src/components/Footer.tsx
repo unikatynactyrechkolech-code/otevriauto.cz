@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold text-white">
-              <span className="h-4 w-1.5 rounded-full bg-brand" />
+              <Image src="/logo.svg" alt="" width={32} height={32} unoptimized />
               otevriauto.cz
             </Link>
             <p className="mt-4 max-w-xs text-sm text-white">

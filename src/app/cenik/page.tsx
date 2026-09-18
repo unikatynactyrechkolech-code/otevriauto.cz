@@ -7,7 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import MobileCallBar from "@/components/MobileCallBar";
+import CallButton from "@/components/CallButton";
 import JsonLd from "@/components/JsonLd";
 import LocationFaq from "@/components/location/LocationFaq";
 import { travelAndPayment } from "@/lib/pricing";
@@ -81,6 +81,7 @@ export default function PricingPage() {
           extraStat={{ label: "Výjezd Praha", value: "700 Kč" }}
           image={images.dashboard}
           imageAlt="Ceník otevírání aut"
+          secondaryCta={{ label: "Jak to funguje?", href: "#postup" }}
         />
 
         <section className="py-16 sm:py-24">
@@ -119,7 +120,7 @@ export default function PricingPage() {
         <Contact />
       </main>
       <Footer />
-      <MobileCallBar />
+      <CallButton />
     </>
   );
 }

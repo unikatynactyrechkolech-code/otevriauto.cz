@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
-import PhoneIcon from "./PhoneIcon";
+import HeroCtas from "./HeroCtas";
 
 export default function Hero() {
   return (
@@ -25,20 +24,8 @@ export default function Hero() {
             Otevřeme ho hned.
           </h1>
 
-          <div className="mt-8 flex flex-wrap items-center gap-2 sm:gap-3">
-            <a
-              href={siteConfig.phoneHref}
-              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
-            >
-              <PhoneIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              Volejte {siteConfig.phone}
-            </a>
-            <a
-              href="#postup"
-              className="whitespace-nowrap rounded-full border border-white/30 bg-white/10 px-4 py-3 text-[13px] font-bold text-white backdrop-blur-sm transition hover:bg-white/20 sm:px-6 sm:text-base"
-            >
-              Jak to funguje?
-            </a>
+          <div className="mt-8">
+            <HeroCtas />
           </div>
         </div>
       </div>

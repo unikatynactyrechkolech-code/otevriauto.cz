@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: "otevriauto.cz",
   shortName: "otevriauto.cz",
-  url: "https://otevriauto.cz",
+  url: "https://www.otevriauto.cz",
   phone: "734 565 987",
   phoneHref: "tel:+420734565987",
   email: "zamecnictvihusak@seznam.cz",

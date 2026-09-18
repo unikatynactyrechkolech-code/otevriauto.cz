@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site-config";
@@ -40,7 +41,7 @@ export default function Header() {
             onClick={() => setOpen(false)}
             className="flex items-center gap-2 font-heading text-lg font-bold text-black"
           >
-            <span className="h-4 w-1.5 rounded-full bg-brand" />
+            <Image src="/logo.svg" alt="" width={32} height={32} unoptimized />
             otevriauto.cz
           </Link>
 
@@ -56,28 +57,17 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
-            <a
-              href={siteConfig.phoneHref}
-              aria-label={`Zavolat ${siteConfig.phone}`}
-              className="flex items-center justify-center gap-2 rounded-full bg-brand p-3 text-sm font-bold text-black transition hover:bg-brand-dark sm:px-5 sm:py-2.5"
-            >
-              <PhoneIcon className="h-4 w-4" />
-              <span className="hidden sm:inline">{siteConfig.phone}</span>
-            </a>
-
-            <button
-              type="button"
-              onClick={() => setOpen((v) => !v)}
-              className="flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full border border-black/10 lg:hidden"
-              aria-label={open ? "Zavřít menu" : "Otevřít menu"}
-              aria-expanded={open}
-              aria-controls="mobile-menu"
-            >
-              <span className={`h-[2px] w-5 bg-black transition ${open ? "translate-y-[3.5px] rotate-45" : ""}`} />
-              <span className={`h-[2px] w-5 bg-black transition ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`} />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="-mr-2 flex h-11 w-11 flex-col items-center justify-center gap-[6px] lg:hidden"
+            aria-label={open ? "Zavřít menu" : "Otevřít menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+          >
+            <span className={`h-[3px] w-7 rounded-full bg-brand transition ${open ? "translate-y-[4.5px] rotate-45" : ""}`} />
+            <span className={`h-[3px] w-7 rounded-full bg-brand transition ${open ? "-translate-y-[4.5px] -rotate-45" : ""}`} />
+          </button>
         </div>
       </header>
 

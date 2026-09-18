@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Situations from "@/components/Situations";
@@ -12,7 +13,11 @@ import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
 import Footer from "@/components/Footer";
-import MobileCallBar from "@/components/MobileCallBar";
+import CallButton from "@/components/CallButton";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (
@@ -33,7 +38,7 @@ export default function Home() {
         <LocationsDirectory />
       </main>
       <Footer />
-      <MobileCallBar />
+      <CallButton />
     </>
   );
 }

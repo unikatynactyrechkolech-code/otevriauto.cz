@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 import PhoneIcon from "./PhoneIcon";
+import HeroCtas from "./HeroCtas";
 
 type PageHeroProps = {
   title: string;
@@ -14,6 +15,8 @@ type PageHeroProps = {
   extraStat: { label: string; value: string };
   image: string;
   imageAlt: string;
+  /** Second hero button; defaults to the price list. */
+  secondaryCta?: { label: string; href: string };
 };
 
 function ClockIcon({ className }: { className: string }) {
@@ -48,6 +51,7 @@ export default function PageHero({
   extraStat,
   image,
   imageAlt,
+  secondaryCta,
 }: PageHeroProps) {
   const stats = [
     { icon: ClockIcon, label: "Příjezd", value: arrival },
@@ -93,20 +97,8 @@ export default function PageHero({
           </h1>
           <p className="mt-4 max-w-2xl text-base text-white sm:text-lg">{subtitle}</p>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-            <a
-              href={siteConfig.phoneHref}
-              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
-            >
-              <PhoneIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              Volejte {siteConfig.phone}
-            </a>
-            <a
-              href="#postup"
-              className="whitespace-nowrap rounded-full border border-white/30 bg-white/10 px-4 py-3 text-[13px] font-bold text-white backdrop-blur-sm transition hover:bg-white/20 sm:px-6 sm:text-base"
-            >
-              Jak to funguje?
-            </a>
+          <div className="mt-8">
+            <HeroCtas align="center" secondary={secondaryCta} />
           </div>
         </div>
       </section>
