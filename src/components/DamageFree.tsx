@@ -1,6 +1,5 @@
-import Image from "next/image";
 import SectionHeading from "./SectionHeading";
-import { images } from "@/lib/images";
+import PragueMap from "./PragueMap";
 
 const vehicleTypes = [
   "Osobní automobily všech značek",
@@ -32,23 +31,7 @@ export default function DamageFree() {
           </ul>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] sm:aspect-[4/3]">
-          <Image
-            src={images.toolClose}
-            alt="Šetrné otevření zámku vozidla odborným nástrojem"
-            fill
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent" />
-
-          <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/20 bg-white/10 px-5 py-4 backdrop-blur-md">
-            <div>
-              <p className="font-heading text-lg font-bold text-white">Dojezd 10–50 min</p>
-              <p className="text-xs text-white">v celé Praze</p>
-            </div>
-          </div>
-        </div>
+        <PragueMap />
       </div>
     </section>
   );

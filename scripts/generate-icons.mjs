@@ -1,8 +1,10 @@
-// Builds every favicon variant from public/logo.svg. Run with `npm run icons` after changing the logo.
+// Builds the header logo from public/logo.svg and every favicon from the square public/logo-icon.svg.
+// Run with `npm run icons` after changing either file.
 import { readFileSync, writeFileSync } from "node:fs";
 import sharp from "sharp";
 
 const svg = readFileSync("public/logo.svg");
+const iconSvg = readFileSync("public/logo-icon.svg");
 
 const png = (source, size) => sharp(source, { density: 1200 }).resize(size, size).png().toBuffer();
 
@@ -28,20 +30,20 @@ function toIco(images) {
 }
 
 const sizes = [16, 32, 48];
-const icoImages = await Promise.all(sizes.map(async (size) => ({ size, data: await png(svg, size) })));
+const icoImages = await Promise.all(sizes.map(async (size) => ({ size, data: await png(iconSvg, size) })));
 writeFileSync("src/app/favicon.ico", toIco(icoImages));
 
-writeFileSync("src/app/icon.svg", svg);
+writeFileSync("src/app/icon.svg", iconSvg);
 
 // Transparent PNG logo for the header and footer, trimmed to the artwork so it lines up with text.
 // The file name changes with the artwork so no browser or image cache serves an old version.
 const trimmed = await sharp(await png(svg, 1024)).trim().png().toBuffer();
 const logo = await sharp(trimmed).resize({ height: 96 }).png().toBuffer({ resolveWithObject: true });
-writeFileSync("public/logo-auto-zamek.png", logo.data);
-console.log(`public/logo-auto-zamek.png is ${logo.info.width}x${logo.info.height}`);
+writeFileSync("public/logo-auto-klic.png", logo.data);
+console.log(`public/logo-auto-klic.png is ${logo.info.width}x${logo.info.height}`);
 
 // iOS fills transparent icons with black anyway, so the touch icon gets an explicit black square.
-const glyph = await png(svg, 150);
+const glyph = await png(iconSvg, 150);
 const appleIcon = await sharp({ create: { width: 180, height: 180, channels: 4, background: "#0a0a0a" } })
   .composite([{ input: glyph, left: 15, top: 15 }])
   .png()

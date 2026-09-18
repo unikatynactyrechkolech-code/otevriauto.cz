@@ -9,7 +9,6 @@ import PricingPreview from "@/components/PricingPreview";
 import WarningBox from "@/components/WarningBox";
 import Tips from "@/components/Tips";
 import CoverageAreas from "@/components/CoverageAreas";
-import PragueDistrictsMap from "@/components/PragueDistrictsMap";
 import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import LocationsDirectory from "@/components/LocationsDirectory";
@@ -33,7 +32,6 @@ export default function Home() {
         <PricingPreview />
         <WarningBox />
         <Tips />
-        <PragueDistrictsMap />
         <CoverageAreas />
         <CtaBanner />
         <Contact />
