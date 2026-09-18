@@ -25,24 +25,17 @@ export default function Hero() {
             Otevřeme ho hned.
           </h1>
 
-          <p className="mt-6 max-w-xl text-base text-white/70 sm:text-lg">
-            Zabouchnuté klíče, vybitá baterie nebo zamrzlý zámek? Vyjíždíme po
-            celé Praze i Středočeském kraji – od Starého Města po Josefov,
-            Malou Stranu, Hradčany a Nové Město – šetrně, rychle a za předem
-            dohodnutou cenu.
-          </p>
-
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-wrap items-center gap-2 sm:gap-3">
             <a
               href={siteConfig.phoneHref}
-              className="flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-4 text-center text-base font-bold text-black shadow-[0_14px_30px_-10px_rgba(242,183,5,0.8)] transition hover:bg-brand-dark"
+              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black shadow-[0_14px_30px_-10px_rgba(242,183,5,0.8)] transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
             >
-              <PhoneIcon className="h-4 w-4" />
+              <PhoneIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               Volejte {siteConfig.phone}
             </a>
             <a
               href="#postup"
-              className="rounded-full border border-white/30 bg-white/10 px-7 py-4 text-center text-base font-bold text-white backdrop-blur-sm transition hover:bg-white/20"
+              className="whitespace-nowrap rounded-full border border-white/30 bg-white/10 px-4 py-3 text-[13px] font-bold text-white backdrop-blur-sm transition hover:bg-white/20 sm:px-6 sm:text-base"
             >
               Jak to funguje?
             </a>
