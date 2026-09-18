@@ -23,7 +23,7 @@ export default function SectionHeading({
         {title}
       </h2>
       {description ? (
-        <p className={`max-w-2xl text-sm sm:text-base ${light ? "text-white/70" : "text-ink"}`}>
+        <p className={`max-w-2xl text-sm sm:text-base ${light ? "text-white" : "text-ink"}`}>
           {description}
         </p>
       ) : null}

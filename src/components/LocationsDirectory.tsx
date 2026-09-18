@@ -14,7 +14,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
     `rounded-md px-1.5 py-0.5 text-[11px] font-semibold transition sm:px-2.5 sm:py-1 sm:text-sm ${
       active
         ? "bg-brand text-black"
-        : "bg-white/10 text-white/80 hover:bg-brand/25 hover:text-white"
+        : "bg-white/10 text-white hover:bg-brand/25 hover:text-white"
     }`;
   const regionClass = "scroll-mt-20 rounded-2xl bg-white/[0.04] p-2 sm:p-6";
   const regionHeadingClass =
@@ -90,7 +90,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
                   {district.otherTowns.map((town) => (
                     <span
                       key={town}
-                      className="rounded-md border border-white/10 px-1.5 py-0.5 text-[11px] text-white/50 sm:px-2.5 sm:py-1 sm:text-sm"
+                      className="rounded-md border border-white/10 px-1.5 py-0.5 text-[11px] text-white sm:px-2.5 sm:py-1 sm:text-sm"
                     >
                       {town}
                     </span>
@@ -101,7 +101,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
           </div>
         </div>
 
-        <p className="mt-6 px-2 text-center text-xs text-white/60 sm:text-sm">
+        <p className="mt-6 px-2 text-center text-xs text-white sm:text-sm">
           Nenašli jste svou obec? Zavolejte na{" "}
           <a href={siteConfig.phoneHref} className="font-bold text-brand hover:underline">
             {siteConfig.phone}

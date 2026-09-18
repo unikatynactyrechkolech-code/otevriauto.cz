@@ -21,7 +21,7 @@ export default function Brands({
           {brandGroups.map((group) => (
             <div
               key={group.label}
-              className="rounded-2xl border border-black/5 bg-gray-50/70 p-6 shadow-sm shadow-black/[0.03]"
+              className="rounded-2xl border border-black/5 bg-gray-50/70 p-6"
             >
               <p className="text-xs font-bold uppercase tracking-wider text-brand-dark">
                 {group.label}
@@ -30,7 +30,7 @@ export default function Brands({
                 {group.brands.map((brand) => {
                   const page = getBrandPageForLabel(brand);
                   const chipClass =
-                    "rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink shadow-sm";
+                    "rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink";
                   return page ? (
                     <Link
                       key={brand}

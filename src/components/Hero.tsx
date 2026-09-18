@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-2 sm:gap-3">
             <a
               href={siteConfig.phoneHref}
-              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black shadow-[0_14px_30px_-10px_rgba(242,183,5,0.8)] transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
+              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
             >
               <PhoneIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               Volejte {siteConfig.phone}

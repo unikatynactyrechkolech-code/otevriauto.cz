@@ -25,20 +25,20 @@ export default function Footer() {
               <span className="h-4 w-1.5 rounded-full bg-brand" />
               otevriauto.cz
             </Link>
-            <p className="mt-4 max-w-xs text-sm text-white/50">
+            <p className="mt-4 max-w-xs text-sm text-white">
               Nouzové otevírání aut v Praze 1 – nonstop, šetrně a bez poškození
               vozidla. Spolehněte se na odborníky s praxí.
             </p>
           </div>
 
           <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white/70">
+            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white">
               Rychlé odkazy
             </h3>
             <ul className="mt-4 space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/50 transition hover:text-brand">
+                  <a href={link.href} className="text-sm text-white transition hover:text-brand">
                     {link.label}
                   </a>
                 </li>
@@ -47,13 +47,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white/70">
+            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white">
               Užitečné odkazy
             </h3>
             <ul className="mt-4 space-y-2.5">
               {usefulLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sm text-white/50 transition hover:text-brand">
+                  <a href={link.href} className="text-sm text-white transition hover:text-brand">
                     {link.label}
                   </a>
                 </li>
@@ -62,10 +62,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white/70">
+            <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-white">
               Kontakt
             </h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/50">
+            <ul className="mt-4 space-y-3 text-sm text-white">
               <li>{siteConfig.phone}</li>
               <li>{siteConfig.email}</li>
               <li>Praha a Středočeský kraj</li>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:justify-between">
+        <div className="mt-12 flex flex-col items-center gap-3 border-t border-white/10 pt-6 text-xs text-white sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {siteConfig.name}. Všechna práva vyhrazena.</p>
           <p>Nouzové otevírání aut v Praze a Středočeském kraji · nonstop 24/7</p>
         </div>

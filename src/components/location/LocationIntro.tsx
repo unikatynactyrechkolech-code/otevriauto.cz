@@ -20,7 +20,7 @@ export default function LocationIntro({ location }: LocationIntroProps) {
         </div>
 
         <aside className="space-y-4">
-          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6 shadow-sm shadow-black/[0.03]">
+          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6">
             <h3 className="font-heading text-lg font-bold text-ink">
               Kde nejčastěji otevíráme auta {location.locative}
             </h3>

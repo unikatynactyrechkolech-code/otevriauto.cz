@@ -5,18 +5,27 @@ import { images } from "@/lib/images";
 const tiles = [
   {
     image: images.keys,
+    alt: "Autoklíče a vložka zámku zapalování",
     title: "Zabouchnuté klíče",
     text: "Klíče zůstaly zamčené uvnitř vozidla.",
   },
   {
-    image: images.ignition,
+    image: images.battery,
+    alt: "Vybitá autobaterie pod kapotou auta",
     title: "Vybitá baterie",
     text: "Baterie klíče nebo autobaterie brání otevření dveří.",
   },
   {
-    image: images.wheel,
+    image: images.frozenLock,
+    alt: "Zamrzlý zámek dveří auta s klíčem",
     title: "Zamrzlý zámek",
     text: "Šetrné rozmrazení a otevření během zimního období.",
+  },
+  {
+    image: images.centralLocking,
+    alt: "Rozebraný motorek centrálního zamykání dveří",
+    title: "Porucha centrálního zamykání",
+    text: "Auto nereaguje na ovladač ani na klíč v zámku.",
   },
 ];
 
@@ -24,10 +33,6 @@ const extra = [
   {
     title: "Ztracené nebo ukradené klíče",
     text: "Přijedeme a vůz otevřeme, i když nemáte po ruce žádný klíč.",
-  },
-  {
-    title: "Porucha centrálního zamykání nebo alarmu",
-    text: "Diagnostikujeme problém přímo na místě a vůz zpřístupníme.",
   },
   {
     title: "Klíče uzamčené v kufru",
@@ -48,23 +53,23 @@ export default function Situations() {
           description="Zkušený zámečník pro oblast Josefov, Hradčany, Malá Strana, Nové Město a Staré Město vám pomůže rychle a bez poškození karoserie nebo zámku."
         />
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4">
           {tiles.map((tile) => (
             <div
               key={tile.title}
-              className="group relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg shadow-black/10"
+              className="group relative aspect-[4/5] overflow-hidden rounded-2xl"
             >
               <Image
                 src={tile.image}
-                alt={tile.title}
+                alt={tile.alt}
                 fill
-                sizes="(min-width: 640px) 33vw, 100vw"
+                sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-5">
-                <h3 className="font-heading text-lg font-bold text-white">{tile.title}</h3>
-                <p className="mt-1 text-sm text-white/70">{tile.text}</p>
+              <div className="absolute inset-x-0 bottom-0 p-3 sm:p-5">
+                <h3 className="font-heading text-sm font-bold leading-tight text-white sm:text-lg">{tile.title}</h3>
+                <p className="mt-1 text-xs text-white sm:text-sm">{tile.text}</p>
               </div>
             </div>
           ))}
@@ -72,7 +77,7 @@ export default function Situations() {
 
         <div className="mt-10 border-t border-black/5 pt-8">
           <h3 className="font-heading text-xl font-bold text-black">Další důvody</h3>
-          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
+          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-8">
             {extra.map((item) => (
               <div key={item.title}>
                 <h4 className="font-heading text-base font-bold text-ink">{item.title}</h4>

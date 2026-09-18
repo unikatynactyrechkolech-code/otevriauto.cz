@@ -22,7 +22,7 @@ export default function WarningBox() {
               <h3 className="font-heading text-xl font-bold text-white sm:text-2xl">
                 Proč nezkoušet otevřít auto svépomocí?
               </h3>
-              <p className="mt-2 max-w-2xl text-sm text-white/70 sm:text-base">
+              <p className="mt-2 max-w-2xl text-sm text-white sm:text-base">
                 Pokusy o otevření auta bez potřebných zkušeností často vedou k
                 poškození klik, gumových těsnění nebo dokonce k prasknutí skla.
                 Oprava takových škod může stát několikanásobně více než

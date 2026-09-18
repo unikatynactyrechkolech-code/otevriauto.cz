@@ -45,7 +45,7 @@ export default function HowItWorks({
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
           <div className="lg:sticky lg:top-24">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-xl shadow-black/10">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
               <Image
                 src={images.ignition}
                 alt="Klíč v zapalování vozidla"

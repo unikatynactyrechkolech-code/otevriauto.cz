@@ -16,14 +16,14 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
-          <p className="mt-6 text-xs text-ink/60">
+          <p className="mt-6 text-xs text-ink">
             Nejsme autorizovaný servis ani zastoupení značky {brand.name}. Název značky a modelů
             uvádíme pouze pro označení vozů, které otevíráme.
           </p>
         </div>
 
         <aside className="space-y-4">
-          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6 shadow-sm shadow-black/[0.03]">
+          <div className="rounded-2xl border border-black/5 bg-gray-50/70 p-6">
             <h3 className="font-heading text-lg font-bold text-ink">
               Modely značky {brand.name}, které otevíráme nejčastěji
             </h3>
@@ -31,7 +31,7 @@ export default function BrandIntro({ brand }: BrandIntroProps) {
               {brand.models.map((model) => (
                 <li
                   key={model}
-                  className="rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink shadow-sm"
+                  className="rounded-full border border-black/5 bg-white px-3 py-1.5 text-sm font-semibold text-ink"
                 >
                   {model.startsWith(brand.name) ? model : `${brand.name} ${model}`}
                 </li>

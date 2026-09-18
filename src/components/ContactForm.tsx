@@ -26,7 +26,7 @@ export default function ContactForm() {
   return (
     <section id="kontakt" className="scroll-mt-20 py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid overflow-hidden rounded-3xl shadow-2xl shadow-black/10 lg:grid-cols-5">
+        <div className="grid overflow-hidden rounded-3xl lg:grid-cols-5">
           <div className="relative flex flex-col justify-between gap-8 overflow-hidden bg-ink p-8 text-white sm:p-10 lg:col-span-2">
             <Image
               src={images.dashboard}
@@ -43,7 +43,7 @@ export default function ContactForm() {
               <h2 className="mt-3 font-heading text-2xl font-extrabold sm:text-3xl">
                 Otevíráme vaše auto ještě dnes
               </h2>
-              <p className="mt-3 text-sm text-white/60">
+              <p className="mt-3 text-sm text-white">
                 Volejte přímo, nebo nám nechte poptávku – ozveme se obratem a
                 řekneme orientační cenu ještě před výjezdem.
               </p>
@@ -51,19 +51,19 @@ export default function ContactForm() {
 
             <div className="relative space-y-5 border-t border-white/15 pt-6">
               <a href={siteConfig.phoneHref} className="block">
-                <span className="block text-xs text-white/50">Zavolejte nám</span>
+                <span className="block text-xs text-white">Zavolejte nám</span>
                 <span className="block text-lg font-bold">{siteConfig.phone}</span>
               </a>
               <div>
-                <span className="block text-xs text-white/50">Napište nám</span>
+                <span className="block text-xs text-white">Napište nám</span>
                 <span className="block text-sm font-bold">{siteConfig.email}</span>
               </div>
               <div>
-                <span className="block text-xs text-white/50">Provoz</span>
+                <span className="block text-xs text-white">Provoz</span>
                 <span className="block text-sm font-bold">{siteConfig.hours}</span>
               </div>
               <div>
-                <span className="block text-xs text-white/50">Oblast</span>
+                <span className="block text-xs text-white">Oblast</span>
                 <span className="block text-sm font-bold">Praha a Středočeský kraj</span>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function ContactForm() {
 
                 <button
                   type="submit"
-                  className="flex items-center justify-center rounded-xl bg-brand px-6 py-3.5 text-sm font-bold text-black shadow-[0_10px_25px_-8px_rgba(242,183,5,0.7)] transition hover:bg-brand-dark sm:col-span-2"
+                  className="flex items-center justify-center rounded-xl bg-brand px-6 py-3.5 text-sm font-bold text-black transition hover:bg-brand-dark sm:col-span-2"
                 >
                   Odeslat poptávku
                 </button>

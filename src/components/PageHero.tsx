@@ -71,7 +71,7 @@ export default function PageHero({
 
         <div className="relative mx-auto flex max-w-5xl flex-col items-center px-4 pb-16 pt-14 text-center sm:px-6 sm:pb-20 sm:pt-20 lg:px-8">
           <nav aria-label="Drobečková navigace">
-            <ol className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-white/60">
+            <ol className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm text-white">
               {breadcrumbs.map((crumb) => (
                 <Fragment key={crumb.href}>
                   <li>
@@ -91,12 +91,12 @@ export default function PageHero({
           <h1 className="mt-6 font-heading text-4xl font-extrabold uppercase leading-tight text-white sm:text-5xl lg:text-6xl">
             {title}
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-white/75 sm:text-lg">{subtitle}</p>
+          <p className="mt-4 max-w-2xl text-base text-white sm:text-lg">{subtitle}</p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             <a
               href={siteConfig.phoneHref}
-              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black shadow-[0_14px_30px_-10px_rgba(242,183,5,0.8)] transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
+              className="flex items-center gap-1.5 whitespace-nowrap rounded-full bg-brand px-4 py-3 text-[13px] font-bold text-black transition hover:bg-brand-dark sm:gap-2 sm:px-6 sm:text-base"
             >
               <PhoneIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
               Volejte {siteConfig.phone}
@@ -117,7 +117,7 @@ export default function PageHero({
             <div key={label} className="flex items-center gap-3 lg:justify-center">
               <Icon className="h-7 w-7 shrink-0 text-brand" />
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-wider text-white/60">{label}</p>
+                <p className="text-[11px] font-bold uppercase tracking-wider text-white">{label}</p>
                 <p className="text-sm font-bold text-white sm:text-base">{value}</p>
               </div>
             </div>

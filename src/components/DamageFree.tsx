@@ -32,7 +32,7 @@ export default function DamageFree() {
           </ul>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-xl shadow-black/10 sm:aspect-[4/3]">
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] sm:aspect-[4/3]">
           <Image
             src={images.toolClose}
             alt="Šetrné otevření zámku vozidla odborným nástrojem"
@@ -45,7 +45,7 @@ export default function DamageFree() {
           <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-2xl border border-white/20 bg-white/10 px-5 py-4 backdrop-blur-md">
             <div>
               <p className="font-heading text-lg font-bold text-white">Dojezd do 30 min</p>
-              <p className="text-xs text-white/70">i v náročných podmínkách</p>
+              <p className="text-xs text-white">i v náročných podmínkách</p>
             </div>
           </div>
         </div>

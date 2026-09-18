@@ -23,7 +23,7 @@ export default function NearbyLocations({ name, locations }: NearbyLocationsProp
             <li key={location.slug}>
               <Link
                 href={locationPath(location)}
-                className="group flex h-full items-center gap-2 rounded-xl border border-black/5 bg-white p-2 shadow-sm shadow-black/[0.03] transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/10 sm:gap-3 sm:rounded-2xl sm:p-4"
+                className="group flex h-full items-center gap-2 rounded-xl border border-black/5 bg-white p-2 transition hover:-translate-y-0.5 sm:gap-3 sm:rounded-2xl sm:p-4"
               >
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand-dark sm:h-10 sm:w-10">
                   <MapPinIcon className="h-3.5 w-3.5 sm:h-5 sm:w-5" />
@@ -32,9 +32,9 @@ export default function NearbyLocations({ name, locations }: NearbyLocationsProp
                   <span className="block font-heading text-xs font-bold leading-tight text-ink sm:text-base">
                     {location.name}
                   </span>
-                  <span className="block text-[11px] text-ink/60 sm:text-sm">{arrivalWindow(location)}</span>
+                  <span className="block text-[11px] text-ink sm:text-sm">{arrivalWindow(location)}</span>
                 </span>
-                <span className="hidden text-xl text-ink/40 transition group-hover:text-brand-dark sm:inline" aria-hidden="true">
+                <span className="hidden text-xl text-ink transition group-hover:text-brand-dark sm:inline" aria-hidden="true">
                   ›
                 </span>
               </Link>

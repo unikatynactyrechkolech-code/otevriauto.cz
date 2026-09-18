@@ -5,6 +5,9 @@ const r2 = "https://pub-1210b04a751146ca8c08bf867908398c.r2.dev/otevri%20auto";
 export const images = {
   hero: `${r2}/otevreni-zamku-auta.webp`,
   keys: `${r2}/autoklice-a-zamek-zapalovani.webp`,
+  battery: `${r2}/vybita-autobaterie.webp`,
+  frozenLock: `${r2}/zamrzly-zamek-auta.webp`,
+  centralLocking: `${r2}/porucha-centralniho-zamykani.webp`,
   ignition: "https://images.unsplash.com/photo-1615906655593-ad0386982a0f",
   wheel: "https://images.unsplash.com/photo-1502877338535-766e1452684a",
   technician: "https://images.unsplash.com/photo-1580273916550-e323be2ae537",

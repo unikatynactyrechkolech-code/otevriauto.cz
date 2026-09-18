@@ -22,7 +22,7 @@ export default function CoverageAreas({
             {areas.map((area) => (
               <span
                 key={area}
-                className="rounded-full border border-black/5 bg-white px-4 py-2.5 text-sm font-bold text-ink shadow-sm shadow-black/[0.03]"
+                className="rounded-full border border-black/5 bg-white px-4 py-2.5 text-sm font-bold text-ink"
               >
                 {area}
               </span>
