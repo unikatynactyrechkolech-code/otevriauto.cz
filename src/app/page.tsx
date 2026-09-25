@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Situations from "@/components/Situations";
 import DamageFree from "@/components/DamageFree";
+import PragueDistrictsMap from "@/components/PragueDistrictsMap";
+import Showcase from "@/components/Showcase";
 import Brands from "@/components/Brands";
 import HowItWorks from "@/components/HowItWorks";
 import Team from "@/components/Team";
@@ -28,8 +30,10 @@ export default function Home() {
         <Hero />
         <Situations />
         <DamageFree />
+        <PragueDistrictsMap />
         <Brands />
         <HowItWorks />
+        <Showcase />
         <Team />
         <PricingPreview />
         <WarningBox />

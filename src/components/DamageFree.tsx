@@ -1,5 +1,6 @@
 import SectionHeading from "./SectionHeading";
-import PragueMap from "./PragueMap";
+import VideoPlayer from "./VideoPlayer";
+import { mainVideo } from "@/lib/showcase";
 
 const vehicleTypes = [
   "Osobní automobily všech značek",
@@ -31,9 +32,13 @@ export default function DamageFree() {
           </ul>
         </div>
 
-        <PragueMap />
+        <figure className="mx-auto w-full max-w-sm">
+          <VideoPlayer video={mainVideo} sizes="(min-width: 640px) 24rem, 100vw" />
+          <figcaption className="mt-3 text-sm text-ink">
+            <span className="font-bold">{mainVideo.title}.</span> {mainVideo.description}
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
 }
-

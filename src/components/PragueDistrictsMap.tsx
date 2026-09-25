@@ -7,7 +7,7 @@ type PragueDistrictsMapProps = {
   currentSlug?: string;
 };
 
-// Map section for the Prague district pages; the homepage shows the map inside DamageFree.
+// Map section shown on the homepage and on every Prague district page.
 export default function PragueDistrictsMap({ currentSlug }: PragueDistrictsMapProps) {
   return (
     <section className="py-16 sm:py-24">
