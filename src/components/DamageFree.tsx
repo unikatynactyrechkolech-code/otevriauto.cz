@@ -32,8 +32,8 @@ export default function DamageFree() {
           </ul>
         </div>
 
-        <figure className="mx-auto w-full max-w-sm">
-          <VideoPlayer video={mainVideo} sizes="(min-width: 640px) 24rem, 100vw" />
+        <figure className="mx-auto w-full max-w-[17rem]">
+          <VideoPlayer video={mainVideo} sizes="(min-width: 640px) 17rem, 100vw" />
           <figcaption className="mt-3 text-sm text-ink">
             <span className="font-bold">{mainVideo.title}.</span> {mainVideo.description}
           </figcaption>

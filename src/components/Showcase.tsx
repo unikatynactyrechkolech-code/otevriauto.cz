@@ -30,15 +30,18 @@ export default function Showcase() {
           description="Žádné fotky z banky obrázků. Všechna videa i fotky jsou z aut, která jsme otevírali v Praze a okolí."
         />
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {showcaseVideos.map((video) => (
-            <article key={video.src} className="border border-black/10 bg-white">
+            <article
+              key={video.src}
+              className="flex flex-col gap-4 border border-black/10 bg-white p-4 sm:flex-row sm:items-center sm:gap-6 sm:p-6"
+            >
               <VideoPlayer
                 video={video}
-                sizes="(min-width: 640px) 36rem, 100vw"
-                className="mx-auto w-full max-w-sm"
+                sizes="(min-width: 640px) 11rem, 100vw"
+                className="mx-auto w-full max-w-[13rem] shrink-0 sm:mx-0 sm:w-44 sm:max-w-none"
               />
-              <div className="p-5 sm:p-6">
+              <div>
                 <h3 className="font-heading text-xl font-bold text-ink">{video.title}</h3>
                 <p className="mt-2 text-sm text-ink sm:text-base">{video.description}</p>
               </div>
