@@ -10,6 +10,8 @@ export type ShowcaseVideo = {
   height: number;
   title: string;
   description: string;
+  /** Clips without a sound track start muted, so no browser blocks the playback. */
+  hasAudio?: boolean;
 };
 
 export const mainVideo: ShowcaseVideo = {
@@ -17,6 +19,7 @@ export const mainVideo: ShowcaseVideo = {
   poster: `${media}/otevirani-auta-alfa-romeo-garaz-poster.webp`,
   width: 464,
   height: 832,
+  hasAudio: true,
   title: "Otevření Alfy Romeo v podzemní garáži",
   description:
     "Vzduchový klín rozevře dveře jen o pár milimetrů, tažná tyč pak zevnitř odemkne zámek. Lak ani těsnění se nedotkne nic tvrdého.",

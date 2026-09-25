@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import type { ShowcaseVideo } from "@/lib/showcase";
 
 type VideoPlayerProps = {
@@ -15,9 +16,24 @@ type VideoPlayerProps = {
 // the visitor hits play.
 export default function VideoPlayer({ video, sizes = "(min-width: 640px) 24rem, 100vw", className }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(false);
+  const frameRef = useRef<HTMLDivElement>(null);
+
+  // Safari only allows unmuted playback from the click itself, so the element has to exist
+  // before this handler returns – hence flushSync instead of the autoPlay attribute.
+  const play = () => {
+    flushSync(() => setPlaying(true));
+    const element = frameRef.current?.querySelector("video");
+    element?.play().catch(() => {
+      if (!element.muted) {
+        element.muted = true;
+        void element.play();
+      }
+    });
+  };
 
   return (
     <div
+      ref={frameRef}
       className={`relative overflow-hidden bg-ink ${className ?? ""}`}
       style={{ aspectRatio: `${video.width} / ${video.height}` }}
     >
@@ -27,14 +43,14 @@ export default function VideoPlayer({ video, sizes = "(min-width: 640px) 24rem, 
           poster={video.poster}
           className="h-full w-full object-cover"
           controls
-          autoPlay
+          muted={!video.hasAudio}
           playsInline
           preload="auto"
         />
       ) : (
         <button
           type="button"
-          onClick={() => setPlaying(true)}
+          onClick={play}
           aria-label={`Přehrát video: ${video.title}`}
           className="group absolute inset-0 cursor-pointer"
         >
