@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, IBM_Plex_Sans } from "next/font/google";
+import Script from "next/script";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
@@ -29,6 +30,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${plex.variable} ${archivo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-ink">{children}</body>
+      {/* Umami analytics on webpojede.cz; it follows client-side navigation on its own. */}
+      <Script
+        src="https://stats.webpojede.cz/script.js"
+        data-website-id="1a4d4355-c51d-4b96-b58e-42956063256d"
+      />
     </html>
   );
 }
