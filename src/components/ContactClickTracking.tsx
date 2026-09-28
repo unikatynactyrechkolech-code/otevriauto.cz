@@ -8,6 +8,17 @@ declare global {
   }
 }
 
+const BUTTON_LABELS: Record<string, string> = {
+  "hero-podstranky": "pruh „Nonstop linka“ pod nadpisem",
+  "plovouci-tlacitko": "plovoucí tlačítko",
+  upozorneni: "rámeček s upozorněním",
+  "seznam-lokalit": "seznam lokalit",
+  kontakt: "kontakt",
+  paticka: "patička",
+  "spodni-banner": "banner dole",
+  menu: "menu",
+};
+
 function channelOf(href: string): string | null {
   if (href.startsWith("tel:")) return "telefon";
   if (href.includes("wa.me/")) return "WhatsApp";
@@ -15,7 +26,7 @@ function channelOf(href: string): string | null {
 }
 
 // Every click on a phone or WhatsApp link goes to Umami as "Klik na telefon" / "Klik na WhatsApp"
-// with the button's data-misto, so the stats show which button people use; Umami adds the page.
+// with the page and a readable button name, so the stats show where people call from.
 // Not data-umami-event: on links Umami holds the navigation until the stat is sent, which would
 // delay the dialler, and a stuck stats server would stop the call from opening at all.
 export default function ContactClickTracking() {
@@ -25,7 +36,12 @@ export default function ContactClickTracking() {
       if (!link) return;
       const channel = channelOf(link.getAttribute("href") ?? "");
       if (!channel) return;
-      window.umami?.track(`Klik na ${channel}`, { misto: link.dataset.misto ?? "jine" });
+      const path = window.location.pathname;
+      const button = link.dataset.misto ?? "";
+      window.umami?.track(`Klik na ${channel}`, {
+        podstranka: path === "/" ? "úvodní stránka" : path,
+        tlacitko: BUTTON_LABELS[button] ?? (button || "jiné"),
+      });
     }
     document.addEventListener("click", onClick, true);
     return () => document.removeEventListener("click", onClick, true);
