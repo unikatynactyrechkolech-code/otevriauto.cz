@@ -3,8 +3,9 @@ export const siteConfig = {
   name: "otevriauto.cz",
   shortName: "otevriauto.cz",
   url: "https://www.otevriauto.cz",
-  phone: "734 565 987",
-  phoneHref: "tel:+420734565987",
+  phone: "606 588 222",
+  phoneHref: "tel:+420606588222",
+  whatsappHref: "https://wa.me/420606588222",
   email: "zamecnictvihusak@seznam.cz",
   address: {
     street: "Herbenova 727/38",

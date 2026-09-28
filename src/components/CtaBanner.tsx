@@ -2,6 +2,7 @@ import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import { images } from "@/lib/images";
 import PhoneIcon from "./PhoneIcon";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function CtaBanner() {
   return (
@@ -20,13 +21,26 @@ export default function CtaBanner() {
           Jsme k dispozici 24/7 pro nouzové otevření vozidla
         </h2>
 
-        <a
-          href={siteConfig.phoneHref}
-          className="mt-2 flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-black transition hover:bg-brand-dark"
-        >
-          <PhoneIcon className="h-4 w-4" />
-          Volejte {siteConfig.phone}
-        </a>
+        <div className="mt-2 flex flex-col items-center gap-3 sm:flex-row">
+          <a
+            href={siteConfig.phoneHref}
+            data-misto="spodni-banner"
+            className="flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-black transition hover:bg-brand-dark"
+          >
+            <PhoneIcon className="h-4 w-4" />
+            Volejte {siteConfig.phone}
+          </a>
+          <a
+            href={siteConfig.whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-misto="spodni-banner"
+            className="flex items-center gap-2 rounded-full border-2 border-brand px-8 py-4 text-base font-bold text-brand transition hover:bg-brand hover:text-black"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            Napsat na WhatsApp
+          </a>
+        </div>
       </div>
     </section>
   );

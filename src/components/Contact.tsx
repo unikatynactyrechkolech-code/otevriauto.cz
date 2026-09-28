@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site-config";
+import WhatsAppIcon from "./WhatsAppIcon";
 
 export default function Contact() {
   const { street, city, postalCode } = siteConfig.address;
@@ -13,9 +14,22 @@ export default function Contact() {
             <li>
               <a
                 href={siteConfig.phoneHref}
+                data-misto="kontakt"
                 className="font-heading text-3xl font-bold text-brand transition hover:text-brand-dark sm:text-4xl"
               >
                 {siteConfig.phone}
+              </a>
+            </li>
+            <li>
+              <a
+                href={siteConfig.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-misto="kontakt"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-brand px-6 py-2.5 font-bold text-brand transition hover:bg-brand hover:text-black"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+                WhatsApp
               </a>
             </li>
             <li>

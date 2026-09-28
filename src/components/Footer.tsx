@@ -68,8 +68,19 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-white">
               <li>
-                <a href={siteConfig.phoneHref} className="transition hover:text-brand">
+                <a href={siteConfig.phoneHref} data-misto="paticka" className="transition hover:text-brand">
                   {siteConfig.phone}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-misto="paticka"
+                  className="transition hover:text-brand"
+                >
+                  WhatsApp {siteConfig.phone}
                 </a>
               </li>
               <li>

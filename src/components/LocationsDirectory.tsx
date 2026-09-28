@@ -110,7 +110,7 @@ export default function LocationsDirectory({ currentSlug }: LocationsDirectoryPr
 
         <p className="mt-6 px-2 text-center text-xs text-white sm:text-sm">
           Nenašli jste svou obec? Zavolejte na{" "}
-          <a href={siteConfig.phoneHref} className="font-bold text-brand hover:underline">
+          <a href={siteConfig.phoneHref} data-misto="seznam-lokalit" className="font-bold text-brand hover:underline">
             {siteConfig.phone}
           </a>{" "}
           – vyjíždíme po celé Praze i Středočeském kraji.

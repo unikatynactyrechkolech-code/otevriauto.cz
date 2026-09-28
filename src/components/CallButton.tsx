@@ -5,6 +5,7 @@ export default function CallButton() {
   return (
     <a
       href={siteConfig.phoneHref}
+      data-misto="plovouci-tlacitko"
       aria-label={`Zavolat ${siteConfig.phone}`}
       className="fixed bottom-4 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-brand text-black shadow-[0_0_28px_rgba(242,183,5,0.75)] transition hover:bg-brand-dark sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
     >

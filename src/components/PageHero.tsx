@@ -15,9 +15,9 @@ type PageHeroProps = {
 };
 
 export default function PageHero({ title, breadcrumbs, arrival, extraStat, image, imageAlt }: PageHeroProps) {
-  const stats = [
+  const stats: { label: string; value: string; href?: string }[] = [
     { label: "Příjezd", value: arrival },
-    { label: "Nonstop linka", value: siteConfig.phone },
+    { label: "Nonstop linka", value: siteConfig.phone, href: siteConfig.phoneHref },
     { label: "Garance", value: "Cena předem" },
     extraStat,
   ];
@@ -62,10 +62,18 @@ export default function PageHero({ title, breadcrumbs, arrival, extraStat, image
 
       <section className="bg-black">
         <dl className="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-5 px-4 py-6 text-center sm:px-6 lg:grid-cols-4 lg:px-8">
-          {stats.map(({ label, value }) => (
+          {stats.map(({ label, value, href }) => (
             <div key={label}>
               <dt className="text-[11px] font-bold uppercase tracking-wider text-white">{label}</dt>
-              <dd className="mt-1 text-sm font-bold text-white sm:text-base">{value}</dd>
+              <dd className="mt-1 text-sm font-bold text-white sm:text-base">
+                {href ? (
+                  <a href={href} data-misto="hero-podstranky" className="text-brand transition hover:text-brand-dark">
+                    {value}
+                  </a>
+                ) : (
+                  value
+                )}
+              </dd>
             </div>
           ))}
         </dl>

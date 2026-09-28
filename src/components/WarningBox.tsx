@@ -32,6 +32,7 @@ export default function WarningBox() {
 
             <a
               href={siteConfig.phoneHref}
+              data-misto="upozorneni"
               className="flex shrink-0 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition hover:bg-white/20"
             >
               <PhoneIcon className="h-4 w-4" />

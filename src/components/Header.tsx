@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site-config";
 import PhoneIcon from "./PhoneIcon";
+import WhatsAppIcon from "./WhatsAppIcon";
 import LiveStatus from "./LiveStatus";
 
 const links = [
@@ -97,13 +98,26 @@ export default function Header() {
               ))}
             </nav>
 
-            <a
-              href={siteConfig.phoneHref}
-              className="flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-lg font-bold text-black transition hover:bg-brand-dark"
-            >
-              <PhoneIcon className="h-5 w-5" />
-              Volejte {siteConfig.phone}
-            </a>
+            <div className="flex flex-col items-start gap-3">
+              <a
+                href={siteConfig.phoneHref}
+                data-misto="menu"
+                className="flex items-center gap-2 rounded-full bg-brand px-8 py-4 text-lg font-bold text-black transition hover:bg-brand-dark"
+              >
+                <PhoneIcon className="h-5 w-5" />
+                Volejte {siteConfig.phone}
+              </a>
+              <a
+                href={siteConfig.whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-misto="menu"
+                className="flex items-center gap-2 rounded-full border-2 border-brand px-8 py-3.5 text-lg font-bold text-black transition hover:bg-brand"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       ) : null}
